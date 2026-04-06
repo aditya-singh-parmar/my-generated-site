@@ -1,20 +1,22 @@
 {
   "root": {
     "props": {
-      "title": "QA Test Landing PageMy Landing Page",
-      "description": "A beautiful landing page for your product or service.",
+      "title": "My Site",
+      "description": "A modern website built with Website Builder.",
       "ogImage": "",
       "favicon": "",
       "headSnippet": ""
     }
   },
-  "zones": {},
+  "zones": {
+    "Section-f9d11e4d-6a9d-4f6c-94eb-17ce781bd0f5:content": []
+  },
   "content": [
     {
       "type": "Navbar",
       "props": {
         "id": "navbar-1",
-        "logo": "YourBrand",
+        "logo": "Acme",
         "links": [
           {
             "url": "#features",
@@ -23,6 +25,37 @@
           {
             "url": "#pricing",
             "label": "Pricing"
+          },
+          {
+            "url": "#about",
+            "label": "About"
+          }
+        ],
+        "ctaUrl": "#",
+        "sticky": "yes",
+        "bgColor": "#ffffff",
+        "ctaText": "Get Started",
+        "logoUrl": "/",
+        "textColor": "#1e293b"
+      }
+    },
+    {
+      "type": "Navbar",
+      "props": {
+        "id": "Navbar-11fa626e-cac1-4f6f-baec-3dc0113df0b7",
+        "logo": "Acme",
+        "links": [
+          {
+            "url": "#features",
+            "label": "Features"
+          },
+          {
+            "url": "#pricing",
+            "label": "Pricing"
+          },
+          {
+            "url": "#about",
+            "label": "About"
           }
         ],
         "ctaUrl": "#",
@@ -40,15 +73,45 @@
         "align": "center",
         "ctaUrl": "#",
         "bgColor": "#0f172a",
-        "ctaText": "Start Free Trial",
-        "heading": "Test Heading",
+        "ctaText": "Start Building Free",
+        "heading": "Build Beautiful Websites\nWithout Writing Code",
         "overlay": "dark",
-        "minHeight": 580,
+        "minHeight": 640,
         "textColor": "#ffffff",
         "bgImageUrl": "",
-        "subheading": "Save time, reduce complexity, and ship faster with our all-in-one platform.",
+        "subheading": "Drag, drop, and publish. Create stunning websites in minutes with our visual editor. No design experience required.",
         "secondaryCtaUrl": "#",
-        "secondaryCtaText": "Watch Demo"
+        "secondaryCtaText": "See How It Works"
+      }
+    },
+    {
+      "type": "Stats",
+      "props": {
+        "id": "stats-1",
+        "stats": [
+          {
+            "label": "Websites Built",
+            "number": "50K+",
+            "description": "Teams shipping faster with our platform"
+          },
+          {
+            "label": "Pages Published",
+            "number": "2M+",
+            "description": "Live pages powered by our builder"
+          },
+          {
+            "label": "Uptime SLA",
+            "number": "99.9%",
+            "description": "Reliability you can depend on"
+          },
+          {
+            "label": "Load Time",
+            "number": "<1s",
+            "description": "Average across all published sites"
+          }
+        ],
+        "bgColor": "#1e3a5f",
+        "textColor": "#ffffff"
       }
     },
     {
@@ -56,41 +119,78 @@
       "props": {
         "id": "features-1",
         "columns": "3",
-        "heading": "Built for Modern Teams",
+        "heading": "Everything You Need to Launch",
         "features": [
           {
             "icon": "⚡",
-            "title": "Fast Setup",
-            "description": "Get started in minutes, not hours. No complex configuration required."
+            "title": "Drag & Drop Editor",
+            "description": "Intuitive visual editor with 20+ production-ready components. Arrange, resize, and customize without touching code."
           },
           {
-            "icon": "🤝",
-            "title": "Team-Ready",
-            "description": "Collaborate seamlessly with your whole team in real time."
+            "icon": "🚀",
+            "title": "One-Click Deploy",
+            "description": "Publish to Vercel instantly. Your site is live in under 60 seconds with automatic HTTPS and a global CDN."
           },
           {
-            "icon": "📊",
-            "title": "Powerful Analytics",
-            "description": "Deep insights into usage, performance, and growth."
+            "icon": "📱",
+            "title": "Fully Responsive",
+            "description": "Every component adapts beautifully to phones, tablets, and desktops — automatic, no extra work required."
+          },
+          {
+            "icon": "🎨",
+            "title": "Beautiful by Default",
+            "description": "Professionally designed components that look polished right out of the box. Customize colors and content freely."
+          },
+          {
+            "icon": "💾",
+            "title": "Auto-Save",
+            "description": "Your work is saved automatically every few seconds. Never lose progress, even if you close the browser."
           },
           {
             "icon": "🔒",
-            "title": "Enterprise Security",
-            "description": "SOC 2 compliant. Your data is always safe and private."
-          },
-          {
-            "icon": "🔌",
-            "title": "100+ Integrations",
-            "description": "Connect with the tools your team already uses."
-          },
-          {
-            "icon": "📞",
-            "title": "24/7 Support",
-            "description": "Our team is always available to help you succeed."
+            "title": "Secure & Fast",
+            "description": "Built on Next.js and Vercel — enterprise-grade infrastructure with security and performance baked in."
           }
         ],
-        "subheading": "Everything you need to move fast and stay organized.",
+        "subheading": "Powerful tools designed for creators, marketers, and teams who want results without the complexity.",
         "accentColor": "#2563eb"
+      }
+    },
+    {
+      "type": "Section",
+      "props": {
+        "id": "Section-f9d11e4d-6a9d-4f6c-94eb-17ce781bd0f5",
+        "bgColor": "#ffffff",
+        "padding": "medium",
+        "maxWidth": "wide"
+      }
+    },
+    {
+      "type": "Testimonials",
+      "props": {
+        "id": "testimonials-1",
+        "bgColor": "#f8fafc",
+        "heading": "Loved by Creators Everywhere",
+        "testimonials": [
+          {
+            "role": "Freelance Designer",
+            "quote": "I launched my portfolio in under an hour. The drag-and-drop is genuinely smooth and the publish button actually works.",
+            "author": "Sarah Chen",
+            "avatar": "https://placehold.co/80x80/dbeafe/2563eb?text=SC"
+          },
+          {
+            "role": "CTO, Startup Studio",
+            "quote": "We replaced a $200/month Webflow subscription with this. Same quality output, way more control over the code.",
+            "author": "Marcus Williams",
+            "avatar": "https://placehold.co/80x80/dcfce7/16a34a?text=MW"
+          },
+          {
+            "role": "UX Lead, Agency",
+            "quote": "The preview mode is perfect for showing clients designs before going live. The whole workflow feels polished.",
+            "author": "Priya Patel",
+            "avatar": "https://placehold.co/80x80/fce7f3/db2777?text=PP"
+          }
+        ]
       }
     },
     {
@@ -98,34 +198,38 @@
       "props": {
         "id": "cta-1",
         "bgColor": "#2563eb",
-        "heading": "Start Your Free 14-Day Trial",
+        "heading": "Ready to Build Your Site?",
         "buttonUrl": "#",
         "textColor": "#ffffff",
-        "buttonText": "Get Started Free",
-        "description": "No credit card required. Cancel anytime.",
-        "secondaryButtonUrl": "",
-        "secondaryButtonText": ""
+        "buttonText": "Start Building Now",
+        "description": "Start for free — no credit card required. Your first website is up in minutes.",
+        "secondaryButtonUrl": "#",
+        "secondaryButtonText": "View Examples"
       }
     },
     {
       "type": "Footer",
       "props": {
         "id": "footer-1",
-        "logo": "YourBrand",
+        "logo": "Acme",
         "bgColor": "#0f172a",
         "columns": [
           {
-            "links": "Features|#\nPricing|#\nChangelog|#",
+            "links": "Features|#\nPricing|#\nChangelog|#\nRoadmap|#",
             "title": "Product"
           },
           {
-            "links": "About|#\nBlog|#\nContact|#",
+            "links": "About|#\nBlog|#\nCareers|#\nContact|#",
             "title": "Company"
+          },
+          {
+            "links": "Privacy Policy|#\nTerms of Service|#\nCookie Policy|#",
+            "title": "Legal"
           }
         ],
-        "copyright": "© 2025 YourBrand. All rights reserved.",
+        "copyright": "© 2025 Acme Inc. All rights reserved.",
         "textColor": "#94a3b8",
-        "description": "Helping teams do their best work."
+        "description": "Building better websites, faster. The drag-and-drop editor for modern teams and creators."
       }
     }
   ]

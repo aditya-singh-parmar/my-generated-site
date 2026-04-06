@@ -3,8 +3,8 @@ import type { Metadata } from 'next'
 import React from 'react'
 
 export const metadata: Metadata = {
-  title: 'QA Test Landing PageMy Landing Page',
-  description: 'A beautiful landing page for your product or service.',
+  title: 'My Site',
+  description: 'A modern website built with Website Builder.',
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
