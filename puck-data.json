@@ -1,56 +1,132 @@
 {
   "root": {
     "props": {
-      "title": "My Site"
+      "title": "QA Test Landing PageMy Landing Page",
+      "description": "A beautiful landing page for your product or service.",
+      "ogImage": "",
+      "favicon": "",
+      "headSnippet": ""
     }
   },
+  "zones": {},
   "content": [
     {
-      "type": "HeroSection",
+      "type": "Navbar",
+      "props": {
+        "id": "navbar-1",
+        "logo": "YourBrand",
+        "links": [
+          {
+            "url": "#features",
+            "label": "Features"
+          },
+          {
+            "url": "#pricing",
+            "label": "Pricing"
+          }
+        ],
+        "ctaUrl": "#",
+        "sticky": "yes",
+        "bgColor": "#ffffff",
+        "ctaText": "Get Started",
+        "logoUrl": "/",
+        "textColor": "#1e293b"
+      }
+    },
+    {
+      "type": "Hero",
       "props": {
         "id": "hero-1",
-        "heading": "Welcome to Your Website",
-        "subheading": "Built with drag and drop. Click any element to edit, or drag new components from the sidebar.",
-        "ctaText": "Get Started",
-        "bgColor": "#1a1a2e"
+        "align": "center",
+        "ctaUrl": "#",
+        "bgColor": "#0f172a",
+        "ctaText": "Start Free Trial",
+        "heading": "Test Heading",
+        "overlay": "dark",
+        "minHeight": 580,
+        "textColor": "#ffffff",
+        "bgImageUrl": "",
+        "subheading": "Save time, reduce complexity, and ship faster with our all-in-one platform.",
+        "secondaryCtaUrl": "#",
+        "secondaryCtaText": "Watch Demo"
       }
     },
     {
-      "type": "TextBlock",
+      "type": "Features",
       "props": {
-        "id": "text-1",
-        "content": "This is your starter template. Click on any element to edit its content, or drag new components from the sidebar on the left. When you're happy with your design, hit Publish to push it live."
-      }
-    },
-    {
-      "type": "CardGrid",
-      "props": {
-        "id": "cards-1",
-        "cards": [
+        "id": "features-1",
+        "columns": "3",
+        "heading": "Built for Modern Teams",
+        "features": [
           {
-            "title": "Drag & Drop",
-            "description": "Rearrange sections by dragging them into the position you want."
+            "icon": "⚡",
+            "title": "Fast Setup",
+            "description": "Get started in minutes, not hours. No complex configuration required."
           },
           {
-            "title": "Live Preview",
-            "description": "Preview your site before publishing to make sure it looks perfect."
+            "icon": "🤝",
+            "title": "Team-Ready",
+            "description": "Collaborate seamlessly with your whole team in real time."
           },
           {
-            "title": "One-Click Publish",
-            "description": "Push your site live to Vercel with a single click."
+            "icon": "📊",
+            "title": "Powerful Analytics",
+            "description": "Deep insights into usage, performance, and growth."
+          },
+          {
+            "icon": "🔒",
+            "title": "Enterprise Security",
+            "description": "SOC 2 compliant. Your data is always safe and private."
+          },
+          {
+            "icon": "🔌",
+            "title": "100+ Integrations",
+            "description": "Connect with the tools your team already uses."
+          },
+          {
+            "icon": "📞",
+            "title": "24/7 Support",
+            "description": "Our team is always available to help you succeed."
           }
-        ]
+        ],
+        "subheading": "Everything you need to move fast and stay organized.",
+        "accentColor": "#2563eb"
       }
     },
     {
-      "type": "CTASection",
+      "type": "CTA",
       "props": {
         "id": "cta-1",
-        "heading": "Ready to build something great?",
-        "buttonText": "Start Editing",
-        "buttonUrl": "#"
+        "bgColor": "#2563eb",
+        "heading": "Start Your Free 14-Day Trial",
+        "buttonUrl": "#",
+        "textColor": "#ffffff",
+        "buttonText": "Get Started Free",
+        "description": "No credit card required. Cancel anytime.",
+        "secondaryButtonUrl": "",
+        "secondaryButtonText": ""
+      }
+    },
+    {
+      "type": "Footer",
+      "props": {
+        "id": "footer-1",
+        "logo": "YourBrand",
+        "bgColor": "#0f172a",
+        "columns": [
+          {
+            "links": "Features|#\nPricing|#\nChangelog|#",
+            "title": "Product"
+          },
+          {
+            "links": "About|#\nBlog|#\nContact|#",
+            "title": "Company"
+          }
+        ],
+        "copyright": "© 2025 YourBrand. All rights reserved.",
+        "textColor": "#94a3b8",
+        "description": "Helping teams do their best work."
       }
     }
-  ],
-  "zones": {}
+  ]
 }
