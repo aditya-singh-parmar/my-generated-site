@@ -1,0 +1,56 @@
+{
+  "root": {
+    "props": {
+      "title": "My Site"
+    }
+  },
+  "content": [
+    {
+      "type": "HeroSection",
+      "props": {
+        "id": "hero-1",
+        "heading": "Welcome to Your Website",
+        "subheading": "Built with drag and drop. Click any element to edit, or drag new components from the sidebar.",
+        "ctaText": "Get Started",
+        "bgColor": "#1a1a2e"
+      }
+    },
+    {
+      "type": "TextBlock",
+      "props": {
+        "id": "text-1",
+        "content": "This is your starter template. Click on any element to edit its content, or drag new components from the sidebar on the left. When you're happy with your design, hit Publish to push it live."
+      }
+    },
+    {
+      "type": "CardGrid",
+      "props": {
+        "id": "cards-1",
+        "cards": [
+          {
+            "title": "Drag & Drop",
+            "description": "Rearrange sections by dragging them into the position you want."
+          },
+          {
+            "title": "Live Preview",
+            "description": "Preview your site before publishing to make sure it looks perfect."
+          },
+          {
+            "title": "One-Click Publish",
+            "description": "Push your site live to Vercel with a single click."
+          }
+        ]
+      }
+    },
+    {
+      "type": "CTASection",
+      "props": {
+        "id": "cta-1",
+        "heading": "Ready to build something great?",
+        "buttonText": "Start Editing",
+        "buttonUrl": "#"
+      }
+    }
+  ],
+  "zones": {}
+}
