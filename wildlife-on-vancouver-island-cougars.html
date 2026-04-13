@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cougars</title>
+  
+  
+  
+  
+  
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--color-bg:#FAF8F5;--color-surface:#F0EBE3;--color-text:#2C2C2C;--color-text-secondary:#6B6560;--color-accent:#B8977E;--color-accent-hover:#A07D63;--color-border:#E5DFD7;--color-overlay:rgba(44, 44, 44, 0.6);--font-heading:'DM Serif Display', Georgia, serif;--font-body:'Inter', -apple-system, sans-serif}
+html{scroll-behavior:smooth}
+body{font-family:var(--font-body);color:var(--color-text);background-color:var(--color-bg);line-height:1.7;-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--color-accent);text-decoration:none;transition:color .2s}
+a:hover{color:var(--color-accent-hover)}
+h1,h2,h3,h4,h5,h6{font-family:var(--font-heading);font-weight:400;line-height:1.2;letter-spacing:-.01em}
+h1{font-size:clamp(2.5rem,5vw,4.5rem)}h2{font-size:clamp(2rem,4vw,3.5rem)}h3{font-size:clamp(1.5rem,3vw,2rem)}h4{font-size:clamp(1.25rem,2vw,1.5rem)}
+p{font-size:1.0625rem;line-height:1.8;color:var(--color-text-secondary)}
+.container{width:100%;max-width:1280px;margin:0 auto;padding:0 2rem}
+.container-narrow{width:100%;max-width:900px;margin:0 auto;padding:0 2rem}
+.section-padding{padding:7rem 0}
+.grid{display:grid;gap:2rem}.grid-2{grid-template-columns:repeat(2,1fr)}.grid-3{grid-template-columns:repeat(3,1fr)}.grid-4{grid-template-columns:repeat(4,1fr)}
+@media(max-width:1024px){.grid-4,.grid-3{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:768px){.grid-2,.grid-3,.grid-4{grid-template-columns:1fr}.section-padding{padding:4rem 0}.container{padding:0 1.25rem}}
+.btn{display:inline-flex;align-items:center;gap:.5rem;padding:.875rem 2rem;font-family:var(--font-body);font-size:.9375rem;font-weight:500;letter-spacing:.02em;border:none;border-radius:4px;cursor:pointer;transition:all .25s cubic-bezier(.25,.46,.45,.94);text-decoration:none}
+.btn-primary{background-color:var(--color-accent);color:#fff}.btn-primary:hover{background-color:var(--color-accent-hover);color:#fff;transform:translateY(-1px)}
+.btn-outline{background-color:transparent;color:var(--color-text);border:1.5px solid var(--color-border)}.btn-outline:hover{border-color:var(--color-accent);color:var(--color-accent)}
+.card{background:var(--color-surface);border:1px solid var(--color-border);border-radius:8px;overflow:hidden;transition:transform .3s ease,box-shadow .3s ease}.card:hover{transform:translateY(-4px);box-shadow:0 12px 40px rgba(0,0,0,.08)}
+.reveal{opacity:0;transform:translateY(30px);transition:opacity .8s cubic-bezier(.25,.46,.45,.94),transform .8s cubic-bezier(.25,.46,.45,.94)}.reveal.revealed{opacity:1;transform:translateY(0)}
+.reveal-delay-1{transition-delay:.1s}.reveal-delay-2{transition-delay:.2s}.reveal-delay-3{transition-delay:.3s}
+.img-cover{width:100%;height:100%;object-fit:cover}.img-rounded{border-radius:8px}.img-aspect-video{aspect-ratio:16/9}
+.overlay{position:absolute;inset:0;background:var(--color-overlay)}
+.text-center{text-align:center}.text-accent{color:var(--color-accent)}.text-secondary{color:var(--color-text-secondary)}
+.uppercase{text-transform:uppercase;letter-spacing:.1em;font-size:.8125rem}
+.mb-1{margin-bottom:.5rem}.mb-2{margin-bottom:1rem}.mb-3{margin-bottom:1.5rem}.mb-4{margin-bottom:2rem}.mb-6{margin-bottom:3rem}
+.separator{width:60px;height:2px;background:var(--color-accent);margin:1.5rem 0}.separator-center{margin-left:auto;margin-right:auto}</style>
+  
+  
+</head>
+<body>
+  <div style="height:70px"></div><nav class="nav nav-sticky"><div class="container"><div class="nav-inner"><a href="/" class="nav-logo"><span class="nav-logo-text">Discover Vancouver Island</span></a><ul class="nav-menu"><li class="nav-item nav-dropdown nav-has-mega"><a href="/guided-fishing-trips.html">Things To Do <svg class="nav-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></a><div class="nav-mega"><div class="nav-mega-media"><figure class="nav-mega-image"><img src="https://res.cloudinary.com/djqswlfat/image/upload/v1776083709/vancouver-island/tophikingspots.jpg" alt=""></figure><figure class="nav-mega-image"><img src="https://res.cloudinary.com/djqswlfat/image/upload/v1776083709/vancouver-island/fishing-menu.jpg" alt=""></figure></div><div class="nav-mega-cols"><div class="nav-mega-col"><h4>Outdoor Activities</h4><ul></ul></div><div class="nav-mega-col"><h4>Sightseeing</h4><ul></ul></div><div class="nav-mega-col"><h4>MISC</h4><ul></ul></div></div></div></li><li class="nav-item nav-dropdown nav-has-mega"><a href="/regions.html">Regions <svg class="nav-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></a><div class="nav-mega"><div class="nav-mega-media"><figure class="nav-mega-image"><img src="https://res.cloudinary.com/djqswlfat/image/upload/v1776083709/vancouver-island/victoria.jpg" alt=""></figure><figure class="nav-mega-image"><img src="https://res.cloudinary.com/djqswlfat/image/upload/v1776083710/vancouver-island/pacificrim.jpg" alt=""></figure></div><div class="nav-mega-cols"><div class="nav-mega-col"><h4>South Island</h4><ul></ul></div><div class="nav-mega-col"><h4>Cowichan</h4><ul></ul></div><div class="nav-mega-col"><h4>Central Island Region</h4><ul></ul></div><div class="nav-mega-col"><h4>Gulf Islands</h4><ul></ul></div><div class="nav-mega-col"><h4>Pacific Rim</h4><ul></ul></div><div class="nav-mega-col"><h4>North Central</h4><ul></ul></div><div class="nav-mega-col"><h4>North Island</h4><ul></ul></div></div></div></li><li class="nav-item"><a href="/blog.html">Blog</a></li><li class="nav-item"><a href="/contact-us.html">Contact us</a></li></ul><button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button><div class="nav-mobile-menu"><ul class="nav-mobile-list"><li><a href="/guided-fishing-trips.html">Things To Do</a></li><li><a href="/regions.html">Regions</a></li><li><a href="/blog.html">Blog</a></li><li><a href="/contact-us.html">Contact us</a></li></ul></div></div></div></nav>
+<style>.nav{position:relative;z-index:100;padding:1.25rem 0;transition:all .3s}.nav-sticky{position:fixed;top:0;left:0;right:0;background:var(--color-bg)}.nav-scrolled{box-shadow:0 1px 0 var(--color-border);padding:.875rem 0}.nav-transparent{background:transparent}.nav-transparent.nav-scrolled{background:var(--color-bg)}.nav-inner{display:flex;align-items:center;justify-content:space-between}.nav-logo{text-decoration:none;color:var(--color-text)}.nav-logo-text{font-family:var(--font-heading);font-size:1.5rem;letter-spacing:-.02em}.nav-logo-img{height:36px;width:auto}.nav-menu{display:flex;list-style:none;gap:2.5rem;align-items:center}.nav-menu a{color:var(--color-text);font-size:.9375rem;font-weight:400;display:flex;align-items:center;gap:4px;transition:color .2s}.nav-menu a:hover{color:var(--color-accent)}.nav-chevron{transition:transform .2s}.nav-dropdown:hover .nav-chevron{transform:rotate(180deg)}.nav-dropdown{position:relative}.nav-dropdown-menu{position:absolute;top:100%;left:-1rem;min-width:200px;padding:.75rem 0;background:var(--color-surface);border:1px solid var(--color-border);border-radius:8px;list-style:none;opacity:0;visibility:hidden;transform:translateY(8px);transition:all .25s;box-shadow:0 8px 30px rgba(0,0,0,.08);margin-top:.5rem}.nav-dropdown-menu li a{display:block;padding:.5rem 1.25rem;font-size:.875rem}.nav-dropdown-menu li a:hover{background:var(--color-bg)}.nav-toggle{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:4px}.nav-toggle span{display:block;width:24px;height:2px;background:var(--color-text);transition:all .3s}.nav-toggle-active span:nth-child(1){transform:translateY(7px) rotate(45deg)}.nav-toggle-active span:nth-child(2){opacity:0}.nav-toggle-active span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}.nav-mobile-menu{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:var(--color-bg);padding:5rem 2rem 2rem;z-index:99}.nav-mobile-open{display:block}.nav-mobile-list{list-style:none;display:flex;flex-direction:column;gap:1.5rem}.nav-mobile-list a{font-family:var(--font-heading);font-size:2rem;color:var(--color-text)}@media(max-width:768px){.nav-menu{display:none}.nav-toggle{display:flex}}.nav-hamburger-only .nav-menu{display:none}.nav-hamburger-only .nav-toggle{display:flex}.nav-item{position:relative}.nav-mega{position:absolute;left:0;right:0;top:100%;background:var(--nav-dropdown-bg,#fff);color:var(--nav-dropdown-fg,#1a1a1a);display:grid;grid-template-columns:1fr 2fr;gap:2rem;padding:2rem;box-shadow:0 20px 40px rgba(0,0,0,.15);opacity:0;visibility:hidden;transform:translateY(-8px);transition:opacity .18s,visibility .18s,transform .18s;z-index:100}.nav-item:hover>.nav-mega,.nav-item:focus-within>.nav-mega{opacity:1;visibility:visible;transform:translateY(0)}.nav-mega-media{display:flex;flex-direction:column;gap:1rem}.nav-mega-image{position:relative;overflow:hidden;border-radius:4px;aspect-ratio:4/3;margin:0}.nav-mega-image img{width:100%;height:100%;object-fit:cover;display:block}.nav-mega-image figcaption{position:absolute;left:0;right:0;bottom:0;padding:.5rem .75rem;background:linear-gradient(transparent,rgba(0,0,0,.7));color:#fff;font-size:.85rem}.nav-mega-cols{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}.nav-mega-col h4{font-size:.95rem;font-weight:600;margin:0 0 .6rem;color:inherit}.nav-mega-col ul{list-style:none;padding:0;margin:0}.nav-mega-col li{margin:.35rem 0;font-size:.9rem}.nav-mega-col li::before{content:"•";color:var(--accent,#2c94a6);margin-right:.5rem}.nav-mega-col a{color:inherit;text-decoration:none}.nav-mega-col a:hover{color:var(--accent,#2c94a6)}.nav-mega-cta{display:inline-block;margin-top:1rem;padding:.6rem 1.25rem;background:var(--accent,#c0392b);color:#fff;text-decoration:none;font-weight:600;letter-spacing:.05em;text-transform:uppercase;font-size:.8rem;border-radius:2px;grid-column:1/-1}@media(max-width:768px){.nav-mega{position:static;display:block;padding:1rem;opacity:1;visibility:visible;transform:none;box-shadow:none}.nav-mega-media{display:none}.nav-mega-cols{grid-template-columns:1fr;gap:1rem}}</style>
+<section class="hero-fs" style=""><div class="overlay" style="opacity:0.5"></div><div class="container hero-content hero-center"><h1 class="hero-title reveal">Cougar</h1><div class="hero-actions reveal reveal-delay-2"></div></div></section>
+<style>.hero-fs{position:relative;min-height:100vh;display:flex;align-items:center;background-size:cover;background-position:center;background-color:var(--color-text);color:#fff}.hero-content{position:relative;z-index:2;width:100%}.hero-center{text-align:center}.hero-center .hero-body{max-width:640px;margin-left:auto;margin-right:auto}.hero-left{text-align:left}.hero-left .hero-body{max-width:640px}.hero-sub{margin-bottom:1.5rem;color:rgba(255,255,255,.7)}.hero-title{margin-bottom:1.5rem;color:#fff}.hero-body{font-size:1.125rem;line-height:1.8;color:rgba(255,255,255,.8);margin-bottom:2.5rem}.hero-actions{display:flex;gap:1rem}.hero-center .hero-actions{justify-content:center}.hero-text-dark,.hero-text-dark .hero-title,.hero-text-dark .hero-sub,.hero-text-dark .hero-body{color:var(--color-text)}.hero-text-dark .hero-sub{color:var(--color-text-secondary)}.hero-text-dark .hero-body{color:var(--color-text-secondary)}.hero-text-dark .btn-outline{color:var(--color-text);border-color:var(--color-border)}@media(max-width:768px){.hero-fs{min-height:80vh}.hero-actions{flex-direction:column;align-items:stretch}.hero-actions .btn{text-align:center;justify-content:center}}</style>
+<section class="section-padding"><div class="container-narrow"><div class="reveal text-center"><div class="separator separator-center mb-4"></div><p>&lt;div class=&quot;gdlr-content&quot;&gt;
+		&lt;!-- Above Sidebar Section--&gt;
+							&lt;div class=&quot;above-sidebar-wrapper&quot;&gt;&lt;section id=&quot;content-section-1&quot;&gt;&lt;div class=&quot;gdlr-full-size-wrapper gdlr-show-all&quot; style=&quot; background-color: #ffffff; &quot;&gt;&lt;div class=&quot;gdlr-image-frame-item gdlr-item&quot;&gt;&lt;div class=&quot;gdlr-frame frame-type-none&quot;&gt;&lt;div class=&quot;gdlr-image-link-shortcode&quot;&gt;&lt;img src=&quot;https://res.cloudinary.com/djqswlfat/image/upload/v1776084138/vancouver-island/cougars.jpg&quot; alt=&quot;&quot; width=&quot;1600&quot; height=&quot;500&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;&lt;/section&gt;&lt;/div&gt;
+				
+		&lt;!-- Sidebar With Content Section--&gt;
+		&lt;div class=&quot;with-sidebar-wrapper&quot;&gt;&lt;section id=&quot;content-section-2&quot;&gt;&lt;div class=&quot;gdlr-color-wrapper  gdlr-show-all no-skin&quot; style=&quot;background-color: #ffffff; padding-top: 0px; &quot;&gt;&lt;div class=&quot;container&quot;&gt;&lt;div class=&quot;gdlr-title-item&quot;&gt;&lt;div class=&quot;gdlr-item-title-wrapper gdlr-item pos-center &quot;&gt;&lt;div class=&quot;gdlr-item-title-head&quot;&gt;&lt;h3 class=&quot;gdlr-item-title gdlr-skin-title gdlr-skin-border&quot;&gt;&lt;/h3&gt;&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;&lt;div class=&quot;gdlr-item gdlr-content-item&quot; style=&quot;margin-bottom: 70px;&quot;&gt;&lt;p&gt;The cougar is most feared cat in North America and is one of just a few worldwide animals that hunt with such a sly prowess. Vancouver Island’s cougar, Felis concolor vancouverensis, is a subspecies of the mountain lion Felis concolor found in both North and South America. There are an estimated 4000 cougars that live in BC and an estimated 600-800 live on Vancouver Island making it the highest concentration for this mountain lion in North America. The highest concentration of cougars are on the north eastern part of the island where their is also a higher concentration of blacktail deer, the favourite meal for this sly cat. Like Blacktail deer, they prefer the mountainous forested regions. Its reddish brown coat is slightly darker than the mainland species.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;ok-list-title&quot;&gt;Speed and Strength&lt;/span&gt;&lt;br&gt;
+ Cougars have the largest hind legs proportionate to any others in the cat family. They can jump horizontally from 6 to 12 meters (20-40 ft) and run as fast as 70 km/hr (45 mi/hr). They are best adapted for short powerful chases though and are skilled climbers and forest navigators. It is most often an ambush predator. Female cougars are fiercely protective of their young have been seen fighting off Grizzly bears on the mainland.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;ok-list-title&quot;&gt;Feed&lt;/span&gt;&lt;br&gt;
+ Cougars are territorial often staying an area of 30 to 100 square miles. They prefer to hunt blacktail deer and will follow them to lower elevation during winter months. They will eat any of the smaller animals that come through their territory. Cougars will also swim to smaller islands temporarily to hunt if their territory is not producing for a time.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;ok-list-title&quot;&gt;Mating and birth cycle&lt;/span&gt;&lt;br&gt;
+ Cougars are solitary cats and are not usually seen together unless it is a mother with her young. There is no fixed mating season but most births happen during February and March. Females usually reproduce every other year and give birth to 2-3 kittens after a gestation period of around 90 days. Females preferably give birth in rock shelters or caves. Kittens weigh from about .24 kilos (.5 lbs) to .5 kilos (1 lb) and will stay with the mother up to 2 years. After separating siblings can remain together for another 2-3 months. Females remain productive until the age of 12 and males until the age of 20. Most cougars live 8-12 years in the wild though like Black Bears can live much longer in captivity.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;ok-list-title&quot;&gt;Sightings and Hunting&lt;/span&gt;&lt;br&gt;
+ Sightings are rare but may happen when a cougar is hunting domesticated animals or blacktail deer that are in populous areas. Many residents will never see a cougar during their lifetime since these large cats usually stay away from civilization. Because cougar populations on Vancouver Island are very healthy, tags are given to hunters who prize this cat as one of the top trophy animals.&lt;/p&gt;
+&lt;/div&gt;&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;&lt;div class=&quot;gdlr-item gdlr-content-item&quot;&gt;&lt;div class=&quot;wonderplugingallery-container&quot; id=&quot;wonderplugingallery-container-142&quot; style=&quot;max-width:100%;margin:0 auto;&quot;&gt;&lt;div class=&quot;wonderplugingallery&quot; id=&quot;wonderplugingallery-142&quot; data-galleryid=&quot;142&quot; data-width=&quot;920&quot; data-height=&quot;610&quot; data-skin=&quot;gallery&quot; data-autoslide=&quot;false&quot; data-autoplayvideo=&quot;false&quot; data-html5player=&quot;true&quot; data-responsive=&quot;true&quot; data-fullwidth=&quot;true&quot; data-showtitle=&quot;true&quot; data-showdescription=&quot;true&quot; data-showplaybutton=&quot;true&quot; data-showfullscreenbutton=&quot;true&quot; data-showtimer=&quot;true&quot; data-showcarousel=&quot;true&quot; data-galleryshadow=&quot;false&quot; data-slideshadow=&quot;true&quot; data-thumbshowtitle=&quot;false&quot; data-thumbshadow=&quot;true&quot; data-lightboxshowtitle=&quot;false&quot; data-lightboxshowdescription=&quot;false&quot; data-specifyid=&quot;true&quot; data-duration=&quot;1500&quot; data-slideduration=&quot;1000&quot; data-slideshowinterval=&quot;6000&quot; data-googleanalyticsaccount=&quot;&quot; data-resizemode=&quot;fill&quot; data-imagetoolboxmode=&quot;mouseover&quot; data-effect=&quot;fade&quot; data-padding=&quot;12&quot; data-bgcolor=&quot;&quot; data-bgimage=&quot;&quot; data-thumbwidth=&quot;48&quot; data-thumbheight=&quot;48&quot; data-thumbgap=&quot;8&quot; data-thumbrowgap=&quot;16&quot; data-lightboxtextheight=&quot;72&quot; data-lightboxtitlecss=&quot;{color:#333333; font:bold 12px Arial,Helvetica,sans-serif; overflow:hidden; white-space:normal; line-height:18px;}&quot; data-lightboxdescriptioncss=&quot;{color:#333333; font:normal 12px Arial,Helvetica,sans-serif; overflow:hidden; white-space:normal; line-height:14px;}&quot; data-titlecss=&quot;{color:#ffffff; font-size:14px; font-family:Armata, sans-serif, Arial; overflow:hidden; white-space:normal; text-align:left; padding:10px 0px 10px 10px;  background:rgb(102, 102, 102) transparent; background:rgba(102, 102, 102, 0.6);}&quot; data-descriptioncss=&quot;{color:#ffffff; font-size:12px; font-family:Armata, sans-serif, Arial; overflow:hidden; white-space:normal; text-align:left; padding:0px 0px 10px 10px;  background:rgb(102, 102, 102) transparent; background:rgba(102, 102, 102, 0.6);}&quot; data-jsfolder=&quot;https://www.discovervancouverisland.com/wp-content/plugins/wonderplugin-gallery/engine/&quot; style=&quot;display:none;&quot;&gt;&lt;a href=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/12/CougarclimbingrocksTM1.jpg&quot;&gt;&lt;img class=&quot;html5galleryimg&quot; src=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/12/CougarclimbingrocksTM1-150x150.jpg&quot; alt=&quot;Tim Melling&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/12/cougaremergingTM1.jpg&quot;&gt;&lt;img class=&quot;html5galleryimg&quot; src=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/12/cougaremergingTM1-150x150.jpg&quot; alt=&quot;Tim Melling&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/12/CougarswimmingTM1.jpg&quot;&gt;&lt;img class=&quot;html5galleryimg&quot; src=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/12/CougarswimmingTM1-150x150.jpg&quot; alt=&quot;Tim Melling&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/12/Tim-Melling_Cougar-Felis-concolor-in-the-wild-Zeballos-Vancouver-Island1.jpg&quot;&gt;&lt;img class=&quot;html5galleryimg&quot; src=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/12/Tim-Melling_Cougar-Felis-concolor-in-the-wild-Zeballos-Vancouver-Island1-150x150.jpg&quot; alt=&quot;Tim Melling&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/12/Tim-Melling_Cougar-31.jpg&quot;&gt;&lt;img class=&quot;html5galleryimg&quot; src=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/12/Tim-Melling_Cougar-31-150x150.jpg&quot; alt=&quot;Tim Melling&quot;&gt;&lt;/a&gt;&lt;div class=&quot;wonderplugin-engine&quot;&gt;&lt;a href=&quot;http://www.wonderplugin.com/wordpress-gallery/&quot; title=&quot;WordPress Gallery Plugin&quot;&gt;WordPress Gallery Plugin&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;&lt;/section&gt;&lt;/div&gt;
+		
+		&lt;!-- Below Sidebar Section--&gt;
+					&lt;div class=&quot;below-sidebar-wrapper&quot;&gt;&lt;section id=&quot;content-section-3&quot;&gt;&lt;div class=&quot;gdlr-full-size-wrapper gdlr-show-all&quot; style=&quot;padding-top: 40px; padding-bottom: 20px;  background-color: #f2f2f2; &quot;&gt;&lt;div class=&quot;one-fifth column&quot;&gt;&lt;/div&gt;&lt;div class=&quot;one-fifth column&quot;&gt;&lt;div class=&quot;gdlr-item gdlr-content-item&quot;&gt;&lt;p class=&quot;m0 centered&quot;&gt;&lt;a class=&quot;btn-btm&quot; href=&quot;https://www.discovervancouverisland.com/wildlife-on-vancouver-island/gray-whales/&quot;&gt;Pacific Gray Whale &lt;i class=&quot;gdlr-icon fa icon-chevron-right&quot; style=&quot;color: #ffffff; font-size: 12px; &quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;one-fifth column&quot;&gt;&lt;div class=&quot;gdlr-item gdlr-content-item&quot;&gt;&lt;p class=&quot;m0 centered&quot;&gt;&lt;a class=&quot;btn-btm&quot; href=&quot;https://www.discovervancouverisland.com/wildlife-on-vancouver-island/grizzly-bears/&quot;&gt;Grizzly Bear &lt;i class=&quot;gdlr-icon fa icon-chevron-right&quot; style=&quot;color: #ffffff; font-size: 12px; &quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;one-fifth column&quot;&gt;&lt;div class=&quot;gdlr-item gdlr-content-item&quot;&gt;&lt;p class=&quot;m0 centered&quot;&gt;&lt;a class=&quot;btn-btm&quot; href=&quot;https://www.discovervancouverisland.com/wildlife-on-vancouver-island/humpback-whales/&quot;&gt;Humpback Whales &lt;i class=&quot;gdlr-icon fa icon-chevron-right&quot; style=&quot;color: #ffffff; font-size: 12px; &quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;one-fifth column&quot;&gt;&lt;/div&gt;&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;&lt;/section&gt;&lt;/div&gt;
+		
+		
+	&lt;/div&gt;</p></div></div></section>
+
+<section class="section-padding gallery-section">
+  <div class="container">
+    
+    
+
+    <div class="gallery-grid gallery-cols-3" id="gallery-kojgjj">
+      
+        <div class="gallery-item reveal reveal-delay-1">
+          <img src="https://res.cloudinary.com/djqswlfat/image/upload/v1776084138/vancouver-island/cougars.jpg" alt="" data-lightbox="gallery-kojgjj" data-index="0" class="img-cover">
+          
+        </div>
+      
+        <div class="gallery-item reveal reveal-delay-2">
+          <img src="https://discovervancouverisland.com/wp-content/uploads/2015/12/CougarclimbingrocksTM1-150x150.jpg" alt="Tim Melling" data-lightbox="gallery-kojgjj" data-index="1" class="img-cover">
+          
+        </div>
+      
+        <div class="gallery-item reveal reveal-delay-3">
+          <img src="https://discovervancouverisland.com/wp-content/uploads/2015/12/cougaremergingTM1-150x150.jpg" alt="Tim Melling" data-lightbox="gallery-kojgjj" data-index="2" class="img-cover">
+          
+        </div>
+      
+        <div class="gallery-item reveal reveal-delay-1">
+          <img src="https://discovervancouverisland.com/wp-content/uploads/2015/12/CougarswimmingTM1-150x150.jpg" alt="Tim Melling" data-lightbox="gallery-kojgjj" data-index="3" class="img-cover">
+          
+        </div>
+      
+        <div class="gallery-item reveal reveal-delay-2">
+          <img src="https://discovervancouverisland.com/wp-content/uploads/2015/12/Tim-Melling_Cougar-Felis-concolor-in-the-wild-Zeballos-Vancouver-Island1-150x150.jpg" alt="Tim Melling" data-lightbox="gallery-kojgjj" data-index="4" class="img-cover">
+          
+        </div>
+      
+        <div class="gallery-item reveal reveal-delay-3">
+          <img src="https://discovervancouverisland.com/wp-content/uploads/2015/12/Tim-Melling_Cougar-31-150x150.jpg" alt="Tim Melling" data-lightbox="gallery-kojgjj" data-index="5" class="img-cover">
+          
+        </div>
+      
+    </div>
+  </div>
+</section>
+<style>
+.gallery-grid{display:grid;gap:1rem}
+.gallery-cols-2{grid-template-columns:repeat(2,1fr)}
+.gallery-cols-3{grid-template-columns:repeat(3,1fr)}
+.gallery-cols-4{grid-template-columns:repeat(4,1fr)}
+.gallery-masonry{columns:3;column-gap:1rem}
+.gallery-masonry .gallery-item{break-inside:avoid;margin-bottom:1rem}
+.gallery-item{overflow:hidden;border-radius:8px;position:relative}
+.gallery-item img{width:100%;transition:transform .5s;cursor:pointer}
+.gallery-grid .gallery-item img{aspect-ratio:1}
+.gallery-item:hover img{transform:scale(1.05)}
+.gallery-caption{padding:.75rem;font-size:.875rem;color:var(--color-text-secondary);text-align:center}
+
+/* Carousel */
+.gallery-carousel{position:relative;overflow:hidden}
+.gallery-carousel .gallery-track{display:flex;gap:1rem;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding:0 0 1rem}
+.gallery-carousel .gallery-track::-webkit-scrollbar{display:none}
+.gallery-carousel .gallery-item{flex:0 0 auto;width:min(500px,80vw);scroll-snap-align:center}
+.gallery-carousel .gallery-item img{aspect-ratio:16/10;border-radius:12px}
+.gallery-nav{position:absolute;top:50%;transform:translateY(-50%);z-index:5;width:44px;height:44px;border-radius:50%;background:var(--color-bg);border:1px solid var(--color-border);color:var(--color-text);display:flex;align-items:center;justify-content:center;cursor:pointer;transition:all .2s;box-shadow:0 4px 20px rgba(0,0,0,.1)}
+.gallery-nav:hover{background:var(--color-accent);color:#fff;border-color:var(--color-accent)}
+.gallery-nav-prev{left:1rem}
+.gallery-nav-next{right:1rem}
+.gallery-dots{display:flex;justify-content:center;gap:.5rem;margin-top:1.25rem}
+.gallery-dot{width:8px;height:8px;border-radius:50%;background:var(--color-border);border:none;cursor:pointer;transition:all .2s;padding:0}
+.gallery-dot.active{background:var(--color-accent);width:24px;border-radius:4px}
+
+/* Lightbox */
+.lb-overlay{position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,.92);display:none;align-items:center;justify-content:center;opacity:0;transition:opacity .3s}
+.lb-overlay.lb-open{display:flex;opacity:1}
+.lb-content{position:relative;max-width:90vw;max-height:90vh;display:flex;align-items:center;justify-content:center}
+.lb-img{max-width:90vw;max-height:85vh;object-fit:contain;border-radius:8px;transition:opacity .3s}
+.lb-close{position:fixed;top:1.5rem;right:1.5rem;z-index:10001;width:44px;height:44px;border-radius:50%;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);color:#fff;font-size:1.25rem;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .2s;backdrop-filter:blur(8px)}
+.lb-close:hover{background:rgba(255,255,255,.2)}
+.lb-arrow{position:fixed;top:50%;transform:translateY(-50%);z-index:10001;width:48px;height:48px;border-radius:50%;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);color:#fff;font-size:1.25rem;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .2s;backdrop-filter:blur(8px)}
+.lb-arrow:hover{background:rgba(255,255,255,.2)}
+.lb-prev{left:1.5rem}
+.lb-next{right:1.5rem}
+.lb-counter{position:fixed;bottom:1.5rem;left:50%;transform:translateX(-50%);color:rgba(255,255,255,.6);font-size:.875rem;font-family:var(--font-body);z-index:10001}
+.lb-caption{position:fixed;bottom:3rem;left:50%;transform:translateX(-50%);color:rgba(255,255,255,.8);font-size:1rem;font-family:var(--font-heading);z-index:10001;text-align:center;max-width:600px}
+
+@media(max-width:1024px){.gallery-cols-4{grid-template-columns:repeat(2,1fr)}.gallery-cols-4.gallery-masonry{columns:2}}
+@media(max-width:768px){.gallery-cols-2,.gallery-cols-3,.gallery-cols-4{grid-template-columns:repeat(2,1fr)}.gallery-masonry{columns:2!important}.gallery-carousel .gallery-item{width:min(400px,85vw)}}
+</style>
+<script>
+(function(){
+  var g=document.getElementById('gallery-kojgjj');
+  if(!g)return;
+  var images=[{"url":"https://res.cloudinary.com/djqswlfat/image/upload/v1776084138/vancouver-island/cougars.jpg","alt":"","caption":""},{"url":"https://discovervancouverisland.com/wp-content/uploads/2015/12/CougarclimbingrocksTM1-150x150.jpg","alt":"Tim Melling","caption":""},{"url":"https://discovervancouverisland.com/wp-content/uploads/2015/12/cougaremergingTM1-150x150.jpg","alt":"Tim Melling","caption":""},{"url":"https://discovervancouverisland.com/wp-content/uploads/2015/12/CougarswimmingTM1-150x150.jpg","alt":"Tim Melling","caption":""},{"url":"https://discovervancouverisland.com/wp-content/uploads/2015/12/Tim-Melling_Cougar-Felis-concolor-in-the-wild-Zeballos-Vancouver-Island1-150x150.jpg","alt":"Tim Melling","caption":""},{"url":"https://discovervancouverisland.com/wp-content/uploads/2015/12/Tim-Melling_Cougar-31-150x150.jpg","alt":"Tim Melling","caption":""}];
+  var isCarousel=false;
+
+  // Carousel setup
+  if(isCarousel){
+    var track=document.createElement('div');
+    track.className='gallery-track';
+    while(g.firstChild)track.appendChild(g.firstChild);
+    g.appendChild(track);
+
+    // Add navigation arrows
+    var prevBtn=document.createElement('button');
+    prevBtn.className='gallery-nav gallery-nav-prev';
+    prevBtn.innerHTML='<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>';
+    prevBtn.setAttribute('aria-label','Previous image');
+    g.appendChild(prevBtn);
+
+    var nextBtn=document.createElement('button');
+    nextBtn.className='gallery-nav gallery-nav-next';
+    nextBtn.innerHTML='<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>';
+    nextBtn.setAttribute('aria-label','Next image');
+    g.appendChild(nextBtn);
+
+    // Dots
+    var dotsWrap=document.createElement('div');
+    dotsWrap.className='gallery-dots';
+    images.forEach(function(_,i){
+      var dot=document.createElement('button');
+      dot.className='gallery-dot'+(i===0?' active':'');
+      dot.dataset.index=i;
+      dot.setAttribute('aria-label','Go to slide '+(i+1));
+      dotsWrap.appendChild(dot);
+    });
+    g.parentElement.appendChild(dotsWrap);
+
+    var items=track.querySelectorAll('.gallery-item');
+    var currentIdx=0;
+
+    function scrollToIdx(idx){
+      if(idx<0)idx=images.length-1;
+      if(idx>=images.length)idx=0;
+      currentIdx=idx;
+      items[idx].scrollIntoView({behavior:'smooth',block:'nearest',inline:'center'});
+      dotsWrap.querySelectorAll('.gallery-dot').forEach(function(d,i){d.classList.toggle('active',i===idx)});
+    }
+
+    prevBtn.addEventListener('click',function(){scrollToIdx(currentIdx-1)});
+    nextBtn.addEventListener('click',function(){scrollToIdx(currentIdx+1)});
+    dotsWrap.querySelectorAll('.gallery-dot').forEach(function(dot){
+      dot.addEventListener('click',function(){scrollToIdx(parseInt(this.dataset.index))});
+    });
+
+    // Auto-detect current slide on scroll
+    var scrollTimer;
+    track.addEventListener('scroll',function(){
+      clearTimeout(scrollTimer);
+      scrollTimer=setTimeout(function(){
+        var trackRect=track.getBoundingClientRect();
+        var center=trackRect.left+trackRect.width/2;
+        var closest=0,closestDist=Infinity;
+        items.forEach(function(item,i){
+          var rect=item.getBoundingClientRect();
+          var dist=Math.abs(rect.left+rect.width/2-center);
+          if(dist<closestDist){closestDist=dist;closest=i}
+        });
+        currentIdx=closest;
+        dotsWrap.querySelectorAll('.gallery-dot').forEach(function(d,i){d.classList.toggle('active',i===closest)});
+      },100);
+    });
+  }
+
+  // Lightbox
+  
+  var overlay=document.createElement('div');
+  overlay.className='lb-overlay';
+  overlay.innerHTML='<div class="lb-content"><img class="lb-img" src="" alt=""></div><button class="lb-close" aria-label="Close lightbox">✕</button><button class="lb-arrow lb-prev" aria-label="Previous image"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg></button><button class="lb-arrow lb-next" aria-label="Next image"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></button><div class="lb-counter"></div><div class="lb-caption"></div>';
+  overlay.setAttribute('role','dialog');
+  overlay.setAttribute('aria-modal','true');
+  overlay.setAttribute('aria-label','Image lightbox');
+  document.body.appendChild(overlay);
+
+  var lbImg=overlay.querySelector('.lb-img');
+  var lbCounter=overlay.querySelector('.lb-counter');
+  var lbCaption=overlay.querySelector('.lb-caption');
+  var lbIdx=0;
+
+  function lbShow(idx){
+    if(idx<0)idx=images.length-1;
+    if(idx>=images.length)idx=0;
+    lbIdx=idx;
+    lbImg.style.opacity='0';
+    setTimeout(function(){
+      lbImg.src=images[idx].url;
+      lbImg.alt=images[idx].alt;
+      lbCounter.textContent=(idx+1)+' / '+images.length;
+      lbCaption.textContent=images[idx].caption||'';
+      lbImg.style.opacity='1';
+    },150);
+  }
+
+  g.querySelectorAll('[data-lightbox="gallery-kojgjj"]').forEach(function(img){
+    img.addEventListener('click',function(){
+      var idx=parseInt(this.dataset.index)||0;
+      lbShow(idx);
+      overlay.classList.add('lb-open');
+      document.body.style.overflow='hidden';
+    });
+  });
+
+  overlay.querySelector('.lb-close').addEventListener('click',function(){
+    overlay.classList.remove('lb-open');
+    document.body.style.overflow='';
+  });
+  overlay.querySelector('.lb-prev').addEventListener('click',function(e){e.stopPropagation();lbShow(lbIdx-1)});
+  overlay.querySelector('.lb-next').addEventListener('click',function(e){e.stopPropagation();lbShow(lbIdx+1)});
+  overlay.addEventListener('click',function(e){
+    if(e.target===overlay||e.target.classList.contains('lb-content')){
+      overlay.classList.remove('lb-open');
+      document.body.style.overflow='';
+    }
+  });
+  document.addEventListener('keydown',function(e){
+    if(!overlay.classList.contains('lb-open'))return;
+    if(e.key==='Escape'){overlay.classList.remove('lb-open');document.body.style.overflow=''}
+    if(e.key==='ArrowLeft')lbShow(lbIdx-1);
+    if(e.key==='ArrowRight')lbShow(lbIdx+1);
+  });
+  
+})();
+</script>
+<section class="cta-section" style=""><div class="container" style="position:relative;z-index:2"><div class="cta-content text-center reveal"><h2 class="cta-heading">Explore More Birds</h2><div class="cta-actions"><a href="/birds-of-vancouver-island.html" class="cta-btn-primary">Back to Birds</a></div></div></div></section>
+<style>
+.cta-section{padding:7rem 0;position:relative;background:var(--color-surface)}
+.cta-img{color:#fff}
+.cta-heading{margin-bottom:1rem}
+.cta-img .cta-heading{color:#fff}
+.cta-body{max-width:640px;margin:0 auto 2.5rem;line-height:1.8}
+.cta-img .cta-body{color:rgba(255,255,255,.85)}
+.cta-actions{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
+.cta-btn-primary{display:inline-flex;align-items:center;gap:.5rem;padding:.875rem 2.5rem;font-family:var(--font-body);font-size:.9375rem;font-weight:500;letter-spacing:.02em;border:none;border-radius:6px;cursor:pointer;transition:all .25s;text-decoration:none;background:#fff;color:#1a1a1a}
+.cta-btn-primary:hover{background:#f0f0f0;color:#1a1a1a;transform:translateY(-2px);box-shadow:0 8px 25px rgba(0,0,0,.15)}
+.cta-section:not(.cta-img) .cta-btn-primary{background:var(--color-accent);color:#fff}
+.cta-section:not(.cta-img) .cta-btn-primary:hover{background:var(--color-accent-hover);color:#fff}
+.cta-btn-secondary{display:inline-flex;align-items:center;gap:.5rem;padding:.875rem 2.5rem;font-family:var(--font-body);font-size:.9375rem;font-weight:500;letter-spacing:.02em;border:2px solid rgba(255,255,255,.4);border-radius:6px;cursor:pointer;transition:all .25s;text-decoration:none;background:transparent;color:#fff}
+.cta-btn-secondary:hover{border-color:#fff;color:#fff;transform:translateY(-2px)}
+.cta-section:not(.cta-img) .cta-btn-secondary{border-color:var(--color-border);color:var(--color-text)}
+.cta-section:not(.cta-img) .cta-btn-secondary:hover{border-color:var(--color-accent);color:var(--color-accent)}
+.cta-text-dark .cta-heading,.cta-text-dark .cta-body{color:var(--color-text)}.cta-text-dark .cta-btn-primary{background:var(--color-accent);color:#fff}.cta-text-dark .cta-btn-primary:hover{background:var(--color-accent-hover)}.cta-text-dark .cta-btn-secondary{border-color:var(--color-border);color:var(--color-text)}.cta-text-dark .cta-btn-secondary:hover{border-color:var(--color-accent);color:var(--color-accent)}
+@media(max-width:768px){.cta-actions{flex-direction:column;align-items:center}.cta-btn-primary,.cta-btn-secondary{width:100%;max-width:300px;justify-content:center;text-align:center}}
+</style>
+  <script>document.addEventListener('DOMContentLoaded',function(){var r=document.querySelectorAll('.reveal');var o=new IntersectionObserver(function(e){e.forEach(function(n){if(n.isIntersecting){n.target.classList.add('revealed');o.unobserve(n.target)}})},{threshold:.1,rootMargin:'0px 0px -50px 0px'});r.forEach(function(e){o.observe(e)});var t=document.querySelector('.nav-toggle'),m=document.querySelector('.nav-mobile-menu');if(t&&m){t.addEventListener('click',function(){m.classList.toggle('nav-mobile-open');t.classList.toggle('nav-toggle-active')})}var d=document.querySelectorAll('.nav-dropdown');d.forEach(function(el){el.addEventListener('mouseenter',function(){var dm=this.querySelector('.nav-dropdown-menu');if(dm){dm.style.opacity='1';dm.style.visibility='visible';dm.style.transform='translateY(0)'}});el.addEventListener('mouseleave',function(){var dm=this.querySelector('.nav-dropdown-menu');if(dm){dm.style.opacity='0';dm.style.visibility='hidden';dm.style.transform='translateY(8px)'}})});var nav=document.querySelector('.nav-sticky');if(nav){window.addEventListener('scroll',function(){nav.classList.toggle('nav-scrolled',window.scrollY>100)})}});</script>
+</body>
+</html>

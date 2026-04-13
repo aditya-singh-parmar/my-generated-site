@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pacific Rim</title>
+  
+  
+  
+  
+  
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--color-bg:#FAF8F5;--color-surface:#F0EBE3;--color-text:#2C2C2C;--color-text-secondary:#6B6560;--color-accent:#B8977E;--color-accent-hover:#A07D63;--color-border:#E5DFD7;--color-overlay:rgba(44, 44, 44, 0.6);--font-heading:'DM Serif Display', Georgia, serif;--font-body:'Inter', -apple-system, sans-serif}
+html{scroll-behavior:smooth}
+body{font-family:var(--font-body);color:var(--color-text);background-color:var(--color-bg);line-height:1.7;-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--color-accent);text-decoration:none;transition:color .2s}
+a:hover{color:var(--color-accent-hover)}
+h1,h2,h3,h4,h5,h6{font-family:var(--font-heading);font-weight:400;line-height:1.2;letter-spacing:-.01em}
+h1{font-size:clamp(2.5rem,5vw,4.5rem)}h2{font-size:clamp(2rem,4vw,3.5rem)}h3{font-size:clamp(1.5rem,3vw,2rem)}h4{font-size:clamp(1.25rem,2vw,1.5rem)}
+p{font-size:1.0625rem;line-height:1.8;color:var(--color-text-secondary)}
+.container{width:100%;max-width:1280px;margin:0 auto;padding:0 2rem}
+.container-narrow{width:100%;max-width:900px;margin:0 auto;padding:0 2rem}
+.section-padding{padding:7rem 0}
+.grid{display:grid;gap:2rem}.grid-2{grid-template-columns:repeat(2,1fr)}.grid-3{grid-template-columns:repeat(3,1fr)}.grid-4{grid-template-columns:repeat(4,1fr)}
+@media(max-width:1024px){.grid-4,.grid-3{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:768px){.grid-2,.grid-3,.grid-4{grid-template-columns:1fr}.section-padding{padding:4rem 0}.container{padding:0 1.25rem}}
+.btn{display:inline-flex;align-items:center;gap:.5rem;padding:.875rem 2rem;font-family:var(--font-body);font-size:.9375rem;font-weight:500;letter-spacing:.02em;border:none;border-radius:4px;cursor:pointer;transition:all .25s cubic-bezier(.25,.46,.45,.94);text-decoration:none}
+.btn-primary{background-color:var(--color-accent);color:#fff}.btn-primary:hover{background-color:var(--color-accent-hover);color:#fff;transform:translateY(-1px)}
+.btn-outline{background-color:transparent;color:var(--color-text);border:1.5px solid var(--color-border)}.btn-outline:hover{border-color:var(--color-accent);color:var(--color-accent)}
+.card{background:var(--color-surface);border:1px solid var(--color-border);border-radius:8px;overflow:hidden;transition:transform .3s ease,box-shadow .3s ease}.card:hover{transform:translateY(-4px);box-shadow:0 12px 40px rgba(0,0,0,.08)}
+.reveal{opacity:0;transform:translateY(30px);transition:opacity .8s cubic-bezier(.25,.46,.45,.94),transform .8s cubic-bezier(.25,.46,.45,.94)}.reveal.revealed{opacity:1;transform:translateY(0)}
+.reveal-delay-1{transition-delay:.1s}.reveal-delay-2{transition-delay:.2s}.reveal-delay-3{transition-delay:.3s}
+.img-cover{width:100%;height:100%;object-fit:cover}.img-rounded{border-radius:8px}.img-aspect-video{aspect-ratio:16/9}
+.overlay{position:absolute;inset:0;background:var(--color-overlay)}
+.text-center{text-align:center}.text-accent{color:var(--color-accent)}.text-secondary{color:var(--color-text-secondary)}
+.uppercase{text-transform:uppercase;letter-spacing:.1em;font-size:.8125rem}
+.mb-1{margin-bottom:.5rem}.mb-2{margin-bottom:1rem}.mb-3{margin-bottom:1.5rem}.mb-4{margin-bottom:2rem}.mb-6{margin-bottom:3rem}
+.separator{width:60px;height:2px;background:var(--color-accent);margin:1.5rem 0}.separator-center{margin-left:auto;margin-right:auto}</style>
+  
+  
+</head>
+<body>
+  <div style="height:70px"></div><nav class="nav nav-sticky"><div class="container"><div class="nav-inner"><a href="/" class="nav-logo"><span class="nav-logo-text">Discover Vancouver Island</span></a><ul class="nav-menu"><li class="nav-item nav-dropdown nav-has-mega"><a href="/guided-fishing-trips.html">Things To Do <svg class="nav-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></a><div class="nav-mega"><div class="nav-mega-media"><figure class="nav-mega-image"><img src="https://res.cloudinary.com/djqswlfat/image/upload/v1776083709/vancouver-island/tophikingspots.jpg" alt=""></figure><figure class="nav-mega-image"><img src="https://res.cloudinary.com/djqswlfat/image/upload/v1776083709/vancouver-island/fishing-menu.jpg" alt=""></figure></div><div class="nav-mega-cols"><div class="nav-mega-col"><h4>Outdoor Activities</h4><ul></ul></div><div class="nav-mega-col"><h4>Sightseeing</h4><ul></ul></div><div class="nav-mega-col"><h4>MISC</h4><ul></ul></div></div></div></li><li class="nav-item nav-dropdown nav-has-mega"><a href="/regions.html">Regions <svg class="nav-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></a><div class="nav-mega"><div class="nav-mega-media"><figure class="nav-mega-image"><img src="https://res.cloudinary.com/djqswlfat/image/upload/v1776083709/vancouver-island/victoria.jpg" alt=""></figure><figure class="nav-mega-image"><img src="https://res.cloudinary.com/djqswlfat/image/upload/v1776083710/vancouver-island/pacificrim.jpg" alt=""></figure></div><div class="nav-mega-cols"><div class="nav-mega-col"><h4>South Island</h4><ul></ul></div><div class="nav-mega-col"><h4>Cowichan</h4><ul></ul></div><div class="nav-mega-col"><h4>Central Island Region</h4><ul></ul></div><div class="nav-mega-col"><h4>Gulf Islands</h4><ul></ul></div><div class="nav-mega-col"><h4>Pacific Rim</h4><ul></ul></div><div class="nav-mega-col"><h4>North Central</h4><ul></ul></div><div class="nav-mega-col"><h4>North Island</h4><ul></ul></div></div></div></li><li class="nav-item"><a href="/blog.html">Blog</a></li><li class="nav-item"><a href="/contact-us.html">Contact us</a></li></ul><button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button><div class="nav-mobile-menu"><ul class="nav-mobile-list"><li><a href="/guided-fishing-trips.html">Things To Do</a></li><li><a href="/regions.html">Regions</a></li><li><a href="/blog.html">Blog</a></li><li><a href="/contact-us.html">Contact us</a></li></ul></div></div></div></nav>
+<style>.nav{position:relative;z-index:100;padding:1.25rem 0;transition:all .3s}.nav-sticky{position:fixed;top:0;left:0;right:0;background:var(--color-bg)}.nav-scrolled{box-shadow:0 1px 0 var(--color-border);padding:.875rem 0}.nav-transparent{background:transparent}.nav-transparent.nav-scrolled{background:var(--color-bg)}.nav-inner{display:flex;align-items:center;justify-content:space-between}.nav-logo{text-decoration:none;color:var(--color-text)}.nav-logo-text{font-family:var(--font-heading);font-size:1.5rem;letter-spacing:-.02em}.nav-logo-img{height:36px;width:auto}.nav-menu{display:flex;list-style:none;gap:2.5rem;align-items:center}.nav-menu a{color:var(--color-text);font-size:.9375rem;font-weight:400;display:flex;align-items:center;gap:4px;transition:color .2s}.nav-menu a:hover{color:var(--color-accent)}.nav-chevron{transition:transform .2s}.nav-dropdown:hover .nav-chevron{transform:rotate(180deg)}.nav-dropdown{position:relative}.nav-dropdown-menu{position:absolute;top:100%;left:-1rem;min-width:200px;padding:.75rem 0;background:var(--color-surface);border:1px solid var(--color-border);border-radius:8px;list-style:none;opacity:0;visibility:hidden;transform:translateY(8px);transition:all .25s;box-shadow:0 8px 30px rgba(0,0,0,.08);margin-top:.5rem}.nav-dropdown-menu li a{display:block;padding:.5rem 1.25rem;font-size:.875rem}.nav-dropdown-menu li a:hover{background:var(--color-bg)}.nav-toggle{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:4px}.nav-toggle span{display:block;width:24px;height:2px;background:var(--color-text);transition:all .3s}.nav-toggle-active span:nth-child(1){transform:translateY(7px) rotate(45deg)}.nav-toggle-active span:nth-child(2){opacity:0}.nav-toggle-active span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}.nav-mobile-menu{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:var(--color-bg);padding:5rem 2rem 2rem;z-index:99}.nav-mobile-open{display:block}.nav-mobile-list{list-style:none;display:flex;flex-direction:column;gap:1.5rem}.nav-mobile-list a{font-family:var(--font-heading);font-size:2rem;color:var(--color-text)}@media(max-width:768px){.nav-menu{display:none}.nav-toggle{display:flex}}.nav-hamburger-only .nav-menu{display:none}.nav-hamburger-only .nav-toggle{display:flex}.nav-item{position:relative}.nav-mega{position:absolute;left:0;right:0;top:100%;background:var(--nav-dropdown-bg,#fff);color:var(--nav-dropdown-fg,#1a1a1a);display:grid;grid-template-columns:1fr 2fr;gap:2rem;padding:2rem;box-shadow:0 20px 40px rgba(0,0,0,.15);opacity:0;visibility:hidden;transform:translateY(-8px);transition:opacity .18s,visibility .18s,transform .18s;z-index:100}.nav-item:hover>.nav-mega,.nav-item:focus-within>.nav-mega{opacity:1;visibility:visible;transform:translateY(0)}.nav-mega-media{display:flex;flex-direction:column;gap:1rem}.nav-mega-image{position:relative;overflow:hidden;border-radius:4px;aspect-ratio:4/3;margin:0}.nav-mega-image img{width:100%;height:100%;object-fit:cover;display:block}.nav-mega-image figcaption{position:absolute;left:0;right:0;bottom:0;padding:.5rem .75rem;background:linear-gradient(transparent,rgba(0,0,0,.7));color:#fff;font-size:.85rem}.nav-mega-cols{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}.nav-mega-col h4{font-size:.95rem;font-weight:600;margin:0 0 .6rem;color:inherit}.nav-mega-col ul{list-style:none;padding:0;margin:0}.nav-mega-col li{margin:.35rem 0;font-size:.9rem}.nav-mega-col li::before{content:"•";color:var(--accent,#2c94a6);margin-right:.5rem}.nav-mega-col a{color:inherit;text-decoration:none}.nav-mega-col a:hover{color:var(--accent,#2c94a6)}.nav-mega-cta{display:inline-block;margin-top:1rem;padding:.6rem 1.25rem;background:var(--accent,#c0392b);color:#fff;text-decoration:none;font-weight:600;letter-spacing:.05em;text-transform:uppercase;font-size:.8rem;border-radius:2px;grid-column:1/-1}@media(max-width:768px){.nav-mega{position:static;display:block;padding:1rem;opacity:1;visibility:visible;transform:none;box-shadow:none}.nav-mega-media{display:none}.nav-mega-cols{grid-template-columns:1fr;gap:1rem}}</style>
+<section class="hero-fs" style=""><div class="overlay" style="opacity:0.5"></div><div class="container hero-content hero-center"><h1 class="hero-title reveal">Pacific Rim</h1><div class="hero-actions reveal reveal-delay-2"></div></div></section>
+<style>.hero-fs{position:relative;min-height:100vh;display:flex;align-items:center;background-size:cover;background-position:center;background-color:var(--color-text);color:#fff}.hero-content{position:relative;z-index:2;width:100%}.hero-center{text-align:center}.hero-center .hero-body{max-width:640px;margin-left:auto;margin-right:auto}.hero-left{text-align:left}.hero-left .hero-body{max-width:640px}.hero-sub{margin-bottom:1.5rem;color:rgba(255,255,255,.7)}.hero-title{margin-bottom:1.5rem;color:#fff}.hero-body{font-size:1.125rem;line-height:1.8;color:rgba(255,255,255,.8);margin-bottom:2.5rem}.hero-actions{display:flex;gap:1rem}.hero-center .hero-actions{justify-content:center}.hero-text-dark,.hero-text-dark .hero-title,.hero-text-dark .hero-sub,.hero-text-dark .hero-body{color:var(--color-text)}.hero-text-dark .hero-sub{color:var(--color-text-secondary)}.hero-text-dark .hero-body{color:var(--color-text-secondary)}.hero-text-dark .btn-outline{color:var(--color-text);border-color:var(--color-border)}@media(max-width:768px){.hero-fs{min-height:80vh}.hero-actions{flex-direction:column;align-items:stretch}.hero-actions .btn{text-align:center;justify-content:center}}</style>
+<section class="section-padding"><div class="container-narrow"><div class="reveal text-center"><div class="separator separator-center mb-4"></div><p>&lt;div class=&quot;gdlr-content&quot;&gt;
+		&lt;!-- Above Sidebar Section--&gt;
+						
+		&lt;!-- Sidebar With Content Section--&gt;
+		&lt;div class=&quot;with-sidebar-wrapper&quot;&gt;&lt;section id=&quot;content-section-1&quot;&gt;&lt;div class=&quot;gdlr-color-wrapper  gdlr-show-all no-skin&quot; style=&quot;background-color: #f2f2f2; padding-top: 40px; &quot;&gt;&lt;div class=&quot;container&quot;&gt;&lt;div class=&quot;gdlr-item gdlr-content-item&quot; style=&quot;margin-bottom: 40px;&quot;&gt;&lt;h2 style=&quot;color: 3f4e65;&quot;&gt;5 Steps to Discovering Vancouver Island:&lt;/h2&gt;
+&lt;/div&gt;&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;&lt;div class=&quot;six columns&quot;&gt;&lt;div class=&quot;gdlr-item gdlr-content-item&quot;&gt;&lt;h5 style=&quot;color: #74b1b7;&quot;&gt;&lt;strong&gt;1.&lt;/strong&gt; Pick your Package.&lt;/h5&gt;
+&lt;h5 style=&quot;color: #74b1b7;&quot;&gt;&lt;strong&gt;2.&lt;/strong&gt; Pick your accommodation type.&lt;/h5&gt;
+&lt;h5 style=&quot;color: #74b1b7;&quot;&gt;&lt;strong&gt;3.&lt;/strong&gt; Specify your arrival date, whether or not you have a vehicle and the number of people.&lt;/h5&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;six columns&quot;&gt;&lt;div class=&quot;gdlr-item gdlr-content-item&quot;&gt;&lt;h5 style=&quot;color: #74b1b7;&quot;&gt;&lt;strong&gt;4.&lt;/strong&gt; Let us know if you don’t want dinner included for one of your evenings.&lt;/h5&gt;
+&lt;h5 style=&quot;color: #74b1b7;&quot;&gt;&lt;strong&gt;5.&lt;/strong&gt; Receive your itinerary and Discover Vancouver Island!&lt;/h5&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;&lt;/section&gt;&lt;section id=&quot;content-section-2&quot;&gt;&lt;div class=&quot;section-container container&quot;&gt;&lt;div class=&quot;gdlr-item gdlr-content-item&quot;&gt;&lt;h4&gt;Tofino Accommodation:&lt;/h4&gt;
+&lt;p&gt;&amp;nbsp;Rest easy close to the heart of the action, but far enough away to not realize it. Whether in a beachside cabin, forest escape, cozy lodge or private ocean view suite, the Tofino accommodation provides the perfect retreat to relax to the sounds of the west coast. All the commodities required after a day well adventured are at your fingertips, as are plenty of other adventures, walks and wanders.&lt;/p&gt;
+&lt;h4&gt;&amp;nbsp;Ucluelet Accommodation:&lt;/h4&gt;
+&lt;p&gt;&amp;nbsp;This quaint harbour town, just 30-minutes from Tofino, is a best-kept gem that will steal your heart. The accommodation here comes in the form of luxury condos with stunning ocean views, comfortable beds and jetted tubs. Minutes away from the infamous Wild Pacific Trail, Ucluelet is the perfect spot to wind down after an exciting day at sea.&lt;/p&gt;
+&lt;h4&gt;&amp;nbsp;&lt;/h4&gt;
+&lt;/div&gt;&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;&lt;div class=&quot;gdlr-item gdlr-accordion-item style-1&quot;&gt;&lt;div class=&quot;accordion-tab&quot;&gt;&lt;h4 class=&quot;accordion-title&quot;&gt;&lt;i class=&quot;icon-plus&quot;&gt;&lt;/i&gt;&lt;span&gt;Intro to Tofino&lt;/span&gt;&lt;/h4&gt;&lt;div class=&quot;accordion-content&quot;&gt;&lt;p&gt;&lt;strong&gt;With so much to do, it’s nearly impossible to cover it all. The Intro to Tofino package, however, does a pretty good job of providing a small taste of the basics that make the coast such a special place to be. &lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&quot;gdlr-shortcode-wrapper gdlr-row-shortcode&quot;&gt;
+&lt;div class=&quot;six columns&quot;&gt;
+&lt;div class=&quot;gdlr-item gdlr-column-shortcode&quot;&gt;
+• &lt;strong&gt;Dinner&lt;/strong&gt;&lt;br&gt;
+One night’s dinner featuring a menu designed and prepared by a local chef using the freshest ingredients and showcasing local seafood and foraged finds in a private venue. &lt;p&gt;&lt;/p&gt;
+&lt;p&gt;• &lt;strong&gt;Group Surf Lesson&lt;/strong&gt;&lt;br&gt;
+3hr group surf lesson with certified surf instructor at one of Tofino’s stunning beaches. &lt;/p&gt;
+&lt;p&gt;• &lt;strong&gt;Kayaking&lt;/strong&gt;&lt;br&gt;
+A 2.5hr group kayaking excursion through the stunning waters of the Clayoquot Sound with a trained and knowledgeable kayak guide – no experience required.&lt;/p&gt;
+&lt;p&gt;• &lt;strong&gt;Whale or Bear Watching&lt;/strong&gt;&lt;br&gt;
+Choose between a 2.5hr Whale watching and a 2hr Bear watching excursion. Both are thrilling adventures lead by knowledgeable guides in either a covered family vessel or zodiac boat. &lt;/p&gt;
+&lt;p&gt;• &lt;strong&gt;Hot Springs Cove&lt;/strong&gt;&lt;br&gt;
+A 6hr adventure, fit with wildlife spotting opportunities during the boat ride to the amazing, natural geothermic Hot Springs Cove.&lt;/p&gt;
+&lt;p&gt;• &lt;strong&gt;Scenic Flight&lt;/strong&gt;&lt;br&gt;
+Taking off from the Tofino Harbour, you’ll soar above Clayoquot Sound, getting a bird’s eye view of the rainforests and beaches of the area for 30 minutes.&lt;/p&gt;
+&lt;p class=&quot;m0 centered pkg-btn&quot;&gt;
+&lt;a class=&quot;btn-btm&quot; href=&quot;https://www.discovervancouverisland.com/packages/pacific-rim/intro-to-tofino/&quot;&gt;See more &lt;i class=&quot;gdlr-icon fa icon-chevron-right&quot; style=&quot;color: #ffffff; font-size: 12px; &quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;br&gt;
+&lt;br&gt;
+&lt;a class=&quot;btn-btm&quot; href=&quot;https://www.discovervancouverisland.com/packages/booking-form/?package=Intro to Tofino&quot;&gt;Book Now! &lt;i class=&quot;gdlr-icon fa icon-chevron-right&quot; style=&quot;color: #ffffff; font-size: 12px; &quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;three columns&quot;&gt;
+&lt;div class=&quot;gdlr-item gdlr-column-shortcode&quot;&gt;
+&lt;img src=&quot;https://res.cloudinary.com/djqswlfat/image/upload/v1776083891/vancouver-island/51.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;
+&lt;img src=&quot;https://res.cloudinary.com/djqswlfat/image/upload/v1776083891/vancouver-island/oo-hs-4.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;
+&lt;img src=&quot;https://res.cloudinary.com/djqswlfat/image/upload/v1776083892/vancouver-island/img-1198-2.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;
+&lt;img src=&quot;&quot; alt=&quot;&quot;&gt;&lt;br&gt;
+&lt;img src=&quot;&quot; alt=&quot;&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;three columns&quot;&gt;
+&lt;div class=&quot;gdlr-item gdlr-column-shortcode&quot;&gt;
+&lt;img src=&quot;https://res.cloudinary.com/djqswlfat/image/upload/v1776083892/vancouver-island/cubs-2.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;
+&lt;img src=&quot;https://res.cloudinary.com/djqswlfat/image/upload/v1776083892/vancouver-island/floatplane-1.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;
+&lt;img src=&quot;https://res.cloudinary.com/djqswlfat/image/upload/v1776083892/vancouver-island/beach-talk.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;
+&lt;img src=&quot;&quot; alt=&quot;&quot;&gt;&lt;br&gt;
+&lt;img src=&quot;&quot; alt=&quot;&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;&lt;div class=&quot;gdlr-item gdlr-accordion-item style-1&quot;&gt;&lt;div class=&quot;accordion-tab&quot;&gt;&lt;h4 class=&quot;accordion-title&quot;&gt;&lt;i class=&quot;icon-plus&quot;&gt;&lt;/i&gt;&lt;span&gt;Experience Tofino&lt;/span&gt;&lt;/h4&gt;&lt;div class=&quot;accordion-content&quot;&gt;&lt;p&gt;&lt;strong&gt;Dive in for more than just a taste of Tofino; experience it. Like the Intro to Tofino package, but on steroids, you’ll be able to see and do it all with a bit more oomph. &lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&quot;gdlr-shortcode-wrapper gdlr-row-shortcode&quot;&gt;
+&lt;div class=&quot;six columns&quot;&gt;
+&lt;div class=&quot;gdlr-item gdlr-column-shortcode&quot;&gt;
+• &lt;strong&gt;Dinner&lt;/strong&gt;&lt;br&gt;
+One night’s dinner featuring a menu designed and prepared by a local chef using the freshest ingredients and showcasing local seafood and foraged finds in a private venue. &lt;p&gt;&lt;/p&gt;
+&lt;p&gt;• &lt;strong&gt;Group Surf Lesson&lt;/strong&gt;&lt;br&gt;
+3hr group surf lesson with certified surf instructor at one of Tofino’s stunning beaches. &lt;/p&gt;
+&lt;p&gt;• &lt;strong&gt;Hot Springs Cove&lt;/strong&gt;&lt;br&gt;
+6hrs of scenery, hot springs and exploration fit with a float plane flight providing a stunning vantage point of Tofino’s beaches and coastline.&lt;/p&gt;
+&lt;p&gt;• &lt;strong&gt;Whale or Bear Watching&lt;/strong&gt;&lt;br&gt;
+Choose between a 2.5hr Whale watching and a 2hr Bear watching excursion. Both are thrilling adventures lead by knowledgeable guides in either a covered family vessel or zodiac boat. &lt;/p&gt;
+&lt;p&gt;• &lt;strong&gt;Kayaking&lt;/strong&gt;&lt;br&gt;
+A 4hr experience that perfectly blends kayaking and hiking on the unforgettable Meares Island.&lt;/p&gt;
+&lt;p class=&quot;m0 centered pkg-btn&quot;&gt;
+&lt;a class=&quot;btn-btm&quot; href=&quot;https://www.discovervancouverisland.com/packages/pacific-rim/experience-tofino/&quot;&gt;See more &lt;i class=&quot;gdlr-icon fa icon-chevron-right&quot; style=&quot;color: #ffffff; font-size: 12px; &quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;br&gt;
+&lt;br&gt;
+&lt;a class=&quot;btn-btm&quot; href=&quot;https://www.discovervancouverisland.com/packages/booking-form/?package=Experience Tofino&quot;&gt;Book Now! &lt;i class=&quot;gdlr-icon fa icon-chevron-right&quot; style=&quot;color: #ffffff; font-size: 12px; &quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;three columns&quot;&gt;
+&lt;div class=&quot;gdlr-item gdlr-column-shortcode&quot;&gt;
+&lt;img src=&quot;https://res.cloudinary.com/djqswlfat/image/upload/v1776083893/vancouver-island/floatplane-1-2.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;
+&lt;img src=&quot;https://res.cloudinary.com/djqswlfat/image/upload/v1776083893/vancouver-island/cheering-on.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;
+&lt;img src=&quot;https://res.cloudinary.com/djqswlfat/image/upload/v1776083893/vancouver-island/orca-12.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;
+&lt;img src=&quot;&quot; alt=&quot;&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;three columns&quot;&gt;
+&lt;div class=&quot;gdlr-item gdlr-column-shortcode&quot;&gt;
+&lt;img src=&quot;https://res.cloudinary.com/djqswlfat/image/upload/v1776083893/vancouver-island/dlp-smbearooos5x3.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;
+&lt;img src=&quot;https://res.cloudinary.com/djqswlfat/image/upload/v1776083894/vancouver-island/kylervos-18.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;
+&lt;img src=&quot;https://res.cloudinary.com/djqswlfat/image/upload/v1776083893/vancouver-island/cheering-on.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;
+&lt;img src=&quot;&quot; alt=&quot;&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;&lt;div class=&quot;gdlr-item gdlr-accordion-item style-1&quot;&gt;&lt;div class=&quot;accordion-tab&quot;&gt;&lt;h4 class=&quot;accordion-title&quot;&gt;&lt;i class=&quot;icon-plus&quot;&gt;&lt;/i&gt;&lt;span&gt;Active Tofino&lt;/span&gt;&lt;/h4&gt;&lt;div class=&quot;accordion-content&quot;&gt;&lt;p&gt;&lt;strong&gt;So much of what the West Coast has to offer comes in the form of an outdoor, blood pumping adventure. Get right into the upbeat rhythm of the coast with the Active Tofino package.&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&quot;gdlr-shortcode-wrapper gdlr-row-shortcode&quot;&gt;
+&lt;div class=&quot;six columns&quot;&gt;
+&lt;div class=&quot;gdlr-item gdlr-column-shortcode&quot;&gt;
+• &lt;strong&gt;Dinner&lt;/strong&gt;&lt;br&gt;
+One night’s dinner featuring a menu designed and prepared by a local chef using the freshest ingredients and showcasing local seafood and foraged finds in a private venue.&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;•&lt;strong&gt;Private Surf Lesson&lt;/strong&gt;&lt;br&gt;
+3hr surf lesson with certified surf instructor at one of Tofino’s stunning beaches. &lt;/p&gt;
+&lt;p&gt;•&lt;strong&gt;Kayaking&lt;/strong&gt;&lt;br&gt;
+A 2.5hr group kayaking excursion through the stunning waters of the Clayoquot Sound with a trained and knowledgeable kayak guide – no experience required.&lt;/p&gt;
+&lt;p&gt;•&lt;strong&gt;Whale or Bear Watching&lt;/strong&gt;&lt;br&gt;
+Choose between a 2.5hr Whale watching and a 2hr Bear watching excursion. Both are thrilling adventures lead by knowledgeable guides in either a covered family vessel or zodiac boat. &lt;/p&gt;
+&lt;p&gt;•&lt;strong&gt;Lone Cone Hike&lt;/strong&gt;&lt;br&gt;
+A demanding 6.5km return hike on Meares Island with a pay off of stunning views of Tofino, Clayoquot Sound, the surrounding islands and the open pacific (~6hrs).&lt;/p&gt;
+&lt;p&gt;•&lt;strong&gt;Scenic Flight&lt;/strong&gt;&lt;br&gt;
+Taking off from the Tofino Harbour, you’ll soar above Clayoquot Sound, getting a bird’s eye view of the rainforests and beaches of the area for 30 minutes.&lt;/p&gt;
+&lt;p class=&quot;m0 centered pkg-btn&quot;&gt;
+&lt;a class=&quot;btn-btm&quot; href=&quot;https://www.discovervancouverisland.com/packages/pacific-rim/active-tofino/&quot;&gt;See more &lt;i class=&quot;gdlr-icon fa icon-chevron-right&quot; style=&quot;color: #ffffff; font-size: 12px; &quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;br&gt;
+&lt;br&gt;
+&lt;a class=&quot;btn-btm&quot; href=&quot;https://www.discovervancouverisland.com/packages/booking-form/?package=Active Tofino&quot;&gt;Book Now! &lt;i class=&quot;gdlr-icon fa icon-chevron-right&quot; style=&quot;color: #ffffff; font-size: 12px; &quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;three columns&quot;&gt;
+&lt;div class=&quot;gdlr-item gdlr-column-shortcode&quot;&gt;
+&lt;img src=&quot;https://res.cloudinary.com/djqswlfat/image/upload/v1776083894/vancouver-island/lessons-surf-book.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;
+&lt;img src=&quot;https://res.cloudinary.com/djqswlfat/image/upload/v1776083894/vancouver-island/img-1198-2-1.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;
+&lt;img src=&quot;https://res.cloudinary.com/djqswlfat/image/upload/v1776083894/vancouver-island/cxo2jvuakerczguqprldkiehcj8pufi3x1djgdfktkqry8esdsqcs9zodssux5o3k1-qa8ufvuy8nqdzxk-7wm.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;
+&lt;img src=&quot;https://res.cloudinary.com/djqswlfat/image/upload/v1776083895/vancouver-island/orca-12-1.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;
+&lt;img src=&quot;&quot; alt=&quot;&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;three columns&quot;&gt;
+&lt;div class=&quot;gdlr-item gdlr-column-shortcode&quot;&gt;
+&lt;img src=&quot;https://res.cloudinary.com/djqswlfat/image/upload/v1776083895/vancouver-island/kylervos-18-1.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;
+&lt;img src=&quot;https://res.cloudinary.com/djqswlfat/image/upload/v1776083895/vancouver-island/floatplane-2.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;
+&lt;img src=&quot;https://res.cloudinary.com/djqswlfat/image/upload/v1776083895/vancouver-island/floatplane-1-3.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;
+&lt;img src=&quot;https://res.cloudinary.com/djqswlfat/image/upload/v1776083896/vancouver-island/28.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;
+&lt;img src=&quot;&quot; alt=&quot;&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;&lt;div class=&quot;gdlr-item gdlr-accordion-item gdlr-multiple-tab style-1&quot;&gt;&lt;div class=&quot;accordion-tab&quot;&gt;&lt;h4 class=&quot;accordion-title&quot;&gt;&lt;i class=&quot;icon-plus&quot;&gt;&lt;/i&gt;&lt;span&gt;Winter Whale Watching&lt;/span&gt;&lt;/h4&gt;&lt;div class=&quot;accordion-content&quot;&gt;&lt;p&gt;&lt;strong&gt;Explore the wonderful wildlife of the west coast in perfect comfort with Discover Vancouver Island’s Winter Whale Watching Adventure based out of Ucluelet, British Columbia!&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&quot;gdlr-shortcode-wrapper gdlr-row-shortcode&quot;&gt;
+&lt;div class=&quot;six columns&quot;&gt;
+&lt;div class=&quot;gdlr-item gdlr-column-shortcode&quot;&gt;
+• &lt;strong&gt; Whale Watching&lt;/strong&gt;&lt;br&gt;
+Embark on an exhilarating 2.5-4 hour whale watching adventure with a local charter company! You’ll have the opportunity to spy Gray, Humpback and Orca (Killer) whales, along with plenty of other amazing, sea life.&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;•&lt;strong&gt;Tofino Shuttle&lt;/strong&gt;&lt;br&gt;
+Do you want to explore Ucluelet’s notorious next-door neighbor, Tofino, but don’t have a vehicle? What about indulging in a couple of drinks while out for dinner? We can arrange a private shuttle to Tofino right from your accommodation for a night!&lt;/p&gt;
+&lt;p&gt;•&lt;strong&gt;Dinner&lt;/strong&gt;&lt;br&gt;
+One night’s dinner featuring a coastal menu designed and prepared by a local chef using the freshest ingredients and showcasing local seafood and foraged finds.&lt;/p&gt;
+&lt;p&gt;•&lt;strong&gt;Whale or Bear Watching&lt;/strong&gt;&lt;br&gt;
+Choose between a 2.5hr Whale watching and a 2hr Bear watching excursion. Both are thrilling adventures lead by knowledgeable guides in either a covered family vessel or zodiac boat. &lt;/p&gt;
+&lt;p class=&quot;m0 centered pkg-btn&quot;&gt;
+&lt;a class=&quot;btn-btm&quot; href=&quot;https://www.discovervancouverisland.com/packages/pacific-rim/ucluelet-whale-watching/&quot;&gt;See more &lt;i class=&quot;gdlr-icon fa icon-chevron-right&quot; style=&quot;color: #ffffff; font-size: 12px; &quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;br&gt;
+&lt;br&gt;
+&lt;a class=&quot;btn-btm&quot; href=&quot;https://www.discovervancouverisland.com/packages/booking-form/?package=Winter Whale Watching&quot;&gt;Book Now! &lt;i class=&quot;gdlr-icon fa icon-chevron-right&quot; style=&quot;color: #ffffff; font-size: 12px; &quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;three columns&quot;&gt;
+&lt;div class=&quot;gdlr-item gdlr-column-shortcode&quot;&gt;
+&lt;img src=&quot;https://res.cloudinary.com/djqswlfat/image/upload/v1776083896/vancouver-island/graywhale2-paulcottis.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;
+&lt;img src=&quot;https://res.cloudinary.com/djqswlfat/image/upload/v1776083896/vancouver-island/1a-ucluelet-harbour-aerial-of-waters-edge.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;
+&lt;img src=&quot;https://res.cloudinary.com/djqswlfat/image/upload/v1776083897/vancouver-island/b67dc13f-original.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;
+&lt;img src=&quot;&quot; alt=&quot;&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;three columns&quot;&gt;
+&lt;div class=&quot;gdlr-item gdlr-column-shortcode&quot;&gt;
+&lt;img src=&quot;https://res.cloudinary.com/djqswlfat/image/upload/v1776083897/vancouver-island/picture1.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;
+&lt;img src=&quot;https://res.cloudinary.com/djqswlfat/image/upload/v1776083897/vancouver-island/1aaec763-original.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;
+&lt;img src=&quot;https://res.cloudinary.com/djqswlfat/image/upload/v1776083898/vancouver-island/drift-spa-at-black-rock-resort.jpg&quot; alt=&quot;&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;&lt;div class=&quot;gdlr-item gdlr-accordion-item style-1&quot;&gt;&lt;div class=&quot;accordion-tab&quot;&gt;&lt;h4 class=&quot;accordion-title&quot;&gt;&lt;i class=&quot;icon-plus&quot;&gt;&lt;/i&gt;&lt;span&gt;Add-Ons and Upgrades: &lt;/span&gt;&lt;/h4&gt;&lt;div class=&quot;accordion-content&quot;&gt;&lt;p&gt;Of course, a package can only cover so much. Below are a few upgrade and add-on options should you be interested in doing more, staying longer or amping up the experience.&lt;br&gt;
+&lt;/p&gt;
+&lt;div class=&quot;gdlr-shortcode-wrapper gdlr-row-shortcode&quot;&gt;
+&lt;div class=&quot;four columns&quot;&gt;
+&lt;div class=&quot;gdlr-item gdlr-column-shortcode&quot;&gt;
+&lt;h5&gt;Whale/Bear Watching:&lt;/h5&gt;
+&lt;p&gt;&lt;img class=&quot;size-medium aligncenter&quot; src=&quot;https://res.cloudinary.com/djqswlfat/image/upload/v1776083898/vancouver-island/whale-watching.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;
+Both bears and whales are fundamental creatures in the unique ecosystem of the Pacific North West. Seeing them in action is truly breathtaking. If you wanted the opportunity to do both excursions, it can be added on to nearly any day of your package, or onto an extra day if you need more time.&lt;br&gt;
+&lt;strong&gt;Cost:&lt;/strong&gt; $111.45
+&lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;four columns&quot;&gt;
+&lt;div class=&quot;gdlr-item gdlr-column-shortcode&quot;&gt;
+&lt;h5&gt;Hot Springs Cove:&lt;/h5&gt;
+&lt;p&gt;&lt;img class=&quot;size-medium aligncenter&quot; src=&quot;https://res.cloudinary.com/djqswlfat/image/upload/v1776083898/vancouver-island/hot-springs-cove.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;
+Nothing beats a day of relaxing in a natural, geothermic hot spring. Not to mention the journey there is nearly unbeatable. Indulge in the unique 6hr adventure by plane or boat. If it’s already included in your package but you want to fly instead, you can easily upgrade the experience as well.&lt;br&gt;
+&lt;strong&gt;Cost:&lt;/strong&gt; $147.15 (boat), $252.15 (flight)
+&lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;four columns&quot;&gt;
+&lt;div class=&quot;gdlr-item gdlr-column-shortcode&quot;&gt;
+&lt;h5&gt;Meares Island Kayaking Trip:&lt;/h5&gt;
+&lt;p&gt;If only paddling isn’t quite your style or 2.5 hours feels too short, upgrade to the Meares Island Kayaking Trip to experience a blend of hiking and kayaking for 4 hours.&lt;br&gt;
+&lt;strong&gt;Cost:&lt;/strong&gt; $83
+&lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;gdlr-shortcode-wrapper gdlr-row-shortcode&quot;&gt;
+&lt;div class=&quot;four columns&quot;&gt;
+&lt;div class=&quot;gdlr-item gdlr-column-shortcode&quot;&gt;
+&lt;h5&gt;Private Surf Lesson:&lt;/h5&gt;
+&lt;p&gt;&lt;img class=&quot;size-medium aligncenter&quot; src=&quot;https://res.cloudinary.com/djqswlfat/image/upload/v1776083898/vancouver-island/surf-lesson.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;
+Upgrade to a private surf lesson for some small-group or one-on-one instruction. Being the only student in the water with the instructor gives them plenty of time to find exactly where you can improve in technique. If there’s a small group of you, it might be nice to not have to share the time and experience with strangers. Regardless, a private lesson will have you riding those waves in no time!&lt;br&gt;
+&lt;strong&gt;Cost:&lt;/strong&gt; Varies depending on number of people in the private lesson.
+&lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;four columns&quot;&gt;
+&lt;div class=&quot;gdlr-item gdlr-column-shortcode&quot;&gt;
+&lt;h5&gt;Scenic Floatplane Ride:&lt;/h5&gt;
+&lt;p&gt;&lt;img class=&quot;size-medium aligncenter&quot; src=&quot;https://res.cloudinary.com/djqswlfat/image/upload/v1776083899/vancouver-island/floatplane.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;
+Take off from Tofino Harbour aboard your own private floatplane. Explore the nooks and crannies of Clayoquot Sound from Tofino Peninsula to Flores Island. Get a birds eye view of the spectacular rainforests and beaches that make this Sound a worldwide destination! In 30 minutes you will experience the local area around Tofino including harbours, bays, mudflats and beaches, you’ll fly over our local lighthouse and explore Flores and Vargas Islands. Keep your eyes out for the abundant wildlife including eagles, seals, sealions, sea otters and three types of whales!&lt;br&gt;
+&lt;strong&gt;Cost:&lt;/strong&gt; $325 (per plane – up to 4 people)
+&lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;four columns&quot;&gt;
+&lt;div class=&quot;gdlr-item gdlr-column-shortcode&quot;&gt;
+&lt;h5&gt;Lone Cone Hike – Meares Island:&lt;/h5&gt;
+&lt;p&gt;If hiking is a priority, set out on one of the area’s most notorious hikes – Lone Cone. Located on Meares Island, you will see it looming above as the water taxi approaches. A grueling but rewarding adventure, views like the ones from Lone Cone remain uncontested in beauty.
+&lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;gdlr-shortcode-wrapper gdlr-row-shortcode&quot;&gt;
+&lt;div class=&quot;four columns&quot;&gt;
+&lt;div class=&quot;gdlr-item gdlr-column-shortcode&quot;&gt;
+&lt;h5&gt;Helicopter Charter:&lt;/h5&gt;
+&lt;p&gt;&lt;img class=&quot;size-medium aligncenter&quot; src=&quot;https://res.cloudinary.com/djqswlfat/image/upload/v1776083899/vancouver-island/helicopter.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;
+Experience the spectacular wilderness of Clayoquot Sound by Helicopter. Join us on a three hour journey above dense coastal rainforest, pristine sandy beaches and rugged glacial peaks. Taking off from Tofino cruise up the inlets into the mountains of Vancouver islands interior, make a stop in the alpine for a hike or a picnic lunch. Then jump back into the helicopter to tour miles of Clayoquot Sound’s remote islets and beaches before stepping out on one of them to feel the sand between your toes. Keep an eye out for wildlife as you tour this magical coastline on your way back to Tofino.&lt;br&gt;
+&lt;strong&gt;Cost:&lt;/strong&gt; $1500 (per helicopter – up to 4 people)
+&lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;four columns&quot;&gt;
+&lt;div class=&quot;gdlr-item gdlr-column-shortcode&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;four columns&quot;&gt;
+&lt;div class=&quot;gdlr-item gdlr-column-shortcode&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;gdlr-shortcode-wrapper gdlr-row-shortcode&quot;&gt;
+&lt;div class=&quot;four columns&quot;&gt;
+&lt;div class=&quot;gdlr-item gdlr-column-shortcode&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;four columns&quot;&gt;
+&lt;div class=&quot;gdlr-item gdlr-column-shortcode&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;four columns&quot;&gt;
+&lt;div class=&quot;gdlr-item gdlr-column-shortcode&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;gdlr-shortcode-wrapper gdlr-row-shortcode&quot;&gt;
+&lt;div class=&quot;four columns&quot;&gt;
+&lt;div class=&quot;gdlr-item gdlr-column-shortcode&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;four columns&quot;&gt;
+&lt;div class=&quot;gdlr-item gdlr-column-shortcode&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;four columns&quot;&gt;
+&lt;div class=&quot;gdlr-item gdlr-column-shortcode&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;gdlr-shortcode-wrapper gdlr-row-shortcode&quot;&gt;
+&lt;div class=&quot;four columns&quot;&gt;
+&lt;div class=&quot;gdlr-item gdlr-column-shortcode&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;eight columns&quot;&gt;
+&lt;div class=&quot;gdlr-item gdlr-column-shortcode&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;**Add-ons are subject to availability and Itinerary time restraints – some may require an extra night’s accommodation.&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;&lt;div class=&quot;gdlr-item gdlr-accordion-item style-1&quot;&gt;&lt;div class=&quot;accordion-tab&quot;&gt;&lt;h4 class=&quot;accordion-title&quot;&gt;&lt;i class=&quot;icon-plus&quot;&gt;&lt;/i&gt;&lt;span&gt;Dinner&lt;/span&gt;&lt;/h4&gt;&lt;div class=&quot;accordion-content&quot;&gt;&lt;div class=&quot;gdlr-shortcode-wrapper gdlr-row-shortcode&quot;&gt;
+&lt;div class=&quot;three columns&quot;&gt;
+&lt;div class=&quot;gdlr-item gdlr-column-shortcode&quot;&gt;
+Dig into a menu designed by a talented local chef specifically for Discover Vancouver Island Tours! Vancouver Island is a cornucopia of some of the freshest seafood, produce and foraged finds. Forego the stress of finding the perfect restaurant and let us showcase the best of the area on your plate at a dinner located in a private venue.
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;three columns&quot;&gt;
+&lt;div class=&quot;gdlr-item gdlr-column-shortcode&quot;&gt;
+&lt;img src=&quot;https://res.cloudinary.com/djqswlfat/image/upload/v1776083899/vancouver-island/dinner-i4.jpg&quot; alt=&quot;&quot; width=&quot;100px&quot; align=&quot;right&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;three columns&quot;&gt;
+&lt;div class=&quot;gdlr-item gdlr-column-shortcode&quot;&gt;
+&lt;img src=&quot;https://res.cloudinary.com/djqswlfat/image/upload/v1776083899/vancouver-island/dinner-v.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;
+&lt;img src=&quot;https://res.cloudinary.com/djqswlfat/image/upload/v1776083900/vancouver-island/dinner-iv.jpg&quot; alt=&quot;&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;three columns&quot;&gt;
+&lt;div class=&quot;gdlr-item gdlr-column-shortcode&quot;&gt;
+&lt;img src=&quot;https://res.cloudinary.com/djqswlfat/image/upload/v1776083900/vancouver-island/dinner-iii.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;
+&lt;img src=&quot;https://res.cloudinary.com/djqswlfat/image/upload/v1776083900/vancouver-island/dinner-ii.jpg&quot; alt=&quot;&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/section&gt;&lt;/div&gt;
+		
+		&lt;!-- Below Sidebar Section--&gt;
+					&lt;div class=&quot;below-sidebar-wrapper&quot;&gt;&lt;section id=&quot;content-section-3&quot;&gt;&lt;div class=&quot;gdlr-color-wrapper  gdlr-show-all no-skin&quot; style=&quot;background-color: #f2f2f2; padding-top: 40px; padding-bottom: 20px; &quot;&gt;&lt;div class=&quot;container&quot;&gt;&lt;div class=&quot;one-fifth column&quot;&gt;&lt;/div&gt;&lt;div class=&quot;one-fifth column&quot;&gt;&lt;div class=&quot;gdlr-item gdlr-content-item&quot;&gt;&lt;p class=&quot;m0 centered&quot;&gt;&lt;a class=&quot;btn-btm&quot; href=&quot;https://www.discovervancouverisland.com/packages/pacific-rim/intro-to-tofino/&quot;&gt;Intro to Tofino &lt;i class=&quot;gdlr-icon fa icon-chevron-right&quot; style=&quot;color: #ffffff; font-size: 12px; &quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;one-fifth column&quot;&gt;&lt;div class=&quot;gdlr-item gdlr-content-item&quot;&gt;&lt;p class=&quot;m0 centered&quot;&gt;&lt;a class=&quot;btn-btm&quot; href=&quot;https://www.discovervancouverisland.com/packages/pacific-rim/experience-tofino/&quot;&gt;Experience Tofino &lt;i class=&quot;gdlr-icon fa icon-chevron-right&quot; style=&quot;color: #ffffff; font-size: 12px; &quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;one-fifth column&quot;&gt;&lt;div class=&quot;gdlr-item gdlr-content-item&quot;&gt;&lt;p class=&quot;m0 centered&quot;&gt;&lt;a class=&quot;btn-btm&quot; href=&quot;https://www.discovervancouverisland.com/packages/pacific-rim/active-tofino/&quot;&gt;Active Tofino &lt;i class=&quot;gdlr-icon fa icon-chevron-right&quot; style=&quot;color: #ffffff; font-size: 12px; &quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;one-fifth column&quot;&gt;&lt;/div&gt;&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;&lt;/section&gt;&lt;/div&gt;
+		
+		
+	&lt;/div&gt;</p></div></div></section>
+
+<section class="section-padding fl-section">
+  <div class="container">
+    <div class="text-center mb-4 reveal"><h2>What&#039;s Included</h2></div>
+    
+    <div class="fl-grid fl-cols-3">
+      
+    <div class="fl-item reveal reveal-delay-1">
+      <h3 class="fl-title">5 Steps to Discovering Vancouver Island:</h3>
+      
+    </div>
+  
+    </div>
+  </div>
+</section>
+<style>
+.fl-grid{display:grid;gap:2rem}
+.fl-cols-2{grid-template-columns:repeat(2,1fr)}
+.fl-cols-3{grid-template-columns:repeat(3,1fr)}
+.fl-cols-4{grid-template-columns:repeat(4,1fr)}
+.fl-list{display:flex;flex-direction:column;gap:1.5rem;max-width:800px;margin:0 auto}
+.fl-item{padding:1.75rem;background:var(--color-surface);border:1px solid var(--color-border);border-radius:12px;transition:transform .3s ease,box-shadow .3s ease}
+.fl-item:hover{transform:translateY(-4px);box-shadow:0 12px 40px rgba(0,0,0,.08)}
+.fl-list .fl-item{border-radius:8px}
+.fl-title{font-family:var(--font-heading);font-weight:400;font-size:clamp(1.125rem,2vw,1.375rem);line-height:1.3;margin-bottom:.75rem;color:var(--color-text)}
+.fl-body{font-size:1rem;line-height:1.75;color:var(--color-text-secondary);margin:0}
+@media(max-width:1024px){.fl-cols-4{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:768px){.fl-cols-2,.fl-cols-3,.fl-cols-4{grid-template-columns:1fr}}
+</style>
+<section class="section-padding"><div class="container-narrow"><div class="text-center mb-6 reveal"><h2 class="mb-3">Book This Tour</h2><div class="separator separator-center mb-4"></div></div><form class="contact-form reveal" action="#" method="POST"><div class="form-group"><label class="form-label">Name *</label><input type="text" name="name" class="form-input" placeholder="" required></div><div class="form-group"><label class="form-label">Email *</label><input type="email" name="email" class="form-input" placeholder="" required></div><div class="form-group"><label class="form-label">Phone</label><input type="tel" name="phone" class="form-input" placeholder=""></div><div class="form-group"><label class="form-label">Message *</label><textarea name="message" class="form-input form-textarea" placeholder="" required rows="5"></textarea></div><button type="submit" class="btn btn-primary" style="width:100%;justify-content:center">Send Message</button></form></div></section>
+<style>.contact-form{max-width:600px;margin:0 auto}.form-group{margin-bottom:1.5rem}.form-label{display:block;font-size:.875rem;font-weight:500;margin-bottom:.5rem;color:var(--color-text)}.form-input{width:100%;padding:.875rem 1rem;font-family:var(--font-body);font-size:.9375rem;color:var(--color-text);background:var(--color-bg);border:1px solid var(--color-border);border-radius:6px;transition:border-color .2s}.form-input:focus{outline:none;border-color:var(--color-accent)}.form-textarea{resize:vertical;min-height:120px}</style>
+  <script>document.addEventListener('DOMContentLoaded',function(){var r=document.querySelectorAll('.reveal');var o=new IntersectionObserver(function(e){e.forEach(function(n){if(n.isIntersecting){n.target.classList.add('revealed');o.unobserve(n.target)}})},{threshold:.1,rootMargin:'0px 0px -50px 0px'});r.forEach(function(e){o.observe(e)});var t=document.querySelector('.nav-toggle'),m=document.querySelector('.nav-mobile-menu');if(t&&m){t.addEventListener('click',function(){m.classList.toggle('nav-mobile-open');t.classList.toggle('nav-toggle-active')})}var d=document.querySelectorAll('.nav-dropdown');d.forEach(function(el){el.addEventListener('mouseenter',function(){var dm=this.querySelector('.nav-dropdown-menu');if(dm){dm.style.opacity='1';dm.style.visibility='visible';dm.style.transform='translateY(0)'}});el.addEventListener('mouseleave',function(){var dm=this.querySelector('.nav-dropdown-menu');if(dm){dm.style.opacity='0';dm.style.visibility='hidden';dm.style.transform='translateY(8px)'}})});var nav=document.querySelector('.nav-sticky');if(nav){window.addEventListener('scroll',function(){nav.classList.toggle('nav-scrolled',window.scrollY>100)})}});</script>
+</body>
+</html>

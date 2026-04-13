@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The North Coast Trail</title>
+  
+  
+  
+  
+  
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--color-bg:#FAF8F5;--color-surface:#F0EBE3;--color-text:#2C2C2C;--color-text-secondary:#6B6560;--color-accent:#B8977E;--color-accent-hover:#A07D63;--color-border:#E5DFD7;--color-overlay:rgba(44, 44, 44, 0.6);--font-heading:'DM Serif Display', Georgia, serif;--font-body:'Inter', -apple-system, sans-serif}
+html{scroll-behavior:smooth}
+body{font-family:var(--font-body);color:var(--color-text);background-color:var(--color-bg);line-height:1.7;-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--color-accent);text-decoration:none;transition:color .2s}
+a:hover{color:var(--color-accent-hover)}
+h1,h2,h3,h4,h5,h6{font-family:var(--font-heading);font-weight:400;line-height:1.2;letter-spacing:-.01em}
+h1{font-size:clamp(2.5rem,5vw,4.5rem)}h2{font-size:clamp(2rem,4vw,3.5rem)}h3{font-size:clamp(1.5rem,3vw,2rem)}h4{font-size:clamp(1.25rem,2vw,1.5rem)}
+p{font-size:1.0625rem;line-height:1.8;color:var(--color-text-secondary)}
+.container{width:100%;max-width:1280px;margin:0 auto;padding:0 2rem}
+.container-narrow{width:100%;max-width:900px;margin:0 auto;padding:0 2rem}
+.section-padding{padding:7rem 0}
+.grid{display:grid;gap:2rem}.grid-2{grid-template-columns:repeat(2,1fr)}.grid-3{grid-template-columns:repeat(3,1fr)}.grid-4{grid-template-columns:repeat(4,1fr)}
+@media(max-width:1024px){.grid-4,.grid-3{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:768px){.grid-2,.grid-3,.grid-4{grid-template-columns:1fr}.section-padding{padding:4rem 0}.container{padding:0 1.25rem}}
+.btn{display:inline-flex;align-items:center;gap:.5rem;padding:.875rem 2rem;font-family:var(--font-body);font-size:.9375rem;font-weight:500;letter-spacing:.02em;border:none;border-radius:4px;cursor:pointer;transition:all .25s cubic-bezier(.25,.46,.45,.94);text-decoration:none}
+.btn-primary{background-color:var(--color-accent);color:#fff}.btn-primary:hover{background-color:var(--color-accent-hover);color:#fff;transform:translateY(-1px)}
+.btn-outline{background-color:transparent;color:var(--color-text);border:1.5px solid var(--color-border)}.btn-outline:hover{border-color:var(--color-accent);color:var(--color-accent)}
+.card{background:var(--color-surface);border:1px solid var(--color-border);border-radius:8px;overflow:hidden;transition:transform .3s ease,box-shadow .3s ease}.card:hover{transform:translateY(-4px);box-shadow:0 12px 40px rgba(0,0,0,.08)}
+.reveal{opacity:0;transform:translateY(30px);transition:opacity .8s cubic-bezier(.25,.46,.45,.94),transform .8s cubic-bezier(.25,.46,.45,.94)}.reveal.revealed{opacity:1;transform:translateY(0)}
+.reveal-delay-1{transition-delay:.1s}.reveal-delay-2{transition-delay:.2s}.reveal-delay-3{transition-delay:.3s}
+.img-cover{width:100%;height:100%;object-fit:cover}.img-rounded{border-radius:8px}.img-aspect-video{aspect-ratio:16/9}
+.overlay{position:absolute;inset:0;background:var(--color-overlay)}
+.text-center{text-align:center}.text-accent{color:var(--color-accent)}.text-secondary{color:var(--color-text-secondary)}
+.uppercase{text-transform:uppercase;letter-spacing:.1em;font-size:.8125rem}
+.mb-1{margin-bottom:.5rem}.mb-2{margin-bottom:1rem}.mb-3{margin-bottom:1.5rem}.mb-4{margin-bottom:2rem}.mb-6{margin-bottom:3rem}
+.separator{width:60px;height:2px;background:var(--color-accent);margin:1.5rem 0}.separator-center{margin-left:auto;margin-right:auto}</style>
+  
+  
+</head>
+<body>
+  <div style="height:70px"></div><nav class="nav nav-sticky"><div class="container"><div class="nav-inner"><a href="/" class="nav-logo"><span class="nav-logo-text">Discover Vancouver Island</span></a><ul class="nav-menu"><li class="nav-item nav-dropdown nav-has-mega"><a href="/guided-fishing-trips.html">Things To Do <svg class="nav-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></a><div class="nav-mega"><div class="nav-mega-media"><figure class="nav-mega-image"><img src="https://res.cloudinary.com/djqswlfat/image/upload/v1776083709/vancouver-island/tophikingspots.jpg" alt=""></figure><figure class="nav-mega-image"><img src="https://res.cloudinary.com/djqswlfat/image/upload/v1776083709/vancouver-island/fishing-menu.jpg" alt=""></figure></div><div class="nav-mega-cols"><div class="nav-mega-col"><h4>Outdoor Activities</h4><ul></ul></div><div class="nav-mega-col"><h4>Sightseeing</h4><ul></ul></div><div class="nav-mega-col"><h4>MISC</h4><ul></ul></div></div></div></li><li class="nav-item nav-dropdown nav-has-mega"><a href="/regions.html">Regions <svg class="nav-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></a><div class="nav-mega"><div class="nav-mega-media"><figure class="nav-mega-image"><img src="https://res.cloudinary.com/djqswlfat/image/upload/v1776083709/vancouver-island/victoria.jpg" alt=""></figure><figure class="nav-mega-image"><img src="https://res.cloudinary.com/djqswlfat/image/upload/v1776083710/vancouver-island/pacificrim.jpg" alt=""></figure></div><div class="nav-mega-cols"><div class="nav-mega-col"><h4>South Island</h4><ul></ul></div><div class="nav-mega-col"><h4>Cowichan</h4><ul></ul></div><div class="nav-mega-col"><h4>Central Island Region</h4><ul></ul></div><div class="nav-mega-col"><h4>Gulf Islands</h4><ul></ul></div><div class="nav-mega-col"><h4>Pacific Rim</h4><ul></ul></div><div class="nav-mega-col"><h4>North Central</h4><ul></ul></div><div class="nav-mega-col"><h4>North Island</h4><ul></ul></div></div></div></li><li class="nav-item"><a href="/blog.html">Blog</a></li><li class="nav-item"><a href="/contact-us.html">Contact us</a></li></ul><button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button><div class="nav-mobile-menu"><ul class="nav-mobile-list"><li><a href="/guided-fishing-trips.html">Things To Do</a></li><li><a href="/regions.html">Regions</a></li><li><a href="/blog.html">Blog</a></li><li><a href="/contact-us.html">Contact us</a></li></ul></div></div></div></nav>
+<style>.nav{position:relative;z-index:100;padding:1.25rem 0;transition:all .3s}.nav-sticky{position:fixed;top:0;left:0;right:0;background:var(--color-bg)}.nav-scrolled{box-shadow:0 1px 0 var(--color-border);padding:.875rem 0}.nav-transparent{background:transparent}.nav-transparent.nav-scrolled{background:var(--color-bg)}.nav-inner{display:flex;align-items:center;justify-content:space-between}.nav-logo{text-decoration:none;color:var(--color-text)}.nav-logo-text{font-family:var(--font-heading);font-size:1.5rem;letter-spacing:-.02em}.nav-logo-img{height:36px;width:auto}.nav-menu{display:flex;list-style:none;gap:2.5rem;align-items:center}.nav-menu a{color:var(--color-text);font-size:.9375rem;font-weight:400;display:flex;align-items:center;gap:4px;transition:color .2s}.nav-menu a:hover{color:var(--color-accent)}.nav-chevron{transition:transform .2s}.nav-dropdown:hover .nav-chevron{transform:rotate(180deg)}.nav-dropdown{position:relative}.nav-dropdown-menu{position:absolute;top:100%;left:-1rem;min-width:200px;padding:.75rem 0;background:var(--color-surface);border:1px solid var(--color-border);border-radius:8px;list-style:none;opacity:0;visibility:hidden;transform:translateY(8px);transition:all .25s;box-shadow:0 8px 30px rgba(0,0,0,.08);margin-top:.5rem}.nav-dropdown-menu li a{display:block;padding:.5rem 1.25rem;font-size:.875rem}.nav-dropdown-menu li a:hover{background:var(--color-bg)}.nav-toggle{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:4px}.nav-toggle span{display:block;width:24px;height:2px;background:var(--color-text);transition:all .3s}.nav-toggle-active span:nth-child(1){transform:translateY(7px) rotate(45deg)}.nav-toggle-active span:nth-child(2){opacity:0}.nav-toggle-active span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}.nav-mobile-menu{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:var(--color-bg);padding:5rem 2rem 2rem;z-index:99}.nav-mobile-open{display:block}.nav-mobile-list{list-style:none;display:flex;flex-direction:column;gap:1.5rem}.nav-mobile-list a{font-family:var(--font-heading);font-size:2rem;color:var(--color-text)}@media(max-width:768px){.nav-menu{display:none}.nav-toggle{display:flex}}.nav-hamburger-only .nav-menu{display:none}.nav-hamburger-only .nav-toggle{display:flex}.nav-item{position:relative}.nav-mega{position:absolute;left:0;right:0;top:100%;background:var(--nav-dropdown-bg,#fff);color:var(--nav-dropdown-fg,#1a1a1a);display:grid;grid-template-columns:1fr 2fr;gap:2rem;padding:2rem;box-shadow:0 20px 40px rgba(0,0,0,.15);opacity:0;visibility:hidden;transform:translateY(-8px);transition:opacity .18s,visibility .18s,transform .18s;z-index:100}.nav-item:hover>.nav-mega,.nav-item:focus-within>.nav-mega{opacity:1;visibility:visible;transform:translateY(0)}.nav-mega-media{display:flex;flex-direction:column;gap:1rem}.nav-mega-image{position:relative;overflow:hidden;border-radius:4px;aspect-ratio:4/3;margin:0}.nav-mega-image img{width:100%;height:100%;object-fit:cover;display:block}.nav-mega-image figcaption{position:absolute;left:0;right:0;bottom:0;padding:.5rem .75rem;background:linear-gradient(transparent,rgba(0,0,0,.7));color:#fff;font-size:.85rem}.nav-mega-cols{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}.nav-mega-col h4{font-size:.95rem;font-weight:600;margin:0 0 .6rem;color:inherit}.nav-mega-col ul{list-style:none;padding:0;margin:0}.nav-mega-col li{margin:.35rem 0;font-size:.9rem}.nav-mega-col li::before{content:"•";color:var(--accent,#2c94a6);margin-right:.5rem}.nav-mega-col a{color:inherit;text-decoration:none}.nav-mega-col a:hover{color:var(--accent,#2c94a6)}.nav-mega-cta{display:inline-block;margin-top:1rem;padding:.6rem 1.25rem;background:var(--accent,#c0392b);color:#fff;text-decoration:none;font-weight:600;letter-spacing:.05em;text-transform:uppercase;font-size:.8rem;border-radius:2px;grid-column:1/-1}@media(max-width:768px){.nav-mega{position:static;display:block;padding:1rem;opacity:1;visibility:visible;transform:none;box-shadow:none}.nav-mega-media{display:none}.nav-mega-cols{grid-template-columns:1fr;gap:1rem}}</style>
+<section class="hero-fs" style=""><div class="overlay" style="opacity:0.5"></div><div class="container hero-content hero-center"><h1 class="hero-title reveal">The North Coast Trail</h1><div class="hero-actions reveal reveal-delay-2"></div></div></section>
+<style>.hero-fs{position:relative;min-height:100vh;display:flex;align-items:center;background-size:cover;background-position:center;background-color:var(--color-text);color:#fff}.hero-content{position:relative;z-index:2;width:100%}.hero-center{text-align:center}.hero-center .hero-body{max-width:640px;margin-left:auto;margin-right:auto}.hero-left{text-align:left}.hero-left .hero-body{max-width:640px}.hero-sub{margin-bottom:1.5rem;color:rgba(255,255,255,.7)}.hero-title{margin-bottom:1.5rem;color:#fff}.hero-body{font-size:1.125rem;line-height:1.8;color:rgba(255,255,255,.8);margin-bottom:2.5rem}.hero-actions{display:flex;gap:1rem}.hero-center .hero-actions{justify-content:center}.hero-text-dark,.hero-text-dark .hero-title,.hero-text-dark .hero-sub,.hero-text-dark .hero-body{color:var(--color-text)}.hero-text-dark .hero-sub{color:var(--color-text-secondary)}.hero-text-dark .hero-body{color:var(--color-text-secondary)}.hero-text-dark .btn-outline{color:var(--color-text);border-color:var(--color-border)}@media(max-width:768px){.hero-fs{min-height:80vh}.hero-actions{flex-direction:column;align-items:stretch}.hero-actions .btn{text-align:center;justify-content:center}}</style>
+<section class="section-padding"><div class="container-narrow"><div class="reveal text-center"><div class="separator separator-center mb-4"></div><p>&lt;div class=&quot;gdlr-content&quot;&gt;
+		&lt;!-- Above Sidebar Section--&gt;
+							&lt;div class=&quot;above-sidebar-wrapper&quot;&gt;&lt;section id=&quot;content-section-1&quot;&gt;&lt;div class=&quot;gdlr-full-size-wrapper &quot; style=&quot; background-color: #ffffff; &quot;&gt;&lt;div class=&quot;gdlr-image-frame-item gdlr-item&quot;&gt;&lt;div class=&quot;gdlr-frame frame-type-none&quot;&gt;&lt;div class=&quot;gdlr-image-link-shortcode&quot;&gt;&lt;img src=&quot;https://res.cloudinary.com/djqswlfat/image/upload/v1776083873/vancouver-island/the-north-coast-trail.jpg&quot; alt=&quot;&quot; width=&quot;1600&quot; height=&quot;500&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;&lt;div class=&quot;gdlr-title-item&quot;&gt;&lt;div class=&quot;gdlr-item-title-wrapper gdlr-item pos-center &quot;&gt;&lt;div class=&quot;gdlr-item-title-head&quot;&gt;&lt;h3 class=&quot;gdlr-item-title gdlr-skin-title gdlr-skin-border&quot;&gt;&lt;/h3&gt;&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;gdlr-item-title-caption gdlr-skin-info&quot;&gt;Discover Vancouver Island&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;&lt;/section&gt;&lt;/div&gt;
+				
+		&lt;!-- Sidebar With Content Section--&gt;
+		&lt;div class=&quot;with-sidebar-wrapper&quot;&gt;&lt;section id=&quot;content-section-2&quot;&gt;&lt;div class=&quot;gdlr-color-wrapper  gdlr-show-all no-skin&quot; style=&quot;background-color: #ffffff; padding-top: 0px; &quot;&gt;&lt;div class=&quot;container&quot;&gt;&lt;div class=&quot;gdlr-item gdlr-content-item&quot; id=&quot;location_desc&quot; style=&quot;margin-bottom: 70px;&quot;&gt;&lt;p&gt;If you are looking for a little more wild, The North Coast coast trail is a challenging adventure that may just get all your senses heightened during the 58 km journey.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;ok-list-title&quot;&gt;Great Link for commentary on trail:&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://besthike.com/2012/09/18/dont-hike-the-north-coast-trail/&quot;&gt;http://besthike.com/2012/09/18/dont-hike-the-north-coast-trail/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;For those wanting to take their backcountry hike to the next level, The North Coast Trail provides a highly challenging and unbelievably rewarding adventure. Spend 4-7 days hiking this 58 kilometer trail and experience the raw beauty of Vancouver Island’s rugged north coast. Most people start the North Coast Trail by taking a water taxi from Port Hardy to Shushartie Bay, a scenic ride with whale watching and other great photo opportunities. This is a true backcountry adventure and is quickly gaining a reputation as one of the best coastal hikes in the world. This is no walk in the park: It’s not recommended that you tackle the trail without previous backpacking experience.&lt;/p&gt;
+&lt;/div&gt;&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;&lt;div class=&quot;gdlr-item gdlr-content-item&quot; style=&quot;margin-bottom: 45px;&quot;&gt;&lt;div class=&quot;wonderplugingallery-container&quot; id=&quot;wonderplugingallery-container-21&quot; style=&quot;max-width:100%;margin:0 auto;&quot;&gt;&lt;div class=&quot;wonderplugingallery&quot; id=&quot;wonderplugingallery-21&quot; data-galleryid=&quot;21&quot; data-width=&quot;640&quot; data-height=&quot;360&quot; data-skin=&quot;gallerywithtext&quot; data-autoslide=&quot;false&quot; data-autoplayvideo=&quot;false&quot; data-html5player=&quot;true&quot; data-responsive=&quot;true&quot; data-fullwidth=&quot;true&quot; data-showtitle=&quot;true&quot; data-showdescription=&quot;false&quot; data-showplaybutton=&quot;true&quot; data-showfullscreenbutton=&quot;true&quot; data-showtimer=&quot;true&quot; data-showcarousel=&quot;true&quot; data-galleryshadow=&quot;false&quot; data-slideshadow=&quot;false&quot; data-thumbshowtitle=&quot;false&quot; data-thumbshadow=&quot;false&quot; data-lightboxshowtitle=&quot;false&quot; data-lightboxshowdescription=&quot;false&quot; data-specifyid=&quot;true&quot; data-duration=&quot;1500&quot; data-slideduration=&quot;1000&quot; data-slideshowinterval=&quot;6000&quot; data-googleanalyticsaccount=&quot;&quot; data-resizemode=&quot;fill&quot; data-imagetoolboxmode=&quot;mouseover&quot; data-effect=&quot;fade&quot; data-padding=&quot;12&quot; data-bgcolor=&quot;&quot; data-bgimage=&quot;&quot; data-thumbwidth=&quot;145&quot; data-thumbheight=&quot;85&quot; data-thumbgap=&quot;8&quot; data-thumbrowgap=&quot;16&quot; data-lightboxtextheight=&quot;72&quot; data-lightboxtitlecss=&quot;{color:#333333; font:bold 12px Arial,Helvetica,sans-serif; overflow:hidden; white-space:normal; line-height:18px;}&quot; data-lightboxdescriptioncss=&quot;{color:#333333; font:normal 12px Arial,Helvetica,sans-serif; overflow:hidden; white-space:normal; line-height:14px;}&quot; data-titlecss=&quot;{color:#333;font-size:14px;font-family:Armata,sans-serif,Arial;overflow:hidden;text-align:right;padding:16px 8px 4px 8px;}&quot; data-descriptioncss=&quot;{color:#333;font-size:12px;font-family:Arial,Helvetica,sans-serif;overflow:hidden;text-align:center;padding:4px 8px; }&quot; data-jsfolder=&quot;https://www.discovervancouverisland.com/wp-content/plugins/wonderplugin-gallery/engine/&quot; style=&quot;display:none;&quot;&gt;&lt;a href=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/08/CapeSutil-Bight-TimGage.jpg&quot;&gt;&lt;img class=&quot;html5galleryimg&quot; src=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/08/CapeSutil-Bight-TimGage-150x150.jpg&quot; alt=&quot;Tim Gage&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/08/CapeSutilBlight-TimGage.jpg&quot;&gt;&lt;img class=&quot;html5galleryimg&quot; src=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/08/CapeSutilBlight-TimGage-150x150.jpg&quot; alt=&quot;Tim Gage&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/08/ChristensenPt-TimGage.jpg&quot;&gt;&lt;img class=&quot;html5galleryimg&quot; src=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/08/ChristensenPt-TimGage-150x150.jpg&quot; alt=&quot;Tim Gage&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/08/NelsBight-TimGage.jpg&quot;&gt;&lt;img class=&quot;html5galleryimg&quot; src=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/08/NelsBight-TimGage-150x150.jpg&quot; alt=&quot;Tim Gage&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/08/NorthCoastTrail1-TimGage.jpg&quot;&gt;&lt;img class=&quot;html5galleryimg&quot; src=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/08/NorthCoastTrail1-TimGage-150x150.jpg&quot; alt=&quot;Tim Gage&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/08/NorthCoastTrail2-TimGage.jpg&quot;&gt;&lt;img class=&quot;html5galleryimg&quot; src=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/08/NorthCoastTrail2-TimGage-150x150.jpg&quot; alt=&quot;Tim Gage&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/08/NorthCoastTrail3-TimGage.jpg&quot;&gt;&lt;img class=&quot;html5galleryimg&quot; src=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/08/NorthCoastTrail3-TimGage-150x150.jpg&quot; alt=&quot;Tim Gage&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/08/NorthCoastTrail4-TimGage.jpg&quot;&gt;&lt;img class=&quot;html5galleryimg&quot; src=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/08/NorthCoastTrail4-TimGage-150x150.jpg&quot; alt=&quot;Tim Gage&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/08/NorthCoastTrail6-TimGage.jpg&quot;&gt;&lt;img class=&quot;html5galleryimg&quot; src=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/08/NorthCoastTrail6-TimGage-150x150.jpg&quot; alt=&quot;Tim Gage&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/08/SeaStacks-TimGage.jpg&quot;&gt;&lt;img class=&quot;html5galleryimg&quot; src=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/08/SeaStacks-TimGage-150x150.jpg&quot; alt=&quot;Tim Gage&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/08/ShushartieOverland-TimGage.jpg&quot;&gt;&lt;img class=&quot;html5galleryimg&quot; src=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/08/ShushartieOverland-TimGage-150x150.jpg&quot; alt=&quot;Tim Gage&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/08/SkinnerBeach-TimGage.jpg&quot;&gt;&lt;img class=&quot;html5galleryimg&quot; src=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/08/SkinnerBeach-TimGage-150x150.jpg&quot; alt=&quot;Tim Gage&quot;&gt;&lt;/a&gt;&lt;div class=&quot;wonderplugin-engine&quot;&gt;&lt;a href=&quot;http://www.wonderplugin.com/wordpress-gallery/&quot; title=&quot;WordPress Gallery Plugin&quot;&gt;WordPress Gallery Plugin&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;&lt;/section&gt;&lt;section id=&quot;content-section-3&quot;&gt;&lt;div class=&quot;section-container container&quot;&gt;&lt;div class=&quot;twelve columns&quot;&gt;&lt;div class=&quot;gdlr-title-item&quot; id=&quot;loc_time_title&quot;&gt;&lt;div class=&quot;gdlr-item-title-wrapper gdlr-item pos-left &quot;&gt;&lt;div class=&quot;gdlr-item-title-head&quot;&gt;&lt;h3 class=&quot;gdlr-item-title gdlr-skin-title gdlr-skin-border&quot;&gt;Time and Distance: &lt;/h3&gt;&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;gdlr-item gdlr-content-item&quot; id=&quot;loc_time&quot; style=&quot;margin-bottom: 95px;&quot;&gt;&lt;p&gt;&lt;span class=&quot;ok-list-title&quot;&gt;Duration:&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;4-7 days&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;ok-list-title&quot;&gt;Starting points:&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;ok-list-title&quot;&gt;Shushartie Bay (water taxi ride from Port Hardy)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;The trail runs along the northern end of Vancouver Island spanning Cape Scott Provincial Park. It can be traversed east to west from Shushartie Bay to the eastern end of Nissen Bight or in reverse from west to east. The trail becomes progressively easier in the east to west direction. Access to the Shushartie Bay trailhead is by boat or floatplane only. There are currently no docking facilities. One water taxi service runs from Port Hardy during the summer season. Access to the western portion of the trail is from the San Josef parking lot at the Cape Scott trailhead. Shuttle service to the parking lot can also be arranged in Port Hardy.&lt;/p&gt;
+&lt;p&gt;The trail offers visitors a glimpse into wild, west coast ecosystems. The rugged trail passes through old and second growth Sitka spruce, hemlock and cedar forests, upland bogs, riparian areas, across sand, gravel and cobble beaches, and past sea stacks, rocky headlands, and tidal pools. The park is home to bald eagles, black bears, cougars, wolves, river and sea otters, mink, and an array of marine mammals.&lt;/p&gt;
+&lt;p&gt;Sighting and encounters are common in the park, so visitors should use precaution.&lt;br&gt;
+Cape Scott Provincial Park is rich with First Nations history. Many signs of their historic presence are evident in the park. Please respect all cultural sites and leave them in an undisturbed state. Do not touch or remove any cultural items.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;ok-list-title&quot;&gt;Trail Overview&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Shushartie Bay Campsite to Skinner Creek Campsite: 8.1km – 5 to 7 hours&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;This is the longest section of inland trail and is considered by most to be the most challenging portion of the entire route. The trail reaches its maximum elevation of 225m along this section and passes mainly through upland bog ecosystems. This section provides sensitive habitats for amphibians, fish and invertebrates so please stay on the trail to avoid increased erosion and damage. There are stretches of boardwalk, but expect to be climbing up, over and around tree roots and stumps and through very muddy sections.&lt;/p&gt;
+&lt;p&gt;Three tent pads, a food cache, and a pit toilet are located on the hillside above the trailhead at Shushartie Bay; however, there is no water source at Shushartie Bay. If you are hiking from Skinner Creek, fill up your water bottles there.&lt;br&gt;
+There is a designated campsite at Skinner Creek with a pit toilet and food cache. There are no tent platforms but beach camping is possible.&lt;br&gt;
+Skinner Creek is the only good water source along this section of trail.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Skinner Creek Campsite to Nahwitti River Campsite: 2.9km – 1 to 1.5 hours&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;It is possible to hike along the beach from Skinner Creek to Nahwitti River at low tide; however, this section can be very dangerous during high tides and can be virtually impassable. A rough inland trail can be used to bypass the beach if necessary. There is one section of inland trail to be used at all times. Hanging floats at the end of the beach identify the access point. Tide tables should be consulted before attempting to hike the beach section.&lt;/p&gt;
+&lt;p&gt;There is a campsite with four tent platforms, a food cache, and a pit toilet located at Nahwitti River.&lt;br&gt;
+The Nahwitti River can be used as a water source, but walk far enough upstream to avoid tidal influx.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Nahwitti River Campsite to Cape Sutil Campsite: 5km – 2.5 to 4 hours&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;From the Nahwitti River camp the trail heads south on an easy trail to the first cable car crossing. The ladders to the cable car platforms are very steep and caution should be used especially in wet weather. No more than two people, or 600lbs, should use the cable car at one time.&lt;br&gt;
+Portions of the next section of trail are through dense forest where the trail can easily be lost. Look for trail markers to identify the path. Be aware that some areas may have old flagging tape delineating old logging tracks and are not marking the trail.&lt;/p&gt;
+&lt;p&gt;The trail then heads up and over what is known as Long Leg Hill before descending down the longest set of stairs in Cape Scott Provincial Park. The stairs are slippery when wet.&lt;/p&gt;
+&lt;p&gt;The beach west of the Nahwitti stairs is impassable at high tide due to a rocky promontory. Wading past this section at high tide should not be attempted due to the risk of being swept out to sea.&amp;nbsp; Plan your hike accordingly by consulting a current tide table. Camping at the eastern edge of the beach is possible during certain times of year if necessary. Ensure that you are set up well above the high tide line.&lt;/p&gt;
+&lt;p&gt;There is a good water source located immediately east of the rocky promontory.&lt;/p&gt;
+&lt;p&gt;The last stretch to the Cape Sutil campsite is characterized by steep, rugged headlands with extensive rope work. If necessary, remove your pack and lower it with the ropes provided. The section is very slippery and a fall will likely result in serious injury.&lt;/p&gt;
+&lt;p&gt;Cape Sutil itself lies outside of the park boundary in an Indian Reserve. It is the former site of the First Nations village of “Nahwitti” and is rich in cultural heritage.&amp;nbsp; Access to the reserve is restricted, so please refrain from visiting the Cape.&lt;/p&gt;
+&lt;p&gt;There is a ranger yurt located at Cape Sutil that is staffed with Park Facility Operators (PFOs) from June 15th to Labour Day weekend. The yurt is open the rest of the year for emergency use by the public. Please ensure you leave the yurt in better condition than you found it. Do not wear caulk boots in the yurt, and use the food caches located behind the structure.&lt;/p&gt;
+&lt;p&gt;Beach camping is possible at Cape Sutil (there are no tent platforms at this site).&amp;nbsp;There is a pit toilet located 50 metres up the trail at the eastern end of the beach.&amp;nbsp; There is a food cache located behind the ranger yurt and another one by the pit toilets.&lt;/p&gt;
+&lt;p&gt;There are only ephemeral water sources along this section of trail. Pack water from Nahwitti River or Irony Creek (depending on direction of travel).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Cape Sutil Campsite to Irony Creek Campsite (Shuttleworth Bight): 7.8km – 4 to 6 hours&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Pocket beaches and rocky headlands characterize this section of trail. Keep your eyes open for floats and buoys hanging near inland trail access points. Many beach sections can be traversed at low tide, but look for the adjacent inland routes during high waters. More rope work and steep sections can be expected along this stretch.&lt;/p&gt;
+&lt;p&gt;There is a creek immediately west of the Irony Creek campsite. Passage can be difficult under high flows (e.g. in early spring), and the rocks in the area are slippery at all times of year, in all weather conditions.&lt;/p&gt;
+&lt;p&gt;There is a campsite located on the west side of Irony Creek in the middle of Shuttleworth Bight. There are four tent platforms, a food cache, and a pit toilet at this location.&lt;/p&gt;
+&lt;p&gt;Irony Creek is the only good water source along this section of trail.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Irony Creek (Shuttleworth Bight) Campsite to Laura Creek Campsite: 11.8km – 4 to 7 hours&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;This section is predominantly coastal. Hikers will find themselves exposed to the effects of the open ocean with little in the way of cover in inclement weather. Camping is possible along the pocket beaches northwest of the cable car but no facilities are provided. Consult tide tables to ensure high tides do not hinder progress along this section.&lt;/p&gt;
+&lt;p&gt;There is a short easy inland section to the second cable car crossing located at the Stranby River. Look for signs of the old corduroy settler’s road on the west side of the cable car.&lt;/p&gt;
+&lt;p&gt;Beach sections alternate between, sand, gravel and cobble while passing by innumerable tidal pools and rock shelves exposed at low tide. This section is teaming with wildlife. Bald eagles perched in old growth Sitka spruce, and black bears foraging in the beds of seaweed, are quite common.&lt;/p&gt;
+&lt;p&gt;There is another creek east of the Laura Creek campsite. It is generally easy to cross, but rocks in this area are very slippery.&lt;/p&gt;
+&lt;p&gt;There is a designated campsite with four tent platforms, a food cache, and a pit toilet located approximately 200 metres west of Laura Creek.&lt;/p&gt;
+&lt;p&gt;Laura Creek is the only good water source along this section of trail.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Laura Creek Campsite to Nissen Bight: 7.5km – 2.5 to 4 hours&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;This is the last section of inland trail before reaching the Nissen Bight trailhead. It begins and ends with easy sand beach walks before climbing back into the forest to traverse around the Nahwitti Cone. Boardwalks and stairways are common, but many sections are still very muddy.&lt;/p&gt;
+&lt;p&gt;Look for the old settler’s road along this section, and stop for a break at Laughing Loon Lake – the North Coast Trail’s only lake (not suitable for swimming).&lt;/p&gt;
+&lt;p&gt;There are three significant creek crossings along this section.&amp;nbsp;The first and third (when heading east to west) have bridges with handrails, but the second, located at Dakota Creek, does not. Do NOT attempt to walk across the log spanning the second creek. It is very slippery and unsafe. Either wade across the creek or shimmy across the log.&lt;/p&gt;
+&lt;p&gt;Beach camping is possible on the entire length of Nissen Bight. A pit toilet and food cache are located at the western end of the beach, and another food cache at the eastern end.&lt;br&gt;
+The water source is located at the eastern end of the beach near the North Coast Trail trailhead (approximately 900 metres from the pit toilet and food cache).&lt;/p&gt;
+&lt;p&gt;At low tide walk approximately 50 metres east along the rocks, or at high tide take the inland trail which forks to the east off of the NCT near the beach.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Nissen Bight to Cape Scott Trailhead: 15.4km – 5 to 7 hours&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;This section is part of the original Cape Scott Trail. It is the easiest section of the North Coast trail and also the most maintained. There are many boardwalk sections, but still expect to get your feet muddy. Look for remnants of the Danish settlers along the entire route.&lt;/p&gt;
+&lt;p&gt;There is a campsite with three tent platforms and a pit toilet located at Fisherman River at kilometre 9.3 (from the Cape Scott trailhead). There is no food cache at this location.&lt;/p&gt;
+&lt;p&gt;There are eight tent platforms, a food cache, and a pit toilet located at Eric Lake at kilometre 3 (from the Cape Scott trailhead). Access to the lake is on the west side of the campground.&lt;/p&gt;
+&lt;p&gt;Fisherman River is the best water source along this section of trail.&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;&lt;div class=&quot;twelve columns&quot;&gt;&lt;div class=&quot;gdlr-title-item&quot; id=&quot;loc_direct_title&quot;&gt;&lt;div class=&quot;gdlr-item-title-wrapper gdlr-item pos-left &quot;&gt;&lt;div class=&quot;gdlr-item-title-head&quot;&gt;&lt;h3 class=&quot;gdlr-item-title gdlr-skin-title gdlr-skin-border&quot;&gt;Directions:&lt;/h3&gt;&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;gdlr-item gdlr-content-item&quot; id=&quot;loc_direct&quot; style=&quot;margin-bottom: 95px;&quot;&gt;&lt;p&gt;Take the Island Highway (19) north past Port McNeil, turn left on the Cape Scott/Holberg road, (just south of Port Hardy). Follow the gravel road for close to 63km to the trailhead.&lt;/p&gt;
+&lt;/div&gt;&lt;div class=&quot;gdlr-item gdlr-content-item&quot;&gt;&lt;p&gt;&lt;a href=&quot;https://www.activeatoms.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;img class=&quot;aligncenter wp-image-14000 size-full&quot; src=&quot;https://res.cloudinary.com/djqswlfat/image/upload/v1776083818/vancouver-island/15x-stronger-learn-more.jpg&quot; alt=&quot;&quot; width=&quot;300&quot; height=&quot;300&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/section&gt;&lt;section id=&quot;content-section-4&quot;&gt;&lt;div class=&quot;gdlr-full-size-wrapper gdlr-show-all&quot; style=&quot;padding-top: 40px; padding-bottom: 20px;  background-color: #f2f2f2; &quot;&gt;&lt;div class=&quot;one-fifth column&quot;&gt;&lt;/div&gt;&lt;div class=&quot;one-fifth column&quot;&gt;&lt;div class=&quot;gdlr-item gdlr-content-item&quot;&gt;&lt;p class=&quot;m0 centered&quot;&gt;&lt;a class=&quot;btn-btm&quot; href=&quot;https://www.discovervancouverisland.com/overnight-hikes-by-region/south-island/the-juan-de-fuca-trail/&quot;&gt;The Juan de Fuca trail &lt;i class=&quot;gdlr-icon fa icon-chevron-right&quot; style=&quot;color: #ffffff; font-size: 12px; &quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;one-fifth column&quot;&gt;&lt;div class=&quot;gdlr-item gdlr-content-item&quot;&gt;&lt;p class=&quot;m0 centered&quot;&gt;&lt;a class=&quot;btn-btm&quot; href=&quot;https://www.discovervancouverisland.com/overnight-hikes-by-region/south-island/the-west-coast-trail/&quot;&gt;The West Coast Trail &lt;i class=&quot;gdlr-icon fa icon-chevron-right&quot; style=&quot;color: #ffffff; font-size: 12px; &quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;one-fifth column&quot;&gt;&lt;div class=&quot;gdlr-item gdlr-content-item&quot;&gt;&lt;p class=&quot;m0 centered&quot;&gt;&lt;a class=&quot;btn-btm&quot; href=&quot;https://www.discovervancouverisland.com/overnight-hikes-by-region/central-island/della-falls/&quot;&gt;Central Island &lt;i class=&quot;gdlr-icon fa icon-chevron-right&quot; style=&quot;color: #ffffff; font-size: 12px; &quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;one-fifth column&quot;&gt;&lt;/div&gt;&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;&lt;/section&gt;&lt;/div&gt;
+		
+		&lt;!-- Below Sidebar Section--&gt;
+		
+		
+	&lt;/div&gt;</p></div></div></section>
+
+<section class="section-padding gallery-section">
+  <div class="container">
+    
+    
+
+    <div class="gallery-grid gallery-cols-3" id="gallery-fmm0fi">
+      
+        <div class="gallery-item reveal reveal-delay-1">
+          <img src="https://res.cloudinary.com/djqswlfat/image/upload/v1776083873/vancouver-island/the-north-coast-trail.jpg" alt="" data-lightbox="gallery-fmm0fi" data-index="0" class="img-cover">
+          
+        </div>
+      
+        <div class="gallery-item reveal reveal-delay-2">
+          <img src="https://discovervancouverisland.com/wp-content/uploads/2015/08/CapeSutil-Bight-TimGage-150x150.jpg" alt="Tim Gage" data-lightbox="gallery-fmm0fi" data-index="1" class="img-cover">
+          
+        </div>
+      
+        <div class="gallery-item reveal reveal-delay-3">
+          <img src="https://discovervancouverisland.com/wp-content/uploads/2015/08/CapeSutilBlight-TimGage-150x150.jpg" alt="Tim Gage" data-lightbox="gallery-fmm0fi" data-index="2" class="img-cover">
+          
+        </div>
+      
+        <div class="gallery-item reveal reveal-delay-1">
+          <img src="https://discovervancouverisland.com/wp-content/uploads/2015/08/ChristensenPt-TimGage-150x150.jpg" alt="Tim Gage" data-lightbox="gallery-fmm0fi" data-index="3" class="img-cover">
+          
+        </div>
+      
+        <div class="gallery-item reveal reveal-delay-2">
+          <img src="https://discovervancouverisland.com/wp-content/uploads/2015/08/NelsBight-TimGage-150x150.jpg" alt="Tim Gage" data-lightbox="gallery-fmm0fi" data-index="4" class="img-cover">
+          
+        </div>
+      
+        <div class="gallery-item reveal reveal-delay-3">
+          <img src="https://discovervancouverisland.com/wp-content/uploads/2015/08/NorthCoastTrail1-TimGage-150x150.jpg" alt="Tim Gage" data-lightbox="gallery-fmm0fi" data-index="5" class="img-cover">
+          
+        </div>
+      
+        <div class="gallery-item reveal reveal-delay-1">
+          <img src="https://discovervancouverisland.com/wp-content/uploads/2015/08/NorthCoastTrail2-TimGage-150x150.jpg" alt="Tim Gage" data-lightbox="gallery-fmm0fi" data-index="6" class="img-cover">
+          
+        </div>
+      
+        <div class="gallery-item reveal reveal-delay-2">
+          <img src="https://discovervancouverisland.com/wp-content/uploads/2015/08/NorthCoastTrail3-TimGage-150x150.jpg" alt="Tim Gage" data-lightbox="gallery-fmm0fi" data-index="7" class="img-cover">
+          
+        </div>
+      
+        <div class="gallery-item reveal reveal-delay-3">
+          <img src="https://discovervancouverisland.com/wp-content/uploads/2015/08/NorthCoastTrail4-TimGage-150x150.jpg" alt="Tim Gage" data-lightbox="gallery-fmm0fi" data-index="8" class="img-cover">
+          
+        </div>
+      
+        <div class="gallery-item reveal reveal-delay-1">
+          <img src="https://discovervancouverisland.com/wp-content/uploads/2015/08/NorthCoastTrail6-TimGage-150x150.jpg" alt="Tim Gage" data-lightbox="gallery-fmm0fi" data-index="9" class="img-cover">
+          
+        </div>
+      
+        <div class="gallery-item reveal reveal-delay-2">
+          <img src="https://discovervancouverisland.com/wp-content/uploads/2015/08/SeaStacks-TimGage-150x150.jpg" alt="Tim Gage" data-lightbox="gallery-fmm0fi" data-index="10" class="img-cover">
+          
+        </div>
+      
+        <div class="gallery-item reveal reveal-delay-3">
+          <img src="https://discovervancouverisland.com/wp-content/uploads/2015/08/ShushartieOverland-TimGage-150x150.jpg" alt="Tim Gage" data-lightbox="gallery-fmm0fi" data-index="11" class="img-cover">
+          
+        </div>
+      
+        <div class="gallery-item reveal reveal-delay-1">
+          <img src="https://discovervancouverisland.com/wp-content/uploads/2015/08/SkinnerBeach-TimGage-150x150.jpg" alt="Tim Gage" data-lightbox="gallery-fmm0fi" data-index="12" class="img-cover">
+          
+        </div>
+      
+        <div class="gallery-item reveal reveal-delay-2">
+          <img src="https://res.cloudinary.com/djqswlfat/image/upload/v1776083818/vancouver-island/15x-stronger-learn-more.jpg" alt="" data-lightbox="gallery-fmm0fi" data-index="13" class="img-cover">
+          
+        </div>
+      
+    </div>
+  </div>
+</section>
+<style>
+.gallery-grid{display:grid;gap:1rem}
+.gallery-cols-2{grid-template-columns:repeat(2,1fr)}
+.gallery-cols-3{grid-template-columns:repeat(3,1fr)}
+.gallery-cols-4{grid-template-columns:repeat(4,1fr)}
+.gallery-masonry{columns:3;column-gap:1rem}
+.gallery-masonry .gallery-item{break-inside:avoid;margin-bottom:1rem}
+.gallery-item{overflow:hidden;border-radius:8px;position:relative}
+.gallery-item img{width:100%;transition:transform .5s;cursor:pointer}
+.gallery-grid .gallery-item img{aspect-ratio:1}
+.gallery-item:hover img{transform:scale(1.05)}
+.gallery-caption{padding:.75rem;font-size:.875rem;color:var(--color-text-secondary);text-align:center}
+
+/* Carousel */
+.gallery-carousel{position:relative;overflow:hidden}
+.gallery-carousel .gallery-track{display:flex;gap:1rem;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding:0 0 1rem}
+.gallery-carousel .gallery-track::-webkit-scrollbar{display:none}
+.gallery-carousel .gallery-item{flex:0 0 auto;width:min(500px,80vw);scroll-snap-align:center}
+.gallery-carousel .gallery-item img{aspect-ratio:16/10;border-radius:12px}
+.gallery-nav{position:absolute;top:50%;transform:translateY(-50%);z-index:5;width:44px;height:44px;border-radius:50%;background:var(--color-bg);border:1px solid var(--color-border);color:var(--color-text);display:flex;align-items:center;justify-content:center;cursor:pointer;transition:all .2s;box-shadow:0 4px 20px rgba(0,0,0,.1)}
+.gallery-nav:hover{background:var(--color-accent);color:#fff;border-color:var(--color-accent)}
+.gallery-nav-prev{left:1rem}
+.gallery-nav-next{right:1rem}
+.gallery-dots{display:flex;justify-content:center;gap:.5rem;margin-top:1.25rem}
+.gallery-dot{width:8px;height:8px;border-radius:50%;background:var(--color-border);border:none;cursor:pointer;transition:all .2s;padding:0}
+.gallery-dot.active{background:var(--color-accent);width:24px;border-radius:4px}
+
+/* Lightbox */
+.lb-overlay{position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,.92);display:none;align-items:center;justify-content:center;opacity:0;transition:opacity .3s}
+.lb-overlay.lb-open{display:flex;opacity:1}
+.lb-content{position:relative;max-width:90vw;max-height:90vh;display:flex;align-items:center;justify-content:center}
+.lb-img{max-width:90vw;max-height:85vh;object-fit:contain;border-radius:8px;transition:opacity .3s}
+.lb-close{position:fixed;top:1.5rem;right:1.5rem;z-index:10001;width:44px;height:44px;border-radius:50%;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);color:#fff;font-size:1.25rem;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .2s;backdrop-filter:blur(8px)}
+.lb-close:hover{background:rgba(255,255,255,.2)}
+.lb-arrow{position:fixed;top:50%;transform:translateY(-50%);z-index:10001;width:48px;height:48px;border-radius:50%;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);color:#fff;font-size:1.25rem;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .2s;backdrop-filter:blur(8px)}
+.lb-arrow:hover{background:rgba(255,255,255,.2)}
+.lb-prev{left:1.5rem}
+.lb-next{right:1.5rem}
+.lb-counter{position:fixed;bottom:1.5rem;left:50%;transform:translateX(-50%);color:rgba(255,255,255,.6);font-size:.875rem;font-family:var(--font-body);z-index:10001}
+.lb-caption{position:fixed;bottom:3rem;left:50%;transform:translateX(-50%);color:rgba(255,255,255,.8);font-size:1rem;font-family:var(--font-heading);z-index:10001;text-align:center;max-width:600px}
+
+@media(max-width:1024px){.gallery-cols-4{grid-template-columns:repeat(2,1fr)}.gallery-cols-4.gallery-masonry{columns:2}}
+@media(max-width:768px){.gallery-cols-2,.gallery-cols-3,.gallery-cols-4{grid-template-columns:repeat(2,1fr)}.gallery-masonry{columns:2!important}.gallery-carousel .gallery-item{width:min(400px,85vw)}}
+</style>
+<script>
+(function(){
+  var g=document.getElementById('gallery-fmm0fi');
+  if(!g)return;
+  var images=[{"url":"https://res.cloudinary.com/djqswlfat/image/upload/v1776083873/vancouver-island/the-north-coast-trail.jpg","alt":"","caption":""},{"url":"https://discovervancouverisland.com/wp-content/uploads/2015/08/CapeSutil-Bight-TimGage-150x150.jpg","alt":"Tim Gage","caption":""},{"url":"https://discovervancouverisland.com/wp-content/uploads/2015/08/CapeSutilBlight-TimGage-150x150.jpg","alt":"Tim Gage","caption":""},{"url":"https://discovervancouverisland.com/wp-content/uploads/2015/08/ChristensenPt-TimGage-150x150.jpg","alt":"Tim Gage","caption":""},{"url":"https://discovervancouverisland.com/wp-content/uploads/2015/08/NelsBight-TimGage-150x150.jpg","alt":"Tim Gage","caption":""},{"url":"https://discovervancouverisland.com/wp-content/uploads/2015/08/NorthCoastTrail1-TimGage-150x150.jpg","alt":"Tim Gage","caption":""},{"url":"https://discovervancouverisland.com/wp-content/uploads/2015/08/NorthCoastTrail2-TimGage-150x150.jpg","alt":"Tim Gage","caption":""},{"url":"https://discovervancouverisland.com/wp-content/uploads/2015/08/NorthCoastTrail3-TimGage-150x150.jpg","alt":"Tim Gage","caption":""},{"url":"https://discovervancouverisland.com/wp-content/uploads/2015/08/NorthCoastTrail4-TimGage-150x150.jpg","alt":"Tim Gage","caption":""},{"url":"https://discovervancouverisland.com/wp-content/uploads/2015/08/NorthCoastTrail6-TimGage-150x150.jpg","alt":"Tim Gage","caption":""},{"url":"https://discovervancouverisland.com/wp-content/uploads/2015/08/SeaStacks-TimGage-150x150.jpg","alt":"Tim Gage","caption":""},{"url":"https://discovervancouverisland.com/wp-content/uploads/2015/08/ShushartieOverland-TimGage-150x150.jpg","alt":"Tim Gage","caption":""},{"url":"https://discovervancouverisland.com/wp-content/uploads/2015/08/SkinnerBeach-TimGage-150x150.jpg","alt":"Tim Gage","caption":""},{"url":"https://res.cloudinary.com/djqswlfat/image/upload/v1776083818/vancouver-island/15x-stronger-learn-more.jpg","alt":"","caption":""}];
+  var isCarousel=false;
+
+  // Carousel setup
+  if(isCarousel){
+    var track=document.createElement('div');
+    track.className='gallery-track';
+    while(g.firstChild)track.appendChild(g.firstChild);
+    g.appendChild(track);
+
+    // Add navigation arrows
+    var prevBtn=document.createElement('button');
+    prevBtn.className='gallery-nav gallery-nav-prev';
+    prevBtn.innerHTML='<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>';
+    prevBtn.setAttribute('aria-label','Previous image');
+    g.appendChild(prevBtn);
+
+    var nextBtn=document.createElement('button');
+    nextBtn.className='gallery-nav gallery-nav-next';
+    nextBtn.innerHTML='<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>';
+    nextBtn.setAttribute('aria-label','Next image');
+    g.appendChild(nextBtn);
+
+    // Dots
+    var dotsWrap=document.createElement('div');
+    dotsWrap.className='gallery-dots';
+    images.forEach(function(_,i){
+      var dot=document.createElement('button');
+      dot.className='gallery-dot'+(i===0?' active':'');
+      dot.dataset.index=i;
+      dot.setAttribute('aria-label','Go to slide '+(i+1));
+      dotsWrap.appendChild(dot);
+    });
+    g.parentElement.appendChild(dotsWrap);
+
+    var items=track.querySelectorAll('.gallery-item');
+    var currentIdx=0;
+
+    function scrollToIdx(idx){
+      if(idx<0)idx=images.length-1;
+      if(idx>=images.length)idx=0;
+      currentIdx=idx;
+      items[idx].scrollIntoView({behavior:'smooth',block:'nearest',inline:'center'});
+      dotsWrap.querySelectorAll('.gallery-dot').forEach(function(d,i){d.classList.toggle('active',i===idx)});
+    }
+
+    prevBtn.addEventListener('click',function(){scrollToIdx(currentIdx-1)});
+    nextBtn.addEventListener('click',function(){scrollToIdx(currentIdx+1)});
+    dotsWrap.querySelectorAll('.gallery-dot').forEach(function(dot){
+      dot.addEventListener('click',function(){scrollToIdx(parseInt(this.dataset.index))});
+    });
+
+    // Auto-detect current slide on scroll
+    var scrollTimer;
+    track.addEventListener('scroll',function(){
+      clearTimeout(scrollTimer);
+      scrollTimer=setTimeout(function(){
+        var trackRect=track.getBoundingClientRect();
+        var center=trackRect.left+trackRect.width/2;
+        var closest=0,closestDist=Infinity;
+        items.forEach(function(item,i){
+          var rect=item.getBoundingClientRect();
+          var dist=Math.abs(rect.left+rect.width/2-center);
+          if(dist<closestDist){closestDist=dist;closest=i}
+        });
+        currentIdx=closest;
+        dotsWrap.querySelectorAll('.gallery-dot').forEach(function(d,i){d.classList.toggle('active',i===closest)});
+      },100);
+    });
+  }
+
+  // Lightbox
+  
+  var overlay=document.createElement('div');
+  overlay.className='lb-overlay';
+  overlay.innerHTML='<div class="lb-content"><img class="lb-img" src="" alt=""></div><button class="lb-close" aria-label="Close lightbox">✕</button><button class="lb-arrow lb-prev" aria-label="Previous image"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg></button><button class="lb-arrow lb-next" aria-label="Next image"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></button><div class="lb-counter"></div><div class="lb-caption"></div>';
+  overlay.setAttribute('role','dialog');
+  overlay.setAttribute('aria-modal','true');
+  overlay.setAttribute('aria-label','Image lightbox');
+  document.body.appendChild(overlay);
+
+  var lbImg=overlay.querySelector('.lb-img');
+  var lbCounter=overlay.querySelector('.lb-counter');
+  var lbCaption=overlay.querySelector('.lb-caption');
+  var lbIdx=0;
+
+  function lbShow(idx){
+    if(idx<0)idx=images.length-1;
+    if(idx>=images.length)idx=0;
+    lbIdx=idx;
+    lbImg.style.opacity='0';
+    setTimeout(function(){
+      lbImg.src=images[idx].url;
+      lbImg.alt=images[idx].alt;
+      lbCounter.textContent=(idx+1)+' / '+images.length;
+      lbCaption.textContent=images[idx].caption||'';
+      lbImg.style.opacity='1';
+    },150);
+  }
+
+  g.querySelectorAll('[data-lightbox="gallery-fmm0fi"]').forEach(function(img){
+    img.addEventListener('click',function(){
+      var idx=parseInt(this.dataset.index)||0;
+      lbShow(idx);
+      overlay.classList.add('lb-open');
+      document.body.style.overflow='hidden';
+    });
+  });
+
+  overlay.querySelector('.lb-close').addEventListener('click',function(){
+    overlay.classList.remove('lb-open');
+    document.body.style.overflow='';
+  });
+  overlay.querySelector('.lb-prev').addEventListener('click',function(e){e.stopPropagation();lbShow(lbIdx-1)});
+  overlay.querySelector('.lb-next').addEventListener('click',function(e){e.stopPropagation();lbShow(lbIdx+1)});
+  overlay.addEventListener('click',function(e){
+    if(e.target===overlay||e.target.classList.contains('lb-content')){
+      overlay.classList.remove('lb-open');
+      document.body.style.overflow='';
+    }
+  });
+  document.addEventListener('keydown',function(e){
+    if(!overlay.classList.contains('lb-open'))return;
+    if(e.key==='Escape'){overlay.classList.remove('lb-open');document.body.style.overflow=''}
+    if(e.key==='ArrowLeft')lbShow(lbIdx-1);
+    if(e.key==='ArrowRight')lbShow(lbIdx+1);
+  });
+  
+})();
+</script>
+<section class="cta-section" style=""><div class="container" style="position:relative;z-index:2"><div class="cta-content text-center reveal"><h2 class="cta-heading">Plan Your Visit</h2><div class="cta-actions"><a href="/contact.html" class="cta-btn-primary">Learn More</a></div></div></div></section>
+<style>
+.cta-section{padding:7rem 0;position:relative;background:var(--color-surface)}
+.cta-img{color:#fff}
+.cta-heading{margin-bottom:1rem}
+.cta-img .cta-heading{color:#fff}
+.cta-body{max-width:640px;margin:0 auto 2.5rem;line-height:1.8}
+.cta-img .cta-body{color:rgba(255,255,255,.85)}
+.cta-actions{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
+.cta-btn-primary{display:inline-flex;align-items:center;gap:.5rem;padding:.875rem 2.5rem;font-family:var(--font-body);font-size:.9375rem;font-weight:500;letter-spacing:.02em;border:none;border-radius:6px;cursor:pointer;transition:all .25s;text-decoration:none;background:#fff;color:#1a1a1a}
+.cta-btn-primary:hover{background:#f0f0f0;color:#1a1a1a;transform:translateY(-2px);box-shadow:0 8px 25px rgba(0,0,0,.15)}
+.cta-section:not(.cta-img) .cta-btn-primary{background:var(--color-accent);color:#fff}
+.cta-section:not(.cta-img) .cta-btn-primary:hover{background:var(--color-accent-hover);color:#fff}
+.cta-btn-secondary{display:inline-flex;align-items:center;gap:.5rem;padding:.875rem 2.5rem;font-family:var(--font-body);font-size:.9375rem;font-weight:500;letter-spacing:.02em;border:2px solid rgba(255,255,255,.4);border-radius:6px;cursor:pointer;transition:all .25s;text-decoration:none;background:transparent;color:#fff}
+.cta-btn-secondary:hover{border-color:#fff;color:#fff;transform:translateY(-2px)}
+.cta-section:not(.cta-img) .cta-btn-secondary{border-color:var(--color-border);color:var(--color-text)}
+.cta-section:not(.cta-img) .cta-btn-secondary:hover{border-color:var(--color-accent);color:var(--color-accent)}
+.cta-text-dark .cta-heading,.cta-text-dark .cta-body{color:var(--color-text)}.cta-text-dark .cta-btn-primary{background:var(--color-accent);color:#fff}.cta-text-dark .cta-btn-primary:hover{background:var(--color-accent-hover)}.cta-text-dark .cta-btn-secondary{border-color:var(--color-border);color:var(--color-text)}.cta-text-dark .cta-btn-secondary:hover{border-color:var(--color-accent);color:var(--color-accent)}
+@media(max-width:768px){.cta-actions{flex-direction:column;align-items:center}.cta-btn-primary,.cta-btn-secondary{width:100%;max-width:300px;justify-content:center;text-align:center}}
+</style>
+  <script>document.addEventListener('DOMContentLoaded',function(){var r=document.querySelectorAll('.reveal');var o=new IntersectionObserver(function(e){e.forEach(function(n){if(n.isIntersecting){n.target.classList.add('revealed');o.unobserve(n.target)}})},{threshold:.1,rootMargin:'0px 0px -50px 0px'});r.forEach(function(e){o.observe(e)});var t=document.querySelector('.nav-toggle'),m=document.querySelector('.nav-mobile-menu');if(t&&m){t.addEventListener('click',function(){m.classList.toggle('nav-mobile-open');t.classList.toggle('nav-toggle-active')})}var d=document.querySelectorAll('.nav-dropdown');d.forEach(function(el){el.addEventListener('mouseenter',function(){var dm=this.querySelector('.nav-dropdown-menu');if(dm){dm.style.opacity='1';dm.style.visibility='visible';dm.style.transform='translateY(0)'}});el.addEventListener('mouseleave',function(){var dm=this.querySelector('.nav-dropdown-menu');if(dm){dm.style.opacity='0';dm.style.visibility='hidden';dm.style.transform='translateY(8px)'}})});var nav=document.querySelector('.nav-sticky');if(nav){window.addEventListener('scroll',function(){nav.classList.toggle('nav-scrolled',window.scrollY>100)})}});</script>
+</body>
+</html>

@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sandpipers, Phalaropes</title>
+  
+  
+  
+  
+  
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--color-bg:#FAF8F5;--color-surface:#F0EBE3;--color-text:#2C2C2C;--color-text-secondary:#6B6560;--color-accent:#B8977E;--color-accent-hover:#A07D63;--color-border:#E5DFD7;--color-overlay:rgba(44, 44, 44, 0.6);--font-heading:'DM Serif Display', Georgia, serif;--font-body:'Inter', -apple-system, sans-serif}
+html{scroll-behavior:smooth}
+body{font-family:var(--font-body);color:var(--color-text);background-color:var(--color-bg);line-height:1.7;-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--color-accent);text-decoration:none;transition:color .2s}
+a:hover{color:var(--color-accent-hover)}
+h1,h2,h3,h4,h5,h6{font-family:var(--font-heading);font-weight:400;line-height:1.2;letter-spacing:-.01em}
+h1{font-size:clamp(2.5rem,5vw,4.5rem)}h2{font-size:clamp(2rem,4vw,3.5rem)}h3{font-size:clamp(1.5rem,3vw,2rem)}h4{font-size:clamp(1.25rem,2vw,1.5rem)}
+p{font-size:1.0625rem;line-height:1.8;color:var(--color-text-secondary)}
+.container{width:100%;max-width:1280px;margin:0 auto;padding:0 2rem}
+.container-narrow{width:100%;max-width:900px;margin:0 auto;padding:0 2rem}
+.section-padding{padding:7rem 0}
+.grid{display:grid;gap:2rem}.grid-2{grid-template-columns:repeat(2,1fr)}.grid-3{grid-template-columns:repeat(3,1fr)}.grid-4{grid-template-columns:repeat(4,1fr)}
+@media(max-width:1024px){.grid-4,.grid-3{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:768px){.grid-2,.grid-3,.grid-4{grid-template-columns:1fr}.section-padding{padding:4rem 0}.container{padding:0 1.25rem}}
+.btn{display:inline-flex;align-items:center;gap:.5rem;padding:.875rem 2rem;font-family:var(--font-body);font-size:.9375rem;font-weight:500;letter-spacing:.02em;border:none;border-radius:4px;cursor:pointer;transition:all .25s cubic-bezier(.25,.46,.45,.94);text-decoration:none}
+.btn-primary{background-color:var(--color-accent);color:#fff}.btn-primary:hover{background-color:var(--color-accent-hover);color:#fff;transform:translateY(-1px)}
+.btn-outline{background-color:transparent;color:var(--color-text);border:1.5px solid var(--color-border)}.btn-outline:hover{border-color:var(--color-accent);color:var(--color-accent)}
+.card{background:var(--color-surface);border:1px solid var(--color-border);border-radius:8px;overflow:hidden;transition:transform .3s ease,box-shadow .3s ease}.card:hover{transform:translateY(-4px);box-shadow:0 12px 40px rgba(0,0,0,.08)}
+.reveal{opacity:0;transform:translateY(30px);transition:opacity .8s cubic-bezier(.25,.46,.45,.94),transform .8s cubic-bezier(.25,.46,.45,.94)}.reveal.revealed{opacity:1;transform:translateY(0)}
+.reveal-delay-1{transition-delay:.1s}.reveal-delay-2{transition-delay:.2s}.reveal-delay-3{transition-delay:.3s}
+.img-cover{width:100%;height:100%;object-fit:cover}.img-rounded{border-radius:8px}.img-aspect-video{aspect-ratio:16/9}
+.overlay{position:absolute;inset:0;background:var(--color-overlay)}
+.text-center{text-align:center}.text-accent{color:var(--color-accent)}.text-secondary{color:var(--color-text-secondary)}
+.uppercase{text-transform:uppercase;letter-spacing:.1em;font-size:.8125rem}
+.mb-1{margin-bottom:.5rem}.mb-2{margin-bottom:1rem}.mb-3{margin-bottom:1.5rem}.mb-4{margin-bottom:2rem}.mb-6{margin-bottom:3rem}
+.separator{width:60px;height:2px;background:var(--color-accent);margin:1.5rem 0}.separator-center{margin-left:auto;margin-right:auto}</style>
+  
+  
+</head>
+<body>
+  <div style="height:70px"></div><nav class="nav nav-sticky"><div class="container"><div class="nav-inner"><a href="/" class="nav-logo"><span class="nav-logo-text">Discover Vancouver Island</span></a><ul class="nav-menu"><li class="nav-item nav-dropdown nav-has-mega"><a href="/guided-fishing-trips.html">Things To Do <svg class="nav-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></a><div class="nav-mega"><div class="nav-mega-media"><figure class="nav-mega-image"><img src="https://res.cloudinary.com/djqswlfat/image/upload/v1776083709/vancouver-island/tophikingspots.jpg" alt=""></figure><figure class="nav-mega-image"><img src="https://res.cloudinary.com/djqswlfat/image/upload/v1776083709/vancouver-island/fishing-menu.jpg" alt=""></figure></div><div class="nav-mega-cols"><div class="nav-mega-col"><h4>Outdoor Activities</h4><ul></ul></div><div class="nav-mega-col"><h4>Sightseeing</h4><ul></ul></div><div class="nav-mega-col"><h4>MISC</h4><ul></ul></div></div></div></li><li class="nav-item nav-dropdown nav-has-mega"><a href="/regions.html">Regions <svg class="nav-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></a><div class="nav-mega"><div class="nav-mega-media"><figure class="nav-mega-image"><img src="https://res.cloudinary.com/djqswlfat/image/upload/v1776083709/vancouver-island/victoria.jpg" alt=""></figure><figure class="nav-mega-image"><img src="https://res.cloudinary.com/djqswlfat/image/upload/v1776083710/vancouver-island/pacificrim.jpg" alt=""></figure></div><div class="nav-mega-cols"><div class="nav-mega-col"><h4>South Island</h4><ul></ul></div><div class="nav-mega-col"><h4>Cowichan</h4><ul></ul></div><div class="nav-mega-col"><h4>Central Island Region</h4><ul></ul></div><div class="nav-mega-col"><h4>Gulf Islands</h4><ul></ul></div><div class="nav-mega-col"><h4>Pacific Rim</h4><ul></ul></div><div class="nav-mega-col"><h4>North Central</h4><ul></ul></div><div class="nav-mega-col"><h4>North Island</h4><ul></ul></div></div></div></li><li class="nav-item"><a href="/blog.html">Blog</a></li><li class="nav-item"><a href="/contact-us.html">Contact us</a></li></ul><button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button><div class="nav-mobile-menu"><ul class="nav-mobile-list"><li><a href="/guided-fishing-trips.html">Things To Do</a></li><li><a href="/regions.html">Regions</a></li><li><a href="/blog.html">Blog</a></li><li><a href="/contact-us.html">Contact us</a></li></ul></div></div></div></nav>
+<style>.nav{position:relative;z-index:100;padding:1.25rem 0;transition:all .3s}.nav-sticky{position:fixed;top:0;left:0;right:0;background:var(--color-bg)}.nav-scrolled{box-shadow:0 1px 0 var(--color-border);padding:.875rem 0}.nav-transparent{background:transparent}.nav-transparent.nav-scrolled{background:var(--color-bg)}.nav-inner{display:flex;align-items:center;justify-content:space-between}.nav-logo{text-decoration:none;color:var(--color-text)}.nav-logo-text{font-family:var(--font-heading);font-size:1.5rem;letter-spacing:-.02em}.nav-logo-img{height:36px;width:auto}.nav-menu{display:flex;list-style:none;gap:2.5rem;align-items:center}.nav-menu a{color:var(--color-text);font-size:.9375rem;font-weight:400;display:flex;align-items:center;gap:4px;transition:color .2s}.nav-menu a:hover{color:var(--color-accent)}.nav-chevron{transition:transform .2s}.nav-dropdown:hover .nav-chevron{transform:rotate(180deg)}.nav-dropdown{position:relative}.nav-dropdown-menu{position:absolute;top:100%;left:-1rem;min-width:200px;padding:.75rem 0;background:var(--color-surface);border:1px solid var(--color-border);border-radius:8px;list-style:none;opacity:0;visibility:hidden;transform:translateY(8px);transition:all .25s;box-shadow:0 8px 30px rgba(0,0,0,.08);margin-top:.5rem}.nav-dropdown-menu li a{display:block;padding:.5rem 1.25rem;font-size:.875rem}.nav-dropdown-menu li a:hover{background:var(--color-bg)}.nav-toggle{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:4px}.nav-toggle span{display:block;width:24px;height:2px;background:var(--color-text);transition:all .3s}.nav-toggle-active span:nth-child(1){transform:translateY(7px) rotate(45deg)}.nav-toggle-active span:nth-child(2){opacity:0}.nav-toggle-active span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}.nav-mobile-menu{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:var(--color-bg);padding:5rem 2rem 2rem;z-index:99}.nav-mobile-open{display:block}.nav-mobile-list{list-style:none;display:flex;flex-direction:column;gap:1.5rem}.nav-mobile-list a{font-family:var(--font-heading);font-size:2rem;color:var(--color-text)}@media(max-width:768px){.nav-menu{display:none}.nav-toggle{display:flex}}.nav-hamburger-only .nav-menu{display:none}.nav-hamburger-only .nav-toggle{display:flex}.nav-item{position:relative}.nav-mega{position:absolute;left:0;right:0;top:100%;background:var(--nav-dropdown-bg,#fff);color:var(--nav-dropdown-fg,#1a1a1a);display:grid;grid-template-columns:1fr 2fr;gap:2rem;padding:2rem;box-shadow:0 20px 40px rgba(0,0,0,.15);opacity:0;visibility:hidden;transform:translateY(-8px);transition:opacity .18s,visibility .18s,transform .18s;z-index:100}.nav-item:hover>.nav-mega,.nav-item:focus-within>.nav-mega{opacity:1;visibility:visible;transform:translateY(0)}.nav-mega-media{display:flex;flex-direction:column;gap:1rem}.nav-mega-image{position:relative;overflow:hidden;border-radius:4px;aspect-ratio:4/3;margin:0}.nav-mega-image img{width:100%;height:100%;object-fit:cover;display:block}.nav-mega-image figcaption{position:absolute;left:0;right:0;bottom:0;padding:.5rem .75rem;background:linear-gradient(transparent,rgba(0,0,0,.7));color:#fff;font-size:.85rem}.nav-mega-cols{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}.nav-mega-col h4{font-size:.95rem;font-weight:600;margin:0 0 .6rem;color:inherit}.nav-mega-col ul{list-style:none;padding:0;margin:0}.nav-mega-col li{margin:.35rem 0;font-size:.9rem}.nav-mega-col li::before{content:"•";color:var(--accent,#2c94a6);margin-right:.5rem}.nav-mega-col a{color:inherit;text-decoration:none}.nav-mega-col a:hover{color:var(--accent,#2c94a6)}.nav-mega-cta{display:inline-block;margin-top:1rem;padding:.6rem 1.25rem;background:var(--accent,#c0392b);color:#fff;text-decoration:none;font-weight:600;letter-spacing:.05em;text-transform:uppercase;font-size:.8rem;border-radius:2px;grid-column:1/-1}@media(max-width:768px){.nav-mega{position:static;display:block;padding:1rem;opacity:1;visibility:visible;transform:none;box-shadow:none}.nav-mega-media{display:none}.nav-mega-cols{grid-template-columns:1fr;gap:1rem}}</style>
+<section class="hero-fs" style=""><div class="overlay" style="opacity:0.5"></div><div class="container hero-content hero-center"><h1 class="hero-title reveal">Sandpipers, Phalaropes</h1><div class="hero-actions reveal reveal-delay-2"></div></div></section>
+<style>.hero-fs{position:relative;min-height:100vh;display:flex;align-items:center;background-size:cover;background-position:center;background-color:var(--color-text);color:#fff}.hero-content{position:relative;z-index:2;width:100%}.hero-center{text-align:center}.hero-center .hero-body{max-width:640px;margin-left:auto;margin-right:auto}.hero-left{text-align:left}.hero-left .hero-body{max-width:640px}.hero-sub{margin-bottom:1.5rem;color:rgba(255,255,255,.7)}.hero-title{margin-bottom:1.5rem;color:#fff}.hero-body{font-size:1.125rem;line-height:1.8;color:rgba(255,255,255,.8);margin-bottom:2.5rem}.hero-actions{display:flex;gap:1rem}.hero-center .hero-actions{justify-content:center}.hero-text-dark,.hero-text-dark .hero-title,.hero-text-dark .hero-sub,.hero-text-dark .hero-body{color:var(--color-text)}.hero-text-dark .hero-sub{color:var(--color-text-secondary)}.hero-text-dark .hero-body{color:var(--color-text-secondary)}.hero-text-dark .btn-outline{color:var(--color-text);border-color:var(--color-border)}@media(max-width:768px){.hero-fs{min-height:80vh}.hero-actions{flex-direction:column;align-items:stretch}.hero-actions .btn{text-align:center;justify-content:center}}</style>
+<section class="section-padding"><div class="container-narrow"><div class="reveal text-center"><div class="separator separator-center mb-4"></div><p>&lt;div class=&quot;gdlr-content&quot;&gt;
+		&lt;!-- Above Sidebar Section--&gt;
+							&lt;div class=&quot;above-sidebar-wrapper&quot;&gt;&lt;section id=&quot;content-section-1&quot;&gt;&lt;div class=&quot;gdlr-full-size-wrapper &quot; style=&quot; background-color: #ffffff; &quot;&gt;&lt;div class=&quot;gdlr-image-frame-item gdlr-item&quot;&gt;&lt;div class=&quot;gdlr-frame frame-type-none&quot;&gt;&lt;div class=&quot;gdlr-image-link-shortcode&quot;&gt;&lt;img src=&quot;https://res.cloudinary.com/djqswlfat/image/upload/v1776083772/vancouver-island/sandpipers-phalaropes.jpg&quot; alt=&quot;&quot; width=&quot;1600&quot; height=&quot;500&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;&lt;div class=&quot;gdlr-title-item&quot; style=&quot;margin-bottom: 30px;&quot;&gt;&lt;div class=&quot;gdlr-item-title-wrapper gdlr-item pos-center &quot;&gt;&lt;div class=&quot;gdlr-item-title-head&quot;&gt;&lt;h3 class=&quot;gdlr-item-title gdlr-skin-title gdlr-skin-border&quot;&gt;&lt;/h3&gt;&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;&lt;/section&gt;&lt;/div&gt;
+				
+		&lt;!-- Sidebar With Content Section--&gt;
+		&lt;div class=&quot;with-sidebar-wrapper&quot;&gt;&lt;section id=&quot;content-section-2&quot;&gt;&lt;div class=&quot;gdlr-color-wrapper  gdlr-show-all no-skin&quot; style=&quot;background-color: #ffffff; padding-top: 0px; &quot;&gt;&lt;div class=&quot;container&quot;&gt;&lt;div class=&quot;three columns&quot;&gt;&lt;div class=&quot;gdlr-item-title-wrapper gdlr-item pos-center &quot;&gt;&lt;div class=&quot;gdlr-item-title-head&quot;&gt;&lt;h3 class=&quot;gdlr-item-title gdlr-skin-title gdlr-skin-border&quot;&gt;Dowitcher&lt;br&gt; (Long-billed)&lt;/h3&gt;&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;gdlr-item gdlr-content-item&quot;&gt;&lt;p&gt;The Long-billed Dowitcher is very close in appearance to the Short-billed Dowitcher. The length of the female Short-billed Dowitcher is the same as Long-billed male. The belly of the Long-billed is typically reddish the full length and Short-billed often has some white on it.&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;three columns&quot;&gt;&lt;div class=&quot;gdlr-item-title-wrapper gdlr-item pos-center &quot;&gt;&lt;div class=&quot;gdlr-item-title-head&quot;&gt;&lt;h3 class=&quot;gdlr-item-title gdlr-skin-title gdlr-skin-border&quot;&gt;Dowitcher (Short-billed)&lt;/h3&gt;&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;gdlr-item gdlr-content-item&quot;&gt;&lt;p&gt;The Short-billed Dowitcher is very close in appearance to the Long-billed Dowitcher and name is misleading since the beak is longer than most shore birds. Short-billed Dowitchers&amp;nbsp; prefer saltwater locations, while Long-billed Dowitchers prefer fresh water.&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;six columns&quot;&gt;&lt;div class=&quot;gdlr-item-title-wrapper gdlr-item pos-center &quot;&gt;&lt;div class=&quot;gdlr-item-title-head&quot;&gt;&lt;h3 class=&quot;gdlr-item-title gdlr-skin-title gdlr-skin-border&quot;&gt;Dunlin&lt;/h3&gt;&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;gdlr-item gdlr-content-item&quot;&gt;&lt;p&gt;This small&amp;nbsp;wader provides another common sighting for the sandy beaches on both sides of Vancouver Island and is one of the most abundant shorebirds in North America. An adult dunlin in breeding plumage displays a distinctive black belly.&amp;nbsp; The winter dunlin is mostly grey above and white below. Juveniles are brown above with two whitish “V” shapes on the back. Adult breeders usually have black marks on the flanks or belly and show a strong white wingbar in flight.&lt;/p&gt;
+&lt;p&gt;The care of the young is mostly provided by the male since the female often leaves the breeding area and desserts the brood. Dunlin are different from most Calindrines in that they don’t travel as far south in the winter and stay longer in the northern regions and the juveniles migrate with adults .The are most abundant from September to April.&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;&lt;div class=&quot;six columns&quot;&gt;&lt;div class=&quot;gdlr-item-title-wrapper gdlr-item pos-center &quot;&gt;&lt;div class=&quot;gdlr-item-title-head&quot;&gt;&lt;h3 class=&quot;gdlr-item-title gdlr-skin-title gdlr-skin-border&quot;&gt;Godwit (Hudsonian)&lt;/h3&gt;&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;gdlr-item gdlr-content-item&quot;&gt;&lt;p&gt;The Hudsonian Godwit is one of the least known shorebirds in North America and is mostly seen in central Canada, however you may see them on the east side of Vancouver Island. It can winter as far south as Chile and spends its breeding time in Alaska, Northwest Territories and northwestern British Columbia. The Hudsonian Godwit has a&amp;nbsp; long reddish beak and dark tip like the Marbled Godwit. The female’s beak is slightly longer than the male’s beak helping identify differences between the sexes. It can be seen on mudflats, sandy beaches and in lagoons.&lt;/p&gt;
+&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong&gt;Godwit (Marbled)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The Marbled Godwit breeds from the Alaskan peninsula to James Bay, Ontario. They winter along coastal regions of North America. The Marbled Godwit has a similar beak to the Hudsonian Godwit in colour but the Marbled Godwit’s is slightly longer. Godwits are quite a bit larger than other shorebirds helping identify them quickly.&lt;/p&gt;
+&lt;div class=&quot;wonderplugingallery-container&quot; id=&quot;wonderplugingallery-container-137&quot; style=&quot;max-width:750px;margin:0 auto;&quot;&gt;&lt;div class=&quot;wonderplugingallery&quot; id=&quot;wonderplugingallery-137&quot; data-galleryid=&quot;137&quot; data-width=&quot;750&quot; data-height=&quot;500&quot; data-skin=&quot;light&quot; data-autoslide=&quot;false&quot; data-autoplayvideo=&quot;false&quot; data-html5player=&quot;true&quot; data-responsive=&quot;true&quot; data-fullwidth=&quot;false&quot; data-showtitle=&quot;true&quot; data-showdescription=&quot;true&quot; data-showplaybutton=&quot;true&quot; data-showfullscreenbutton=&quot;true&quot; data-showtimer=&quot;true&quot; data-showcarousel=&quot;true&quot; data-galleryshadow=&quot;false&quot; data-slideshadow=&quot;true&quot; data-thumbshowtitle=&quot;false&quot; data-thumbshadow=&quot;true&quot; data-lightboxshowtitle=&quot;false&quot; data-lightboxshowdescription=&quot;false&quot; data-specifyid=&quot;true&quot; data-duration=&quot;1500&quot; data-slideduration=&quot;1000&quot; data-slideshowinterval=&quot;6000&quot; data-googleanalyticsaccount=&quot;&quot; data-resizemode=&quot;fill&quot; data-imagetoolboxmode=&quot;mouseover&quot; data-effect=&quot;fade&quot; data-padding=&quot;12&quot; data-bgcolor=&quot;&quot; data-bgimage=&quot;&quot; data-thumbwidth=&quot;48&quot; data-thumbheight=&quot;48&quot; data-thumbgap=&quot;8&quot; data-thumbrowgap=&quot;16&quot; data-lightboxtextheight=&quot;72&quot; data-lightboxtitlecss=&quot;{color:#333333; font:bold 12px Arial,Helvetica,sans-serif; overflow:hidden; white-space:normal; line-height:18px;}&quot; data-lightboxdescriptioncss=&quot;{color:#333333; font:normal 12px Arial,Helvetica,sans-serif; overflow:hidden; white-space:normal; line-height:14px;}&quot; data-titlecss=&quot;{color:#ffffff; font-size:14px; font-family:Armata, sans-serif, Arial; overflow:hidden; white-space:normal; text-align:left; padding:10px 0px 10px 10px;  background:rgb(102, 102, 102) transparent; background:rgba(102, 102, 102, 0.6);}&quot; data-descriptioncss=&quot;{color:#ffffff; font-size:18px; font-family:Armata, sans-serif, Arial; overflow:hidden; white-space:normal; text-align:left; padding:10px 10px 10px 10px;  background:rgb(63, 78, 101) transparent; background:rgba(63, 78, 101, 0.8); border-radius: 10px;}&quot; data-jsfolder=&quot;https://www.discovervancouverisland.com/wp-content/plugins/wonderplugin-gallery/engine/&quot; style=&quot;display:none;&quot;&gt;&lt;a href=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/11/SolitarySandpiper-GuyMonty.jpg&quot;&gt;&lt;img class=&quot;html5galleryimg&quot; src=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/11/SolitarySandpiper-GuyMonty-150x150.jpg&quot; alt=&quot;Guy Monty&quot; data-description=&quot;Solitary Sandpiper&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/11/Short-billedDowitcher-NimpkishEstuary-GuyMonty.jpg&quot;&gt;&lt;img class=&quot;html5galleryimg&quot; src=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/11/Short-billedDowitcher-NimpkishEstuary-GuyMonty-150x150.jpg&quot; alt=&quot;Guy Monty&quot; data-description=&quot;Short billed Dowitcher&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/11/ShortbilledDowitcher-NimpkishEstuary-GuyMonty.jpg&quot;&gt;&lt;img class=&quot;html5galleryimg&quot; src=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/11/ShortbilledDowitcher-NimpkishEstuary-GuyMonty-150x150.jpg&quot; alt=&quot;Guy Monty&quot; data-description=&quot;Short billed Dowitcher&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/11/ShortbilledDowicher2-NimpkishEstuary-GuyMonty.jpg&quot;&gt;&lt;img class=&quot;html5galleryimg&quot; src=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/11/ShortbilledDowicher2-NimpkishEstuary-GuyMonty-150x150.jpg&quot; alt=&quot;Guy Monty&quot; data-description=&quot;Short billed Dowitcher&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/11/SemipalmatedsandpiperTM.jpg&quot;&gt;&lt;img class=&quot;html5galleryimg&quot; src=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/11/SemipalmatedsandpiperTM-150x150.jpg&quot; alt=&quot;Tim Melling&quot; data-description=&quot;Semipalmated sandpiper&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/11/Semipalmatedsandpiper2.jpg&quot;&gt;&lt;img class=&quot;html5galleryimg&quot; src=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/11/Semipalmatedsandpiper2-150x150.jpg&quot; alt=&quot;Tim Melling&quot; data-description=&quot;Semipalmated sandpiper&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/11/SanderlingsTM.jpg&quot;&gt;&lt;img class=&quot;html5galleryimg&quot; src=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/11/SanderlingsTM-150x150.jpg&quot; alt=&quot;Tim Melling&quot; data-description=&quot;Semipalmated sandpiper&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/11/sanderlingreflectionTM.jpg&quot;&gt;&lt;img class=&quot;html5galleryimg&quot; src=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/11/sanderlingreflectionTM-150x150.jpg&quot; alt=&quot;Tim Melling&quot; data-description=&quot;Sanderlingreflection&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/11/RedneckedPharlopeTM.jpg&quot;&gt;&lt;img class=&quot;html5galleryimg&quot; src=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/11/RedneckedPharlopeTM-150x150.jpg&quot; alt=&quot;Tim Melling&quot; data-description=&quot;Rednecked Pharlope&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/11/MarbledGodwitStoreysbeach-GuyMonty.jpg&quot;&gt;&lt;img class=&quot;html5galleryimg&quot; src=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/11/MarbledGodwitStoreysbeach-GuyMonty-150x150.jpg&quot; alt=&quot;Guy Monty&quot; data-description=&quot;Marbled Godwit&quot;&gt;&lt;/a&gt;&lt;div class=&quot;wonderplugin-engine&quot;&gt;&lt;a href=&quot;http://www.wonderplugin.com/wordpress-gallery/&quot; title=&quot;WordPress Gallery Plugin&quot;&gt;WordPress Gallery Plugin&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;six columns&quot;&gt;&lt;div class=&quot;gdlr-item gdlr-content-item&quot; style=&quot;margin-bottom: 70px;&quot;&gt;&lt;div class=&quot;wonderplugingallery-container&quot; id=&quot;wonderplugingallery-container-132&quot; style=&quot;max-width:750px;margin:0 auto;&quot;&gt;&lt;div class=&quot;wonderplugingallery&quot; id=&quot;wonderplugingallery-132&quot; data-galleryid=&quot;132&quot; data-width=&quot;750&quot; data-height=&quot;500&quot; data-skin=&quot;light&quot; data-autoslide=&quot;false&quot; data-autoplayvideo=&quot;false&quot; data-html5player=&quot;true&quot; data-responsive=&quot;true&quot; data-fullwidth=&quot;false&quot; data-showtitle=&quot;true&quot; data-showdescription=&quot;true&quot; data-showplaybutton=&quot;true&quot; data-showfullscreenbutton=&quot;true&quot; data-showtimer=&quot;true&quot; data-showcarousel=&quot;true&quot; data-galleryshadow=&quot;false&quot; data-slideshadow=&quot;true&quot; data-thumbshowtitle=&quot;false&quot; data-thumbshadow=&quot;true&quot; data-lightboxshowtitle=&quot;false&quot; data-lightboxshowdescription=&quot;false&quot; data-specifyid=&quot;true&quot; data-duration=&quot;1500&quot; data-slideduration=&quot;1000&quot; data-slideshowinterval=&quot;6000&quot; data-googleanalyticsaccount=&quot;&quot; data-resizemode=&quot;fill&quot; data-imagetoolboxmode=&quot;mouseover&quot; data-effect=&quot;fade&quot; data-padding=&quot;12&quot; data-bgcolor=&quot;&quot; data-bgimage=&quot;&quot; data-thumbwidth=&quot;48&quot; data-thumbheight=&quot;48&quot; data-thumbgap=&quot;8&quot; data-thumbrowgap=&quot;16&quot; data-lightboxtextheight=&quot;72&quot; data-lightboxtitlecss=&quot;{color:#333333; font:bold 12px Arial,Helvetica,sans-serif; overflow:hidden; white-space:normal; line-height:18px;}&quot; data-lightboxdescriptioncss=&quot;{color:#333333; font:normal 12px Arial,Helvetica,sans-serif; overflow:hidden; white-space:normal; line-height:14px;}&quot; data-titlecss=&quot;{color:#ffffff; font-size:14px; font-family:Armata, sans-serif, Arial; overflow:hidden; white-space:normal; text-align:left; padding:10px 0px 10px 10px;  background:rgb(102, 102, 102) transparent; background:rgba(102, 102, 102, 0.6);}&quot; data-descriptioncss=&quot;{color:#ffffff; font-size:18px; font-family:Armata, sans-serif, Arial; overflow:hidden; white-space:normal; text-align:left; padding:10px 10px 10px 10px;  background:rgb(63, 78, 101) transparent; background:rgba(63, 78, 101, 0.8); border-radius: 10px;}&quot; data-jsfolder=&quot;https://www.discovervancouverisland.com/wp-content/plugins/wonderplugin-gallery/engine/&quot; style=&quot;display:none;&quot;&gt;&lt;a href=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/11/Dunlin-FrenchCreek-GuyMonty.jpg&quot;&gt;&lt;img class=&quot;html5galleryimg&quot; src=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/11/Dunlin-FrenchCreek-GuyMonty-150x150.jpg&quot; alt=&quot;Guy Monty&quot; data-description=&quot;Dunlin&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/11/Dunlin2-FrenchCreek-GuyMonty.jpg&quot;&gt;&lt;img class=&quot;html5galleryimg&quot; src=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/11/Dunlin2-FrenchCreek-GuyMonty-150x150.jpg&quot; alt=&quot;Guy Monty&quot; data-description=&quot;Dunlin&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/11/balancingtattlerTM.jpg&quot;&gt;&lt;img class=&quot;html5galleryimg&quot; src=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/11/balancingtattlerTM-150x150.jpg&quot; alt=&quot;Tim Melling&quot; data-description=&quot;Balancingtattler&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/11/Bairds-sandpipers-in-flight-Chesterman-PaulCottis.jpg&quot;&gt;&lt;img class=&quot;html5galleryimg&quot; src=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/11/Bairds-sandpipers-in-flight-Chesterman-PaulCottis-150x150.jpg&quot; alt=&quot;Paul Cottis&quot; data-description=&quot;Bairds Sandpipers&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/11/Bairdssandpipers-Chertermans-PaulCottis.jpg&quot;&gt;&lt;img class=&quot;html5galleryimg&quot; src=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/11/Bairdssandpipers-Chertermans-PaulCottis-150x150.jpg&quot; alt=&quot;Paul Cottis&quot; data-description=&quot;Bairds Sandpipers&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/11/BairdsSandpiper-GuyMonty-OysterBay.jpg&quot;&gt;&lt;img class=&quot;html5galleryimg&quot; src=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/11/BairdsSandpiper-GuyMonty-OysterBay-150x150.jpg&quot; alt=&quot;Oyster Bay&quot; data-description=&quot;Bairds Sandpiper&quot;&gt;&lt;/a&gt;&lt;div class=&quot;wonderplugin-engine&quot;&gt;&lt;a href=&quot;http://www.wonderplugin.com/wordpress-gallery/&quot; title=&quot;WordPress Gallery Plugin&quot;&gt;WordPress Gallery Plugin&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;&lt;div class=&quot;gdlr-item-title-wrapper gdlr-item pos-center &quot;&gt;&lt;div class=&quot;gdlr-item-title-head&quot;&gt;&lt;h3 class=&quot;gdlr-item-title gdlr-skin-title gdlr-skin-border&quot;&gt;Phalarope (Red-Necked)&lt;/h3&gt;&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;gdlr-item gdlr-content-item&quot;&gt;&lt;p&gt;The Red-Necked Phalarope has quite a few colour patterns depending on the age and season. The female Phalarope while breeding is predominantly dark grey with a chestnut neck and upper breast and a black face with a white throat. The females have a white stripe just around the neck area which helps distinguish this bird from the&amp;nbsp;Wilson’s Phalarope. The breeding male is a slightly less sharp version of the female. Young Red-Necked birds have a black patch through the eye and are mostly grey and brown. In winter the black eye patch is there and the colouring is grey above and white below. The Red-Necked Phalarope has a call that has been described as a&amp;nbsp;&lt;em&gt;whit&lt;/em&gt;&amp;nbsp;or&amp;nbsp;&lt;em&gt;twit&lt;/em&gt;.&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;&lt;/section&gt;&lt;section id=&quot;content-section-3&quot;&gt;&lt;div class=&quot;gdlr-color-wrapper  gdlr-show-all no-skin&quot; style=&quot;background-color: #f4f4f4;  border-top: 4px solid #ededed;  border-bottom: 4px solid #ededed; &quot;&gt;&lt;div class=&quot;container&quot;&gt;&lt;div class=&quot;six columns&quot;&gt;&lt;div class=&quot;gdlr-item-title-wrapper gdlr-item pos-center &quot;&gt;&lt;div class=&quot;gdlr-item-title-head&quot;&gt;&lt;h3 class=&quot;gdlr-item-title gdlr-skin-title gdlr-skin-border&quot;&gt;Sanderling&lt;/h3&gt;&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;gdlr-item gdlr-content-item&quot; style=&quot;margin-bottom: 2px;&quot;&gt;&lt;p&gt;Sandlerlings do not have similar markings to other sandpipers and are easy to distinguish. Sanderlings prefer the sandy beaches of the west coast over mudflats and are common sightings on beaches in the Pacific Rim. They can feed at night and can be seen foraging for food when the moon is out. The winter bird is pale and can look almost white from a distance. Though they migrate like the rest of the sandpipers, they are the most abundant sandpiper seen during the winter.&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;six columns&quot;&gt;&lt;div class=&quot;gdlr-item gdlr-content-item&quot; style=&quot;margin-bottom: 2px;&quot;&gt;&lt;div class=&quot;wonderplugingallery-container&quot; id=&quot;wonderplugingallery-container-138&quot; style=&quot;max-width:750px;margin:0 auto;&quot;&gt;&lt;div class=&quot;wonderplugingallery&quot; id=&quot;wonderplugingallery-138&quot; data-galleryid=&quot;138&quot; data-width=&quot;750&quot; data-height=&quot;500&quot; data-skin=&quot;light&quot; data-autoslide=&quot;false&quot; data-autoplayvideo=&quot;false&quot; data-html5player=&quot;true&quot; data-responsive=&quot;true&quot; data-fullwidth=&quot;false&quot; data-showtitle=&quot;true&quot; data-showdescription=&quot;true&quot; data-showplaybutton=&quot;true&quot; data-showfullscreenbutton=&quot;true&quot; data-showtimer=&quot;true&quot; data-showcarousel=&quot;true&quot; data-galleryshadow=&quot;false&quot; data-slideshadow=&quot;true&quot; data-thumbshowtitle=&quot;false&quot; data-thumbshadow=&quot;true&quot; data-lightboxshowtitle=&quot;false&quot; data-lightboxshowdescription=&quot;false&quot; data-specifyid=&quot;true&quot; data-duration=&quot;1500&quot; data-slideduration=&quot;1000&quot; data-slideshowinterval=&quot;6000&quot; data-googleanalyticsaccount=&quot;&quot; data-resizemode=&quot;fill&quot; data-imagetoolboxmode=&quot;mouseover&quot; data-effect=&quot;fade&quot; data-padding=&quot;12&quot; data-bgcolor=&quot;&quot; data-bgimage=&quot;&quot; data-thumbwidth=&quot;48&quot; data-thumbheight=&quot;48&quot; data-thumbgap=&quot;8&quot; data-thumbrowgap=&quot;16&quot; data-lightboxtextheight=&quot;72&quot; data-lightboxtitlecss=&quot;{color:#333333; font:bold 12px Arial,Helvetica,sans-serif; overflow:hidden; white-space:normal; line-height:18px;}&quot; data-lightboxdescriptioncss=&quot;{color:#333333; font:normal 12px Arial,Helvetica,sans-serif; overflow:hidden; white-space:normal; line-height:14px;}&quot; data-titlecss=&quot;{color:#ffffff; font-size:14px; font-family:Armata, sans-serif, Arial; overflow:hidden; white-space:normal; text-align:left; padding:10px 0px 10px 10px;  background:rgb(102, 102, 102) transparent; background:rgba(102, 102, 102, 0.6);}&quot; data-descriptioncss=&quot;{color:#ffffff; font-size:18px; font-family:Armata, sans-serif, Arial; overflow:hidden; white-space:normal; text-align:left; padding:10px 10px 10px 10px;  background:rgb(63, 78, 101) transparent; background:rgba(63, 78, 101, 0.8); border-radius: 10px;}&quot; data-jsfolder=&quot;https://www.discovervancouverisland.com/wp-content/plugins/wonderplugin-gallery/engine/&quot; style=&quot;display:none;&quot;&gt;&lt;a href=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/11/YellowLegsOakHarbour-PaulCottis.jpg&quot;&gt;&lt;img class=&quot;html5galleryimg&quot; src=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/11/YellowLegsOakHarbour-PaulCottis-150x150.jpg&quot; alt=&quot;Paul Cottis&quot; data-description=&quot;Yellow Legs&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/11/Willet-GuyMonty.jpg&quot;&gt;&lt;img class=&quot;html5galleryimg&quot; src=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/11/Willet-GuyMonty-150x150.jpg&quot; alt=&quot;Guy Monty&quot; data-description=&quot;Willet&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/11/WesternSanspipersflyingTM.jpg&quot;&gt;&lt;img class=&quot;html5galleryimg&quot; src=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/11/WesternSanspipersflyingTM-150x150.jpg&quot; alt=&quot;Tim Melling&quot; data-description=&quot;Western Sanspipers&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/11/WesternSanpiper-Ucluelet-TimMelling.jpg&quot;&gt;&lt;img class=&quot;html5galleryimg&quot; src=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/11/WesternSanpiper-Ucluelet-TimMelling-150x150.jpg&quot; alt=&quot;Tim Melling&quot; data-description=&quot;Western Sanpiper&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/11/WesternSanpiperPortMcNeil-GuyMonty.jpg&quot;&gt;&lt;img class=&quot;html5galleryimg&quot; src=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/11/WesternSanpiperPortMcNeil-GuyMonty-150x150.jpg&quot; alt=&quot;Guy Monty&quot; data-description=&quot;Western Sanpiper&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/11/WesternSandpiper-MylesGreen.jpg&quot;&gt;&lt;img class=&quot;html5galleryimg&quot; src=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/11/WesternSandpiper-MylesGreen-150x150.jpg&quot; alt=&quot;Myles Green&quot; data-description=&quot;Western Sandpiper&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/11/WesternSandpiper-GuyMonty.jpg&quot;&gt;&lt;img class=&quot;html5galleryimg&quot; src=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/11/WesternSandpiper-GuyMonty-150x150.jpg&quot; alt=&quot;Guy Monty&quot; data-description=&quot;Western Sandpiper&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/11/WanderingtattlerTM.jpg&quot;&gt;&lt;img class=&quot;html5galleryimg&quot; src=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/11/WanderingtattlerTM-150x150.jpg&quot; alt=&quot;Tim Melling&quot; data-description=&quot;Wanderingtattler&quot;&gt;&lt;/a&gt;&lt;div class=&quot;wonderplugin-engine&quot;&gt;&lt;a href=&quot;http://www.wonderplugin.com/wordpress-gallery/&quot; title=&quot;WordPress Gallery Plugin&quot;&gt;WordPress Gallery Plugin&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;&lt;/section&gt;&lt;section id=&quot;content-section-4&quot;&gt;&lt;div class=&quot;gdlr-color-wrapper   &quot; style=&quot;background-color: #ffffff; &quot;&gt;&lt;div class=&quot;container&quot;&gt;&lt;div class=&quot;six columns&quot;&gt;&lt;div class=&quot;gdlr-item gdlr-content-item&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;six columns&quot;&gt;&lt;div class=&quot;gdlr-item gdlr-content-item&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;&lt;/section&gt;&lt;section id=&quot;content-section-5&quot;&gt;&lt;div class=&quot;gdlr-color-wrapper   &quot; style=&quot;background-color: #ffffff; &quot;&gt;&lt;div class=&quot;container&quot;&gt;&lt;div class=&quot;four columns&quot;&gt;&lt;div class=&quot;gdlr-item gdlr-content-item&quot; style=&quot;margin-bottom: 30px;&quot;&gt;&lt;p&gt;&lt;strong&gt;Sandpipers (Baird’s)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Baird’s Sandpipers are very similar to the Western Sandpiper but can be distinguished by their long wings that extend beyond the tail when the bird is not in flight. Adults have black legs and a straight, thin dark bill. They are black and brown on top with white tips around some of their feathers and mainly white underneath. Baird’s Sandpipers undertake one of the longest annual migration of any bird flying from the Arctic every year as far south as Tierra del Fuego (almost Antartica) and back again. They begin spring migration through Vancouver Island on the way to the Arctic as early as mid April until late May and they return August and September along the west coast. Most sightings will be in summer months on Vancouver Island’s west coast.&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;four columns&quot;&gt;&lt;div class=&quot;gdlr-item gdlr-content-item&quot; style=&quot;margin-bottom: 2px;&quot;&gt;&lt;p&gt;&lt;strong&gt;Sandpiper (Least)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Least Sandpipers breed in the Arctic and head as far south as Central South America. They are mostly seen around Witty’s Lagoon close to Victoria and Long Beach in the Pacific Rim. Least Sandpipers can be easily identified by their crouched position while feeding and are often seen with other Sandpipers.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Sandpiper (Semi-palmated)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The Semipalmated Sandpiper gets its name from the slight webbing at the base of its toes.&lt;/p&gt;
+&lt;p&gt;Adults have black legs and a dark bill like the Bairds and Western Sandpiper. The body is dark grey-brown on top and white underneath. In flight, the Semipalmated Sandpiper displays a white stripe running down its wings and white on either side of its tail.&amp;nbsp;In the late summer when we are most likely to see them on Vancouver Island, the juvenile’s legs may be olive-colored. Adults may be hard to separate from Baird’s and Western Sandpipers. Their migratory pattern is similar to other sandpipers and you will see them from April to October with the highest numbers in July and August. They are often mixed in with Western Sandpipers and like the tidal mudflats around Victoria and Tofino.&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;four columns&quot;&gt;&lt;div class=&quot;gdlr-item gdlr-content-item&quot; style=&quot;margin-bottom: 2px;&quot;&gt;&lt;p&gt;&lt;strong&gt;Sandpiper (Solitary)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Most sandpipers migrate in flocks and nest on the ground, but the Solitary Sandpiper does neither. In migration it is usually alone and it is most often seen near fresh water. When approached, it may bob nervously and fly away with sharp whistled cries. The Solitary Sandpiper is different from 84 of the 85 other types of sandpipers in that it nests in trees instead of on the ground.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Sandpiper (Western)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Western Sandpipers can be hard to distinguish from Semi-palmated and Bairds Sandpipers because of similar features including a dark bill and dark legs. Their body is brown on top and white underneath and they are reddish-brown on the crown. The western sandpiper acquires winter plumage (plain gray) much earlier in the autumn than the semi-palmated sandpiper. They start showing up on Vancouver Island in April on their journey north and are done by November. The greatest numbers are usually seen in July and August and they are the most abundant shorebird on Vancouver Island. The Tofino Mudflats is one of the best bird watching areas to see the Western Sandpiper.&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;gdlr-item gdlr-content-item&quot; style=&quot;margin-bottom: 50px;&quot;&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong&gt;Turnstone (Black)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The Black Turnstone mostly seen feeding on crustaceans, invertebrates, barnacles, limpets and other mollusks pried from rocks along Vancouver Island’s coasts but can also feed on mudflats and in piles of seaweed on sand or pebble beaches. They will often be in smaller flocks of 10 to 50 birds, but can be seen in much larger flocks. They breed in western Alaska and spend the winters anywhere from southern Alaska to Mexico. Adults come back to the same nesting sites and nest with the same mate each year. The female often leaves the next 2 weeks after the chicks are hatched.&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;/div&gt;&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;&lt;div class=&quot;six columns&quot;&gt;&lt;div class=&quot;gdlr-item gdlr-content-item&quot; style=&quot;margin-bottom: 50px;&quot;&gt;&lt;div class=&quot;wonderplugingallery-container&quot; id=&quot;wonderplugingallery-container-136&quot; style=&quot;max-width:750px;margin:0 auto;&quot;&gt;&lt;div class=&quot;wonderplugingallery&quot; id=&quot;wonderplugingallery-136&quot; data-galleryid=&quot;136&quot; data-width=&quot;750&quot; data-height=&quot;500&quot; data-skin=&quot;light&quot; data-autoslide=&quot;false&quot; data-autoplayvideo=&quot;false&quot; data-html5player=&quot;true&quot; data-responsive=&quot;true&quot; data-fullwidth=&quot;false&quot; data-showtitle=&quot;true&quot; data-showdescription=&quot;true&quot; data-showplaybutton=&quot;true&quot; data-showfullscreenbutton=&quot;true&quot; data-showtimer=&quot;true&quot; data-showcarousel=&quot;true&quot; data-galleryshadow=&quot;false&quot; data-slideshadow=&quot;true&quot; data-thumbshowtitle=&quot;false&quot; data-thumbshadow=&quot;true&quot; data-lightboxshowtitle=&quot;false&quot; data-lightboxshowdescription=&quot;false&quot; data-specifyid=&quot;true&quot; data-duration=&quot;1500&quot; data-slideduration=&quot;1000&quot; data-slideshowinterval=&quot;6000&quot; data-googleanalyticsaccount=&quot;&quot; data-resizemode=&quot;fill&quot; data-imagetoolboxmode=&quot;mouseover&quot; data-effect=&quot;fade&quot; data-padding=&quot;12&quot; data-bgcolor=&quot;&quot; data-bgimage=&quot;&quot; data-thumbwidth=&quot;48&quot; data-thumbheight=&quot;48&quot; data-thumbgap=&quot;8&quot; data-thumbrowgap=&quot;16&quot; data-lightboxtextheight=&quot;72&quot; data-lightboxtitlecss=&quot;{color:#333333; font:bold 12px Arial,Helvetica,sans-serif; overflow:hidden; white-space:normal; line-height:18px;}&quot; data-lightboxdescriptioncss=&quot;{color:#333333; font:normal 12px Arial,Helvetica,sans-serif; overflow:hidden; white-space:normal; line-height:14px;}&quot; data-titlecss=&quot;{color:#ffffff; font-size:14px; font-family:Armata, sans-serif, Arial; overflow:hidden; white-space:normal; text-align:left; padding:10px 0px 10px 10px;  background:rgb(102, 102, 102) transparent; background:rgba(102, 102, 102, 0.6);}&quot; data-descriptioncss=&quot;{color:#ffffff; font-size:18px; font-family:Armata, sans-serif, Arial; overflow:hidden; white-space:normal; text-align:left; padding:10px 10px 10px 10px;  background:rgb(63, 78, 101) transparent; background:rgba(63, 78, 101, 0.8); border-radius: 10px;}&quot; data-jsfolder=&quot;https://www.discovervancouverisland.com/wp-content/plugins/wonderplugin-gallery/engine/&quot; style=&quot;display:none;&quot;&gt;&lt;a href=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/11/LongbilledDowitcher-UnionBay-GuyMonty.jpg&quot;&gt;&lt;img class=&quot;html5galleryimg&quot; src=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/11/LongbilledDowitcher-UnionBay-GuyMonty-150x150.jpg&quot; alt=&quot;Guy Monty&quot; data-description=&quot;Longbilled Dowitcher&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/11/LongBilledDowitcher-NanaimoEstuary-GuyMonty-copy.jpg&quot;&gt;&lt;img class=&quot;html5galleryimg&quot; src=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/11/LongBilledDowitcher-NanaimoEstuary-GuyMonty-copy-150x150.jpg&quot; alt=&quot;Guy Monty&quot; data-description=&quot;Long Billed Dowitcher&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/11/LongBilledDowitcher-NanaimoEstuary-GuyMonty.jpg&quot;&gt;&lt;img class=&quot;html5galleryimg&quot; src=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/11/LongBilledDowitcher-NanaimoEstuary-GuyMonty-150x150.jpg&quot; alt=&quot;Guy onty&quot; data-description=&quot;LongBilledDowitcher&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/11/LongBilledDowitcherJuvenile-NanaimoEstuary-GuyMonty.jpg&quot;&gt;&lt;img class=&quot;html5galleryimg&quot; src=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/11/LongBilledDowitcherJuvenile-NanaimoEstuary-GuyMonty-150x150.jpg&quot; alt=&quot;Guy Monty&quot; data-description=&quot;LongBilledDowitcher&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/11/LongbilledCurlewEnglishmanRiverEstuary-GuyMonty.jpg&quot;&gt;&lt;img class=&quot;html5galleryimg&quot; src=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/11/LongbilledCurlewEnglishmanRiverEstuary-GuyMonty-150x150.jpg&quot; alt=&quot;Guy Monty&quot; data-description=&quot;Longbilled Curlew&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/11/LesserScaup-MarySanseverino1.jpg&quot;&gt;&lt;img class=&quot;html5galleryimg&quot; src=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/11/LesserScaup-MarySanseverino1-150x150.jpg&quot; alt=&quot;Mary Sanseverino&quot; data-description=&quot;Lesser Scaup&quot;&gt;&lt;/a&gt;&lt;div class=&quot;wonderplugin-engine&quot;&gt;&lt;a href=&quot;http://www.wonderplugin.com/wordpress-gallery/&quot; title=&quot;WordPress Gallery Plugin&quot;&gt;WordPress Gallery Plugin&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;six columns&quot;&gt;&lt;div class=&quot;gdlr-item-title-wrapper gdlr-item pos-center &quot;&gt;&lt;div class=&quot;gdlr-item-title-head&quot;&gt;&lt;h3 class=&quot;gdlr-item-title gdlr-skin-title gdlr-skin-border&quot;&gt;Tattler (Wandering)&lt;/h3&gt;&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;gdlr-item gdlr-content-item&quot; style=&quot;margin-bottom: 2px;&quot;&gt;&lt;p&gt;Tattlers are generally scarce birds that breed in eastern Siberia and Alaska. There are two very similar species and this is the American Wandering Tattler (Heteroscelusincanus). Heteroscelus translates as different legs because unlike other wading birds, it has a different pattern of scales on the front and back of its tarsus (lower leg). In 1858 Spencer Fullerton Baird wrote “This very remarkable sandpiper differs, in the hexagonal scutellation of the tibia and the posterior face of the tarsus…”. Amazingly the different scaling between the front and back of its lower leg (tarsus) is visible on this photograph. For completeness, the other part of its scientific name (incanus) means “light grey” for obvious reasons. This feature separates it from the Siberian Grey-tailed Tattler which has elongated scales on the rear of the tarsus. Tattlers also have a groove on the bill which is longer in the American Wandering Tattler, which is also visible in this photograph.&lt;/p&gt;
+&lt;p&gt;Wandering Tattlers breed by mountain streams mainly in Alaska, and winter on rocky coasts mainly in Mexico but also southern California. They are usually found at low density so are always a treat to find. (By Tim Melling)&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;&lt;div class=&quot;six columns&quot;&gt;&lt;div class=&quot;gdlr-item-title-wrapper gdlr-item pos-center &quot;&gt;&lt;div class=&quot;gdlr-item-title-head&quot;&gt;&lt;h3 class=&quot;gdlr-item-title gdlr-skin-title gdlr-skin-border&quot;&gt;Yellow Legs (Greater)&lt;/h3&gt;&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;gdlr-item gdlr-content-item&quot; style=&quot;margin-bottom: 50px;&quot;&gt;&lt;p&gt;Greater Yellow Legs are larger than their counterpart and the can be distinguished by a longer bill and longer legs. Their call is louder as well and can spook other shorebirds when coming close to them. It is mostly seen in salt and fresh water beaches and estuaries. Greater Yellow legs are usually in small flocks unless favourable feeding conditions bring more together. They are often found with Lesser Yellowlegs and are found in greater numbers in southern Vancouver Island. Spring migration is from late February to late May and the autumn migration from late June to November with a peak around mid-August. Southern Vancouver Island may have Yellowlegs during winter months.&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;six columns&quot;&gt;&lt;div class=&quot;gdlr-item gdlr-content-item&quot;&gt;&lt;div class=&quot;wonderplugingallery-container&quot; id=&quot;wonderplugingallery-container-137&quot; style=&quot;max-width:750px;margin:0 auto;&quot;&gt;&lt;div class=&quot;wonderplugingallery&quot; id=&quot;wonderplugingallery-137&quot; data-galleryid=&quot;137&quot; data-width=&quot;750&quot; data-height=&quot;500&quot; data-skin=&quot;light&quot; data-autoslide=&quot;false&quot; data-autoplayvideo=&quot;false&quot; data-html5player=&quot;true&quot; data-responsive=&quot;true&quot; data-fullwidth=&quot;false&quot; data-showtitle=&quot;true&quot; data-showdescription=&quot;true&quot; data-showplaybutton=&quot;true&quot; data-showfullscreenbutton=&quot;true&quot; data-showtimer=&quot;true&quot; data-showcarousel=&quot;true&quot; data-galleryshadow=&quot;false&quot; data-slideshadow=&quot;true&quot; data-thumbshowtitle=&quot;false&quot; data-thumbshadow=&quot;true&quot; data-lightboxshowtitle=&quot;false&quot; data-lightboxshowdescription=&quot;false&quot; data-specifyid=&quot;true&quot; data-duration=&quot;1500&quot; data-slideduration=&quot;1000&quot; data-slideshowinterval=&quot;6000&quot; data-googleanalyticsaccount=&quot;&quot; data-resizemode=&quot;fill&quot; data-imagetoolboxmode=&quot;mouseover&quot; data-effect=&quot;fade&quot; data-padding=&quot;12&quot; data-bgcolor=&quot;&quot; data-bgimage=&quot;&quot; data-thumbwidth=&quot;48&quot; data-thumbheight=&quot;48&quot; data-thumbgap=&quot;8&quot; data-thumbrowgap=&quot;16&quot; data-lightboxtextheight=&quot;72&quot; data-lightboxtitlecss=&quot;{color:#333333; font:bold 12px Arial,Helvetica,sans-serif; overflow:hidden; white-space:normal; line-height:18px;}&quot; data-lightboxdescriptioncss=&quot;{color:#333333; font:normal 12px Arial,Helvetica,sans-serif; overflow:hidden; white-space:normal; line-height:14px;}&quot; data-titlecss=&quot;{color:#ffffff; font-size:14px; font-family:Armata, sans-serif, Arial; overflow:hidden; white-space:normal; text-align:left; padding:10px 0px 10px 10px;  background:rgb(102, 102, 102) transparent; background:rgba(102, 102, 102, 0.6);}&quot; data-descriptioncss=&quot;{color:#ffffff; font-size:18px; font-family:Armata, sans-serif, Arial; overflow:hidden; white-space:normal; text-align:left; padding:10px 10px 10px 10px;  background:rgb(63, 78, 101) transparent; background:rgba(63, 78, 101, 0.8); border-radius: 10px;}&quot; data-jsfolder=&quot;https://www.discovervancouverisland.com/wp-content/plugins/wonderplugin-gallery/engine/&quot; style=&quot;display:none;&quot;&gt;&lt;a href=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/11/SolitarySandpiper-GuyMonty.jpg&quot;&gt;&lt;img class=&quot;html5galleryimg&quot; src=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/11/SolitarySandpiper-GuyMonty-150x150.jpg&quot; alt=&quot;Guy Monty&quot; data-description=&quot;Solitary Sandpiper&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/11/Short-billedDowitcher-NimpkishEstuary-GuyMonty.jpg&quot;&gt;&lt;img class=&quot;html5galleryimg&quot; src=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/11/Short-billedDowitcher-NimpkishEstuary-GuyMonty-150x150.jpg&quot; alt=&quot;Guy Monty&quot; data-description=&quot;Short billed Dowitcher&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/11/ShortbilledDowitcher-NimpkishEstuary-GuyMonty.jpg&quot;&gt;&lt;img class=&quot;html5galleryimg&quot; src=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/11/ShortbilledDowitcher-NimpkishEstuary-GuyMonty-150x150.jpg&quot; alt=&quot;Guy Monty&quot; data-description=&quot;Short billed Dowitcher&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/11/ShortbilledDowicher2-NimpkishEstuary-GuyMonty.jpg&quot;&gt;&lt;img class=&quot;html5galleryimg&quot; src=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/11/ShortbilledDowicher2-NimpkishEstuary-GuyMonty-150x150.jpg&quot; alt=&quot;Guy Monty&quot; data-description=&quot;Short billed Dowitcher&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/11/SemipalmatedsandpiperTM.jpg&quot;&gt;&lt;img class=&quot;html5galleryimg&quot; src=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/11/SemipalmatedsandpiperTM-150x150.jpg&quot; alt=&quot;Tim Melling&quot; data-description=&quot;Semipalmated sandpiper&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/11/Semipalmatedsandpiper2.jpg&quot;&gt;&lt;img class=&quot;html5galleryimg&quot; src=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/11/Semipalmatedsandpiper2-150x150.jpg&quot; alt=&quot;Tim Melling&quot; data-description=&quot;Semipalmated sandpiper&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/11/SanderlingsTM.jpg&quot;&gt;&lt;img class=&quot;html5galleryimg&quot; src=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/11/SanderlingsTM-150x150.jpg&quot; alt=&quot;Tim Melling&quot; data-description=&quot;Semipalmated sandpiper&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/11/sanderlingreflectionTM.jpg&quot;&gt;&lt;img class=&quot;html5galleryimg&quot; src=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/11/sanderlingreflectionTM-150x150.jpg&quot; alt=&quot;Tim Melling&quot; data-description=&quot;Sanderlingreflection&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/11/RedneckedPharlopeTM.jpg&quot;&gt;&lt;img class=&quot;html5galleryimg&quot; src=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/11/RedneckedPharlopeTM-150x150.jpg&quot; alt=&quot;Tim Melling&quot; data-description=&quot;Rednecked Pharlope&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/11/MarbledGodwitStoreysbeach-GuyMonty.jpg&quot;&gt;&lt;img class=&quot;html5galleryimg&quot; src=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/11/MarbledGodwitStoreysbeach-GuyMonty-150x150.jpg&quot; alt=&quot;Guy Monty&quot; data-description=&quot;Marbled Godwit&quot;&gt;&lt;/a&gt;&lt;div class=&quot;wonderplugin-engine&quot;&gt;&lt;a href=&quot;http://www.wonderplugin.com/wordpress-gallery/&quot; title=&quot;WordPress Gallery Plugin&quot;&gt;WordPress Gallery Plugin&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;&lt;/section&gt;&lt;section id=&quot;content-section-6&quot;&gt;&lt;div class=&quot;gdlr-color-wrapper  gdlr-show-all no-skin&quot; style=&quot;background-color: #f2f2f2; &quot;&gt;&lt;div class=&quot;container&quot;&gt;&lt;div class=&quot;six columns&quot;&gt;&lt;div class=&quot;gdlr-item gdlr-content-item&quot;&gt;&lt;div class=&quot;wonderplugingallery-container&quot; id=&quot;wonderplugingallery-container-135&quot; style=&quot;max-width:750px;margin:0 auto;&quot;&gt;&lt;div class=&quot;wonderplugingallery&quot; id=&quot;wonderplugingallery-135&quot; data-galleryid=&quot;135&quot; data-width=&quot;750&quot; data-height=&quot;500&quot; data-skin=&quot;light&quot; data-autoslide=&quot;false&quot; data-autoplayvideo=&quot;false&quot; data-html5player=&quot;true&quot; data-responsive=&quot;true&quot; data-fullwidth=&quot;false&quot; data-showtitle=&quot;true&quot; data-showdescription=&quot;true&quot; data-showplaybutton=&quot;true&quot; data-showfullscreenbutton=&quot;true&quot; data-showtimer=&quot;true&quot; data-showcarousel=&quot;true&quot; data-galleryshadow=&quot;false&quot; data-slideshadow=&quot;true&quot; data-thumbshowtitle=&quot;false&quot; data-thumbshadow=&quot;true&quot; data-lightboxshowtitle=&quot;false&quot; data-lightboxshowdescription=&quot;false&quot; data-specifyid=&quot;true&quot; data-duration=&quot;1500&quot; data-slideduration=&quot;1000&quot; data-slideshowinterval=&quot;6000&quot; data-googleanalyticsaccount=&quot;&quot; data-resizemode=&quot;fill&quot; data-imagetoolboxmode=&quot;mouseover&quot; data-effect=&quot;fade&quot; data-padding=&quot;12&quot; data-bgcolor=&quot;&quot; data-bgimage=&quot;&quot; data-thumbwidth=&quot;48&quot; data-thumbheight=&quot;48&quot; data-thumbgap=&quot;8&quot; data-thumbrowgap=&quot;16&quot; data-lightboxtextheight=&quot;72&quot; data-lightboxtitlecss=&quot;{color:#333333; font:bold 12px Arial,Helvetica,sans-serif; overflow:hidden; white-space:normal; line-height:18px;}&quot; data-lightboxdescriptioncss=&quot;{color:#333333; font:normal 12px Arial,Helvetica,sans-serif; overflow:hidden; white-space:normal; line-height:14px;}&quot; data-titlecss=&quot;{color:#ffffff; font-size:14px; font-family:Armata, sans-serif, Arial; overflow:hidden; white-space:normal; text-align:left; padding:10px 0px 10px 10px;  background:rgb(102, 102, 102) transparent; background:rgba(102, 102, 102, 0.6);}&quot; data-descriptioncss=&quot;{color:#ffffff; font-size:18px; font-family:Armata, sans-serif, Arial; overflow:hidden; white-space:normal; text-align:left; padding:10px 10px 10px 10px;  background:rgb(63, 78, 101) transparent; background:rgba(63, 78, 101, 0.8); border-radius: 10px;}&quot; data-jsfolder=&quot;https://www.discovervancouverisland.com/wp-content/plugins/wonderplugin-gallery/engine/&quot; style=&quot;display:none;&quot;&gt;&lt;a href=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/11/LesserScaup-MarySanseverino.jpg&quot;&gt;&lt;img class=&quot;html5galleryimg&quot; src=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/11/LesserScaup-MarySanseverino-150x150.jpg&quot; alt=&quot;Mary Sanseverino&quot; data-description=&quot;Lesser Scaup&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/11/LeastSandPiper-NimpkishEstuary-GuyMonty.jpg&quot;&gt;&lt;img class=&quot;html5galleryimg&quot; src=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/11/LeastSandPiper-NimpkishEstuary-GuyMonty-150x150.jpg&quot; alt=&quot;Guy Monty&quot; data-description=&quot;Least Sand Piper&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/11/LeastSandpiper-NanaimoEstuary-GuyMonty.jpg&quot;&gt;&lt;img class=&quot;html5galleryimg&quot; src=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/11/LeastSandpiper-NanaimoEstuary-GuyMonty-150x150.jpg&quot; alt=&quot;Guy Monty&quot; data-description=&quot;Least Sandpiper&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/11/HudsonianGodwit-Rathtrevor-GuyMonty.jpg&quot;&gt;&lt;img class=&quot;html5galleryimg&quot; src=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/11/HudsonianGodwit-Rathtrevor-GuyMonty-150x150.jpg&quot; alt=&quot;Guy Monty&quot; data-description=&quot;Hudsonian Godwit&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/11/HudsonianGodwit2-Rathtrevor-GuyMonty.jpg&quot;&gt;&lt;img class=&quot;html5galleryimg&quot; src=&quot;https://discovervancouverisland.com/wp-content/uploads/2015/11/HudsonianGodwit2-Rathtrevor-GuyMonty-150x150.jpg&quot; alt=&quot;Guy Monty&quot; data-description=&quot;Hudsonian Godwit&quot;&gt;&lt;/a&gt;&lt;div class=&quot;wonderplugin-engine&quot;&gt;&lt;a href=&quot;http://www.wonderplugin.com/wordpress-gallery/&quot; title=&quot;WordPress Gallery Plugin&quot;&gt;WordPress Gallery Plugin&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;six columns&quot;&gt;&lt;div class=&quot;gdlr-item-title-wrapper gdlr-item pos-center &quot;&gt;&lt;div class=&quot;gdlr-item-title-head&quot;&gt;&lt;h3 class=&quot;gdlr-item-title gdlr-skin-title gdlr-skin-border&quot;&gt;Yellow Legs (Lesser)&lt;/h3&gt;&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;gdlr-item gdlr-content-item&quot; style=&quot;margin-bottom: 50px;&quot;&gt;&lt;p&gt;The Lesser (smaller) Yellowlegs is about half the size of Greater Yellowlegs and the bill not much longer than the length of its head. Compared to its size, the Lesser Yellowlegs has longer legs. The Lesser Yellowlegs often allows a closer approach then the Greater Yellowlegs, but both bob their heads up and down when watching an intruder.&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;&lt;/section&gt;&lt;section id=&quot;content-section-7&quot;&gt;&lt;div class=&quot;gdlr-full-size-wrapper gdlr-show-all&quot; style=&quot;padding-top: 40px; padding-bottom: 20px;  background-color: #ffffff; &quot;&gt;&lt;div class=&quot;one-fifth column&quot;&gt;&lt;/div&gt;&lt;div class=&quot;one-fifth column&quot;&gt;&lt;div class=&quot;gdlr-item gdlr-content-item&quot;&gt;&lt;p class=&quot;m0 centered&quot;&gt;&lt;a class=&quot;btn-btm&quot; href=&quot;https://www.discovervancouverisland.com/birds-of-vancouver-island/shearwaters/&quot;&gt;Shearwaters &lt;i class=&quot;gdlr-icon fa icon-chevron-right&quot; style=&quot;color: #ffffff; font-size: 12px; &quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;one-fifth column&quot;&gt;&lt;div class=&quot;gdlr-item gdlr-content-item&quot;&gt;&lt;p class=&quot;m0 centered&quot;&gt;&lt;a class=&quot;btn-btm&quot; href=&quot;https://www.discovervancouverisland.com/birds-of-vancouver-island/avocet-oyster-cather-heron/&quot;&gt;Avocet, Oyster Cather, Heron &lt;i class=&quot;gdlr-icon fa icon-chevron-right&quot; style=&quot;color: #ffffff; font-size: 12px; &quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;one-fifth column&quot;&gt;&lt;div class=&quot;gdlr-item gdlr-content-item&quot;&gt;&lt;p class=&quot;m0 centered&quot;&gt;&lt;a class=&quot;btn-btm&quot; href=&quot;https://www.discovervancouverisland.com/birds-of-vancouver-island/belted-kingfisher-and-bald-eagle/&quot;&gt;Belted Kingfisher &lt;i class=&quot;gdlr-icon fa icon-chevron-right&quot; style=&quot;color: #ffffff; font-size: 12px; &quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;one-fifth column&quot;&gt;&lt;/div&gt;&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;&lt;/section&gt;&lt;/div&gt;
+		
+		&lt;!-- Below Sidebar Section--&gt;
+		
+		
+	&lt;/div&gt;</p></div></div></section>
+
+<section class="section-padding gallery-section">
+  <div class="container">
+    
+    
+
+    <div class="gallery-grid gallery-cols-3" id="gallery-7538dd">
+      
+        <div class="gallery-item reveal reveal-delay-1">
+          <img src="https://res.cloudinary.com/djqswlfat/image/upload/v1776083772/vancouver-island/sandpipers-phalaropes.jpg" alt="" data-lightbox="gallery-7538dd" data-index="0" class="img-cover">
+          
+        </div>
+      
+        <div class="gallery-item reveal reveal-delay-2">
+          <img src="https://discovervancouverisland.com/wp-content/uploads/2015/11/SolitarySandpiper-GuyMonty-150x150.jpg" alt="Guy Monty" data-lightbox="gallery-7538dd" data-index="1" class="img-cover">
+          
+        </div>
+      
+        <div class="gallery-item reveal reveal-delay-3">
+          <img src="https://discovervancouverisland.com/wp-content/uploads/2015/11/Short-billedDowitcher-NimpkishEstuary-GuyMonty-150x150.jpg" alt="Guy Monty" data-lightbox="gallery-7538dd" data-index="2" class="img-cover">
+          
+        </div>
+      
+        <div class="gallery-item reveal reveal-delay-1">
+          <img src="https://discovervancouverisland.com/wp-content/uploads/2015/11/ShortbilledDowitcher-NimpkishEstuary-GuyMonty-150x150.jpg" alt="Guy Monty" data-lightbox="gallery-7538dd" data-index="3" class="img-cover">
+          
+        </div>
+      
+        <div class="gallery-item reveal reveal-delay-2">
+          <img src="https://discovervancouverisland.com/wp-content/uploads/2015/11/ShortbilledDowicher2-NimpkishEstuary-GuyMonty-150x150.jpg" alt="Guy Monty" data-lightbox="gallery-7538dd" data-index="4" class="img-cover">
+          
+        </div>
+      
+        <div class="gallery-item reveal reveal-delay-3">
+          <img src="https://discovervancouverisland.com/wp-content/uploads/2015/11/SemipalmatedsandpiperTM-150x150.jpg" alt="Tim Melling" data-lightbox="gallery-7538dd" data-index="5" class="img-cover">
+          
+        </div>
+      
+        <div class="gallery-item reveal reveal-delay-1">
+          <img src="https://discovervancouverisland.com/wp-content/uploads/2015/11/Semipalmatedsandpiper2-150x150.jpg" alt="Tim Melling" data-lightbox="gallery-7538dd" data-index="6" class="img-cover">
+          
+        </div>
+      
+        <div class="gallery-item reveal reveal-delay-2">
+          <img src="https://discovervancouverisland.com/wp-content/uploads/2015/11/SanderlingsTM-150x150.jpg" alt="Tim Melling" data-lightbox="gallery-7538dd" data-index="7" class="img-cover">
+          
+        </div>
+      
+        <div class="gallery-item reveal reveal-delay-3">
+          <img src="https://discovervancouverisland.com/wp-content/uploads/2015/11/sanderlingreflectionTM-150x150.jpg" alt="Tim Melling" data-lightbox="gallery-7538dd" data-index="8" class="img-cover">
+          
+        </div>
+      
+        <div class="gallery-item reveal reveal-delay-1">
+          <img src="https://discovervancouverisland.com/wp-content/uploads/2015/11/RedneckedPharlopeTM-150x150.jpg" alt="Tim Melling" data-lightbox="gallery-7538dd" data-index="9" class="img-cover">
+          
+        </div>
+      
+        <div class="gallery-item reveal reveal-delay-2">
+          <img src="https://discovervancouverisland.com/wp-content/uploads/2015/11/MarbledGodwitStoreysbeach-GuyMonty-150x150.jpg" alt="Guy Monty" data-lightbox="gallery-7538dd" data-index="10" class="img-cover">
+          
+        </div>
+      
+        <div class="gallery-item reveal reveal-delay-3">
+          <img src="https://discovervancouverisland.com/wp-content/uploads/2015/11/Dunlin-FrenchCreek-GuyMonty-150x150.jpg" alt="Guy Monty" data-lightbox="gallery-7538dd" data-index="11" class="img-cover">
+          
+        </div>
+      
+        <div class="gallery-item reveal reveal-delay-1">
+          <img src="https://discovervancouverisland.com/wp-content/uploads/2015/11/Dunlin2-FrenchCreek-GuyMonty-150x150.jpg" alt="Guy Monty" data-lightbox="gallery-7538dd" data-index="12" class="img-cover">
+          
+        </div>
+      
+        <div class="gallery-item reveal reveal-delay-2">
+          <img src="https://discovervancouverisland.com/wp-content/uploads/2015/11/balancingtattlerTM-150x150.jpg" alt="Tim Melling" data-lightbox="gallery-7538dd" data-index="13" class="img-cover">
+          
+        </div>
+      
+        <div class="gallery-item reveal reveal-delay-3">
+          <img src="https://discovervancouverisland.com/wp-content/uploads/2015/11/Bairds-sandpipers-in-flight-Chesterman-PaulCottis-150x150.jpg" alt="Paul Cottis" data-lightbox="gallery-7538dd" data-index="14" class="img-cover">
+          
+        </div>
+      
+        <div class="gallery-item reveal reveal-delay-1">
+          <img src="https://discovervancouverisland.com/wp-content/uploads/2015/11/Bairdssandpipers-Chertermans-PaulCottis-150x150.jpg" alt="Paul Cottis" data-lightbox="gallery-7538dd" data-index="15" class="img-cover">
+          
+        </div>
+      
+        <div class="gallery-item reveal reveal-delay-2">
+          <img src="https://discovervancouverisland.com/wp-content/uploads/2015/11/BairdsSandpiper-GuyMonty-OysterBay-150x150.jpg" alt="Oyster Bay" data-lightbox="gallery-7538dd" data-index="16" class="img-cover">
+          
+        </div>
+      
+        <div class="gallery-item reveal reveal-delay-3">
+          <img src="https://discovervancouverisland.com/wp-content/uploads/2015/11/YellowLegsOakHarbour-PaulCottis-150x150.jpg" alt="Paul Cottis" data-lightbox="gallery-7538dd" data-index="17" class="img-cover">
+          
+        </div>
+      
+        <div class="gallery-item reveal reveal-delay-1">
+          <img src="https://discovervancouverisland.com/wp-content/uploads/2015/11/Willet-GuyMonty-150x150.jpg" alt="Guy Monty" data-lightbox="gallery-7538dd" data-index="18" class="img-cover">
+          
+        </div>
+      
+        <div class="gallery-item reveal reveal-delay-2">
+          <img src="https://discovervancouverisland.com/wp-content/uploads/2015/11/WesternSanspipersflyingTM-150x150.jpg" alt="Tim Melling" data-lightbox="gallery-7538dd" data-index="19" class="img-cover">
+          
+        </div>
+      
+        <div class="gallery-item reveal reveal-delay-3">
+          <img src="https://discovervancouverisland.com/wp-content/uploads/2015/11/WesternSanpiper-Ucluelet-TimMelling-150x150.jpg" alt="Tim Melling" data-lightbox="gallery-7538dd" data-index="20" class="img-cover">
+          
+        </div>
+      
+        <div class="gallery-item reveal reveal-delay-1">
+          <img src="https://discovervancouverisland.com/wp-content/uploads/2015/11/WesternSanpiperPortMcNeil-GuyMonty-150x150.jpg" alt="Guy Monty" data-lightbox="gallery-7538dd" data-index="21" class="img-cover">
+          
+        </div>
+      
+        <div class="gallery-item reveal reveal-delay-2">
+          <img src="https://discovervancouverisland.com/wp-content/uploads/2015/11/WesternSandpiper-MylesGreen-150x150.jpg" alt="Myles Green" data-lightbox="gallery-7538dd" data-index="22" class="img-cover">
+          
+        </div>
+      
+        <div class="gallery-item reveal reveal-delay-3">
+          <img src="https://discovervancouverisland.com/wp-content/uploads/2015/11/WesternSandpiper-GuyMonty-150x150.jpg" alt="Guy Monty" data-lightbox="gallery-7538dd" data-index="23" class="img-cover">
+          
+        </div>
+      
+        <div class="gallery-item reveal reveal-delay-1">
+          <img src="https://discovervancouverisland.com/wp-content/uploads/2015/11/WanderingtattlerTM-150x150.jpg" alt="Tim Melling" data-lightbox="gallery-7538dd" data-index="24" class="img-cover">
+          
+        </div>
+      
+        <div class="gallery-item reveal reveal-delay-2">
+          <img src="https://discovervancouverisland.com/wp-content/uploads/2015/11/LongbilledDowitcher-UnionBay-GuyMonty-150x150.jpg" alt="Guy Monty" data-lightbox="gallery-7538dd" data-index="25" class="img-cover">
+          
+        </div>
+      
+        <div class="gallery-item reveal reveal-delay-3">
+          <img src="https://discovervancouverisland.com/wp-content/uploads/2015/11/LongBilledDowitcher-NanaimoEstuary-GuyMonty-copy-150x150.jpg" alt="Guy Monty" data-lightbox="gallery-7538dd" data-index="26" class="img-cover">
+          
+        </div>
+      
+        <div class="gallery-item reveal reveal-delay-1">
+          <img src="https://discovervancouverisland.com/wp-content/uploads/2015/11/LongBilledDowitcher-NanaimoEstuary-GuyMonty-150x150.jpg" alt="Guy onty" data-lightbox="gallery-7538dd" data-index="27" class="img-cover">
+          
+        </div>
+      
+        <div class="gallery-item reveal reveal-delay-2">
+          <img src="https://discovervancouverisland.com/wp-content/uploads/2015/11/LongBilledDowitcherJuvenile-NanaimoEstuary-GuyMonty-150x150.jpg" alt="Guy Monty" data-lightbox="gallery-7538dd" data-index="28" class="img-cover">
+          
+        </div>
+      
+        <div class="gallery-item reveal reveal-delay-3">
+          <img src="https://discovervancouverisland.com/wp-content/uploads/2015/11/LongbilledCurlewEnglishmanRiverEstuary-GuyMonty-150x150.jpg" alt="Guy Monty" data-lightbox="gallery-7538dd" data-index="29" class="img-cover">
+          
+        </div>
+      
+        <div class="gallery-item reveal reveal-delay-1">
+          <img src="https://discovervancouverisland.com/wp-content/uploads/2015/11/LesserScaup-MarySanseverino1-150x150.jpg" alt="Mary Sanseverino" data-lightbox="gallery-7538dd" data-index="30" class="img-cover">
+          
+        </div>
+      
+        <div class="gallery-item reveal reveal-delay-2">
+          <img src="https://discovervancouverisland.com/wp-content/uploads/2015/11/SolitarySandpiper-GuyMonty-150x150.jpg" alt="Guy Monty" data-lightbox="gallery-7538dd" data-index="31" class="img-cover">
+          
+        </div>
+      
+        <div class="gallery-item reveal reveal-delay-3">
+          <img src="https://discovervancouverisland.com/wp-content/uploads/2015/11/Short-billedDowitcher-NimpkishEstuary-GuyMonty-150x150.jpg" alt="Guy Monty" data-lightbox="gallery-7538dd" data-index="32" class="img-cover">
+          
+        </div>
+      
+        <div class="gallery-item reveal reveal-delay-1">
+          <img src="https://discovervancouverisland.com/wp-content/uploads/2015/11/ShortbilledDowitcher-NimpkishEstuary-GuyMonty-150x150.jpg" alt="Guy Monty" data-lightbox="gallery-7538dd" data-index="33" class="img-cover">
+          
+        </div>
+      
+        <div class="gallery-item reveal reveal-delay-2">
+          <img src="https://discovervancouverisland.com/wp-content/uploads/2015/11/ShortbilledDowicher2-NimpkishEstuary-GuyMonty-150x150.jpg" alt="Guy Monty" data-lightbox="gallery-7538dd" data-index="34" class="img-cover">
+          
+        </div>
+      
+        <div class="gallery-item reveal reveal-delay-3">
+          <img src="https://discovervancouverisland.com/wp-content/uploads/2015/11/SemipalmatedsandpiperTM-150x150.jpg" alt="Tim Melling" data-lightbox="gallery-7538dd" data-index="35" class="img-cover">
+          
+        </div>
+      
+        <div class="gallery-item reveal reveal-delay-1">
+          <img src="https://discovervancouverisland.com/wp-content/uploads/2015/11/Semipalmatedsandpiper2-150x150.jpg" alt="Tim Melling" data-lightbox="gallery-7538dd" data-index="36" class="img-cover">
+          
+        </div>
+      
+        <div class="gallery-item reveal reveal-delay-2">
+          <img src="https://discovervancouverisland.com/wp-content/uploads/2015/11/SanderlingsTM-150x150.jpg" alt="Tim Melling" data-lightbox="gallery-7538dd" data-index="37" class="img-cover">
+          
+        </div>
+      
+        <div class="gallery-item reveal reveal-delay-3">
+          <img src="https://discovervancouverisland.com/wp-content/uploads/2015/11/sanderlingreflectionTM-150x150.jpg" alt="Tim Melling" data-lightbox="gallery-7538dd" data-index="38" class="img-cover">
+          
+        </div>
+      
+        <div class="gallery-item reveal reveal-delay-1">
+          <img src="https://discovervancouverisland.com/wp-content/uploads/2015/11/RedneckedPharlopeTM-150x150.jpg" alt="Tim Melling" data-lightbox="gallery-7538dd" data-index="39" class="img-cover">
+          
+        </div>
+      
+        <div class="gallery-item reveal reveal-delay-2">
+          <img src="https://discovervancouverisland.com/wp-content/uploads/2015/11/MarbledGodwitStoreysbeach-GuyMonty-150x150.jpg" alt="Guy Monty" data-lightbox="gallery-7538dd" data-index="40" class="img-cover">
+          
+        </div>
+      
+        <div class="gallery-item reveal reveal-delay-3">
+          <img src="https://discovervancouverisland.com/wp-content/uploads/2015/11/LesserScaup-MarySanseverino-150x150.jpg" alt="Mary Sanseverino" data-lightbox="gallery-7538dd" data-index="41" class="img-cover">
+          
+        </div>
+      
+        <div class="gallery-item reveal reveal-delay-1">
+          <img src="https://discovervancouverisland.com/wp-content/uploads/2015/11/LeastSandPiper-NimpkishEstuary-GuyMonty-150x150.jpg" alt="Guy Monty" data-lightbox="gallery-7538dd" data-index="42" class="img-cover">
+          
+        </div>
+      
+        <div class="gallery-item reveal reveal-delay-2">
+          <img src="https://discovervancouverisland.com/wp-content/uploads/2015/11/LeastSandpiper-NanaimoEstuary-GuyMonty-150x150.jpg" alt="Guy Monty" data-lightbox="gallery-7538dd" data-index="43" class="img-cover">
+          
+        </div>
+      
+        <div class="gallery-item reveal reveal-delay-3">
+          <img src="https://discovervancouverisland.com/wp-content/uploads/2015/11/HudsonianGodwit-Rathtrevor-GuyMonty-150x150.jpg" alt="Guy Monty" data-lightbox="gallery-7538dd" data-index="44" class="img-cover">
+          
+        </div>
+      
+        <div class="gallery-item reveal reveal-delay-1">
+          <img src="https://discovervancouverisland.com/wp-content/uploads/2015/11/HudsonianGodwit2-Rathtrevor-GuyMonty-150x150.jpg" alt="Guy Monty" data-lightbox="gallery-7538dd" data-index="45" class="img-cover">
+          
+        </div>
+      
+    </div>
+  </div>
+</section>
+<style>
+.gallery-grid{display:grid;gap:1rem}
+.gallery-cols-2{grid-template-columns:repeat(2,1fr)}
+.gallery-cols-3{grid-template-columns:repeat(3,1fr)}
+.gallery-cols-4{grid-template-columns:repeat(4,1fr)}
+.gallery-masonry{columns:3;column-gap:1rem}
+.gallery-masonry .gallery-item{break-inside:avoid;margin-bottom:1rem}
+.gallery-item{overflow:hidden;border-radius:8px;position:relative}
+.gallery-item img{width:100%;transition:transform .5s;cursor:pointer}
+.gallery-grid .gallery-item img{aspect-ratio:1}
+.gallery-item:hover img{transform:scale(1.05)}
+.gallery-caption{padding:.75rem;font-size:.875rem;color:var(--color-text-secondary);text-align:center}
+
+/* Carousel */
+.gallery-carousel{position:relative;overflow:hidden}
+.gallery-carousel .gallery-track{display:flex;gap:1rem;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding:0 0 1rem}
+.gallery-carousel .gallery-track::-webkit-scrollbar{display:none}
+.gallery-carousel .gallery-item{flex:0 0 auto;width:min(500px,80vw);scroll-snap-align:center}
+.gallery-carousel .gallery-item img{aspect-ratio:16/10;border-radius:12px}
+.gallery-nav{position:absolute;top:50%;transform:translateY(-50%);z-index:5;width:44px;height:44px;border-radius:50%;background:var(--color-bg);border:1px solid var(--color-border);color:var(--color-text);display:flex;align-items:center;justify-content:center;cursor:pointer;transition:all .2s;box-shadow:0 4px 20px rgba(0,0,0,.1)}
+.gallery-nav:hover{background:var(--color-accent);color:#fff;border-color:var(--color-accent)}
+.gallery-nav-prev{left:1rem}
+.gallery-nav-next{right:1rem}
+.gallery-dots{display:flex;justify-content:center;gap:.5rem;margin-top:1.25rem}
+.gallery-dot{width:8px;height:8px;border-radius:50%;background:var(--color-border);border:none;cursor:pointer;transition:all .2s;padding:0}
+.gallery-dot.active{background:var(--color-accent);width:24px;border-radius:4px}
+
+/* Lightbox */
+.lb-overlay{position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,.92);display:none;align-items:center;justify-content:center;opacity:0;transition:opacity .3s}
+.lb-overlay.lb-open{display:flex;opacity:1}
+.lb-content{position:relative;max-width:90vw;max-height:90vh;display:flex;align-items:center;justify-content:center}
+.lb-img{max-width:90vw;max-height:85vh;object-fit:contain;border-radius:8px;transition:opacity .3s}
+.lb-close{position:fixed;top:1.5rem;right:1.5rem;z-index:10001;width:44px;height:44px;border-radius:50%;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);color:#fff;font-size:1.25rem;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .2s;backdrop-filter:blur(8px)}
+.lb-close:hover{background:rgba(255,255,255,.2)}
+.lb-arrow{position:fixed;top:50%;transform:translateY(-50%);z-index:10001;width:48px;height:48px;border-radius:50%;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);color:#fff;font-size:1.25rem;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .2s;backdrop-filter:blur(8px)}
+.lb-arrow:hover{background:rgba(255,255,255,.2)}
+.lb-prev{left:1.5rem}
+.lb-next{right:1.5rem}
+.lb-counter{position:fixed;bottom:1.5rem;left:50%;transform:translateX(-50%);color:rgba(255,255,255,.6);font-size:.875rem;font-family:var(--font-body);z-index:10001}
+.lb-caption{position:fixed;bottom:3rem;left:50%;transform:translateX(-50%);color:rgba(255,255,255,.8);font-size:1rem;font-family:var(--font-heading);z-index:10001;text-align:center;max-width:600px}
+
+@media(max-width:1024px){.gallery-cols-4{grid-template-columns:repeat(2,1fr)}.gallery-cols-4.gallery-masonry{columns:2}}
+@media(max-width:768px){.gallery-cols-2,.gallery-cols-3,.gallery-cols-4{grid-template-columns:repeat(2,1fr)}.gallery-masonry{columns:2!important}.gallery-carousel .gallery-item{width:min(400px,85vw)}}
+</style>
+<script>
+(function(){
+  var g=document.getElementById('gallery-7538dd');
+  if(!g)return;
+  var images=[{"url":"https://res.cloudinary.com/djqswlfat/image/upload/v1776083772/vancouver-island/sandpipers-phalaropes.jpg","alt":"","caption":""},{"url":"https://discovervancouverisland.com/wp-content/uploads/2015/11/SolitarySandpiper-GuyMonty-150x150.jpg","alt":"Guy Monty","caption":""},{"url":"https://discovervancouverisland.com/wp-content/uploads/2015/11/Short-billedDowitcher-NimpkishEstuary-GuyMonty-150x150.jpg","alt":"Guy Monty","caption":""},{"url":"https://discovervancouverisland.com/wp-content/uploads/2015/11/ShortbilledDowitcher-NimpkishEstuary-GuyMonty-150x150.jpg","alt":"Guy Monty","caption":""},{"url":"https://discovervancouverisland.com/wp-content/uploads/2015/11/ShortbilledDowicher2-NimpkishEstuary-GuyMonty-150x150.jpg","alt":"Guy Monty","caption":""},{"url":"https://discovervancouverisland.com/wp-content/uploads/2015/11/SemipalmatedsandpiperTM-150x150.jpg","alt":"Tim Melling","caption":""},{"url":"https://discovervancouverisland.com/wp-content/uploads/2015/11/Semipalmatedsandpiper2-150x150.jpg","alt":"Tim Melling","caption":""},{"url":"https://discovervancouverisland.com/wp-content/uploads/2015/11/SanderlingsTM-150x150.jpg","alt":"Tim Melling","caption":""},{"url":"https://discovervancouverisland.com/wp-content/uploads/2015/11/sanderlingreflectionTM-150x150.jpg","alt":"Tim Melling","caption":""},{"url":"https://discovervancouverisland.com/wp-content/uploads/2015/11/RedneckedPharlopeTM-150x150.jpg","alt":"Tim Melling","caption":""},{"url":"https://discovervancouverisland.com/wp-content/uploads/2015/11/MarbledGodwitStoreysbeach-GuyMonty-150x150.jpg","alt":"Guy Monty","caption":""},{"url":"https://discovervancouverisland.com/wp-content/uploads/2015/11/Dunlin-FrenchCreek-GuyMonty-150x150.jpg","alt":"Guy Monty","caption":""},{"url":"https://discovervancouverisland.com/wp-content/uploads/2015/11/Dunlin2-FrenchCreek-GuyMonty-150x150.jpg","alt":"Guy Monty","caption":""},{"url":"https://discovervancouverisland.com/wp-content/uploads/2015/11/balancingtattlerTM-150x150.jpg","alt":"Tim Melling","caption":""},{"url":"https://discovervancouverisland.com/wp-content/uploads/2015/11/Bairds-sandpipers-in-flight-Chesterman-PaulCottis-150x150.jpg","alt":"Paul Cottis","caption":""},{"url":"https://discovervancouverisland.com/wp-content/uploads/2015/11/Bairdssandpipers-Chertermans-PaulCottis-150x150.jpg","alt":"Paul Cottis","caption":""},{"url":"https://discovervancouverisland.com/wp-content/uploads/2015/11/BairdsSandpiper-GuyMonty-OysterBay-150x150.jpg","alt":"Oyster Bay","caption":""},{"url":"https://discovervancouverisland.com/wp-content/uploads/2015/11/YellowLegsOakHarbour-PaulCottis-150x150.jpg","alt":"Paul Cottis","caption":""},{"url":"https://discovervancouverisland.com/wp-content/uploads/2015/11/Willet-GuyMonty-150x150.jpg","alt":"Guy Monty","caption":""},{"url":"https://discovervancouverisland.com/wp-content/uploads/2015/11/WesternSanspipersflyingTM-150x150.jpg","alt":"Tim Melling","caption":""},{"url":"https://discovervancouverisland.com/wp-content/uploads/2015/11/WesternSanpiper-Ucluelet-TimMelling-150x150.jpg","alt":"Tim Melling","caption":""},{"url":"https://discovervancouverisland.com/wp-content/uploads/2015/11/WesternSanpiperPortMcNeil-GuyMonty-150x150.jpg","alt":"Guy Monty","caption":""},{"url":"https://discovervancouverisland.com/wp-content/uploads/2015/11/WesternSandpiper-MylesGreen-150x150.jpg","alt":"Myles Green","caption":""},{"url":"https://discovervancouverisland.com/wp-content/uploads/2015/11/WesternSandpiper-GuyMonty-150x150.jpg","alt":"Guy Monty","caption":""},{"url":"https://discovervancouverisland.com/wp-content/uploads/2015/11/WanderingtattlerTM-150x150.jpg","alt":"Tim Melling","caption":""},{"url":"https://discovervancouverisland.com/wp-content/uploads/2015/11/LongbilledDowitcher-UnionBay-GuyMonty-150x150.jpg","alt":"Guy Monty","caption":""},{"url":"https://discovervancouverisland.com/wp-content/uploads/2015/11/LongBilledDowitcher-NanaimoEstuary-GuyMonty-copy-150x150.jpg","alt":"Guy Monty","caption":""},{"url":"https://discovervancouverisland.com/wp-content/uploads/2015/11/LongBilledDowitcher-NanaimoEstuary-GuyMonty-150x150.jpg","alt":"Guy onty","caption":""},{"url":"https://discovervancouverisland.com/wp-content/uploads/2015/11/LongBilledDowitcherJuvenile-NanaimoEstuary-GuyMonty-150x150.jpg","alt":"Guy Monty","caption":""},{"url":"https://discovervancouverisland.com/wp-content/uploads/2015/11/LongbilledCurlewEnglishmanRiverEstuary-GuyMonty-150x150.jpg","alt":"Guy Monty","caption":""},{"url":"https://discovervancouverisland.com/wp-content/uploads/2015/11/LesserScaup-MarySanseverino1-150x150.jpg","alt":"Mary Sanseverino","caption":""},{"url":"https://discovervancouverisland.com/wp-content/uploads/2015/11/SolitarySandpiper-GuyMonty-150x150.jpg","alt":"Guy Monty","caption":""},{"url":"https://discovervancouverisland.com/wp-content/uploads/2015/11/Short-billedDowitcher-NimpkishEstuary-GuyMonty-150x150.jpg","alt":"Guy Monty","caption":""},{"url":"https://discovervancouverisland.com/wp-content/uploads/2015/11/ShortbilledDowitcher-NimpkishEstuary-GuyMonty-150x150.jpg","alt":"Guy Monty","caption":""},{"url":"https://discovervancouverisland.com/wp-content/uploads/2015/11/ShortbilledDowicher2-NimpkishEstuary-GuyMonty-150x150.jpg","alt":"Guy Monty","caption":""},{"url":"https://discovervancouverisland.com/wp-content/uploads/2015/11/SemipalmatedsandpiperTM-150x150.jpg","alt":"Tim Melling","caption":""},{"url":"https://discovervancouverisland.com/wp-content/uploads/2015/11/Semipalmatedsandpiper2-150x150.jpg","alt":"Tim Melling","caption":""},{"url":"https://discovervancouverisland.com/wp-content/uploads/2015/11/SanderlingsTM-150x150.jpg","alt":"Tim Melling","caption":""},{"url":"https://discovervancouverisland.com/wp-content/uploads/2015/11/sanderlingreflectionTM-150x150.jpg","alt":"Tim Melling","caption":""},{"url":"https://discovervancouverisland.com/wp-content/uploads/2015/11/RedneckedPharlopeTM-150x150.jpg","alt":"Tim Melling","caption":""},{"url":"https://discovervancouverisland.com/wp-content/uploads/2015/11/MarbledGodwitStoreysbeach-GuyMonty-150x150.jpg","alt":"Guy Monty","caption":""},{"url":"https://discovervancouverisland.com/wp-content/uploads/2015/11/LesserScaup-MarySanseverino-150x150.jpg","alt":"Mary Sanseverino","caption":""},{"url":"https://discovervancouverisland.com/wp-content/uploads/2015/11/LeastSandPiper-NimpkishEstuary-GuyMonty-150x150.jpg","alt":"Guy Monty","caption":""},{"url":"https://discovervancouverisland.com/wp-content/uploads/2015/11/LeastSandpiper-NanaimoEstuary-GuyMonty-150x150.jpg","alt":"Guy Monty","caption":""},{"url":"https://discovervancouverisland.com/wp-content/uploads/2015/11/HudsonianGodwit-Rathtrevor-GuyMonty-150x150.jpg","alt":"Guy Monty","caption":""},{"url":"https://discovervancouverisland.com/wp-content/uploads/2015/11/HudsonianGodwit2-Rathtrevor-GuyMonty-150x150.jpg","alt":"Guy Monty","caption":""}];
+  var isCarousel=false;
+
+  // Carousel setup
+  if(isCarousel){
+    var track=document.createElement('div');
+    track.className='gallery-track';
+    while(g.firstChild)track.appendChild(g.firstChild);
+    g.appendChild(track);
+
+    // Add navigation arrows
+    var prevBtn=document.createElement('button');
+    prevBtn.className='gallery-nav gallery-nav-prev';
+    prevBtn.innerHTML='<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>';
+    prevBtn.setAttribute('aria-label','Previous image');
+    g.appendChild(prevBtn);
+
+    var nextBtn=document.createElement('button');
+    nextBtn.className='gallery-nav gallery-nav-next';
+    nextBtn.innerHTML='<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>';
+    nextBtn.setAttribute('aria-label','Next image');
+    g.appendChild(nextBtn);
+
+    // Dots
+    var dotsWrap=document.createElement('div');
+    dotsWrap.className='gallery-dots';
+    images.forEach(function(_,i){
+      var dot=document.createElement('button');
+      dot.className='gallery-dot'+(i===0?' active':'');
+      dot.dataset.index=i;
+      dot.setAttribute('aria-label','Go to slide '+(i+1));
+      dotsWrap.appendChild(dot);
+    });
+    g.parentElement.appendChild(dotsWrap);
+
+    var items=track.querySelectorAll('.gallery-item');
+    var currentIdx=0;
+
+    function scrollToIdx(idx){
+      if(idx<0)idx=images.length-1;
+      if(idx>=images.length)idx=0;
+      currentIdx=idx;
+      items[idx].scrollIntoView({behavior:'smooth',block:'nearest',inline:'center'});
+      dotsWrap.querySelectorAll('.gallery-dot').forEach(function(d,i){d.classList.toggle('active',i===idx)});
+    }
+
+    prevBtn.addEventListener('click',function(){scrollToIdx(currentIdx-1)});
+    nextBtn.addEventListener('click',function(){scrollToIdx(currentIdx+1)});
+    dotsWrap.querySelectorAll('.gallery-dot').forEach(function(dot){
+      dot.addEventListener('click',function(){scrollToIdx(parseInt(this.dataset.index))});
+    });
+
+    // Auto-detect current slide on scroll
+    var scrollTimer;
+    track.addEventListener('scroll',function(){
+      clearTimeout(scrollTimer);
+      scrollTimer=setTimeout(function(){
+        var trackRect=track.getBoundingClientRect();
+        var center=trackRect.left+trackRect.width/2;
+        var closest=0,closestDist=Infinity;
+        items.forEach(function(item,i){
+          var rect=item.getBoundingClientRect();
+          var dist=Math.abs(rect.left+rect.width/2-center);
+          if(dist<closestDist){closestDist=dist;closest=i}
+        });
+        currentIdx=closest;
+        dotsWrap.querySelectorAll('.gallery-dot').forEach(function(d,i){d.classList.toggle('active',i===closest)});
+      },100);
+    });
+  }
+
+  // Lightbox
+  
+  var overlay=document.createElement('div');
+  overlay.className='lb-overlay';
+  overlay.innerHTML='<div class="lb-content"><img class="lb-img" src="" alt=""></div><button class="lb-close" aria-label="Close lightbox">✕</button><button class="lb-arrow lb-prev" aria-label="Previous image"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg></button><button class="lb-arrow lb-next" aria-label="Next image"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></button><div class="lb-counter"></div><div class="lb-caption"></div>';
+  overlay.setAttribute('role','dialog');
+  overlay.setAttribute('aria-modal','true');
+  overlay.setAttribute('aria-label','Image lightbox');
+  document.body.appendChild(overlay);
+
+  var lbImg=overlay.querySelector('.lb-img');
+  var lbCounter=overlay.querySelector('.lb-counter');
+  var lbCaption=overlay.querySelector('.lb-caption');
+  var lbIdx=0;
+
+  function lbShow(idx){
+    if(idx<0)idx=images.length-1;
+    if(idx>=images.length)idx=0;
+    lbIdx=idx;
+    lbImg.style.opacity='0';
+    setTimeout(function(){
+      lbImg.src=images[idx].url;
+      lbImg.alt=images[idx].alt;
+      lbCounter.textContent=(idx+1)+' / '+images.length;
+      lbCaption.textContent=images[idx].caption||'';
+      lbImg.style.opacity='1';
+    },150);
+  }
+
+  g.querySelectorAll('[data-lightbox="gallery-7538dd"]').forEach(function(img){
+    img.addEventListener('click',function(){
+      var idx=parseInt(this.dataset.index)||0;
+      lbShow(idx);
+      overlay.classList.add('lb-open');
+      document.body.style.overflow='hidden';
+    });
+  });
+
+  overlay.querySelector('.lb-close').addEventListener('click',function(){
+    overlay.classList.remove('lb-open');
+    document.body.style.overflow='';
+  });
+  overlay.querySelector('.lb-prev').addEventListener('click',function(e){e.stopPropagation();lbShow(lbIdx-1)});
+  overlay.querySelector('.lb-next').addEventListener('click',function(e){e.stopPropagation();lbShow(lbIdx+1)});
+  overlay.addEventListener('click',function(e){
+    if(e.target===overlay||e.target.classList.contains('lb-content')){
+      overlay.classList.remove('lb-open');
+      document.body.style.overflow='';
+    }
+  });
+  document.addEventListener('keydown',function(e){
+    if(!overlay.classList.contains('lb-open'))return;
+    if(e.key==='Escape'){overlay.classList.remove('lb-open');document.body.style.overflow=''}
+    if(e.key==='ArrowLeft')lbShow(lbIdx-1);
+    if(e.key==='ArrowRight')lbShow(lbIdx+1);
+  });
+  
+})();
+</script>
+<section class="cta-section" style=""><div class="container" style="position:relative;z-index:2"><div class="cta-content text-center reveal"><h2 class="cta-heading">Explore More Birds</h2><div class="cta-actions"><a href="/birds-of-vancouver-island.html" class="cta-btn-primary">Back to Birds</a></div></div></div></section>
+<style>
+.cta-section{padding:7rem 0;position:relative;background:var(--color-surface)}
+.cta-img{color:#fff}
+.cta-heading{margin-bottom:1rem}
+.cta-img .cta-heading{color:#fff}
+.cta-body{max-width:640px;margin:0 auto 2.5rem;line-height:1.8}
+.cta-img .cta-body{color:rgba(255,255,255,.85)}
+.cta-actions{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
+.cta-btn-primary{display:inline-flex;align-items:center;gap:.5rem;padding:.875rem 2.5rem;font-family:var(--font-body);font-size:.9375rem;font-weight:500;letter-spacing:.02em;border:none;border-radius:6px;cursor:pointer;transition:all .25s;text-decoration:none;background:#fff;color:#1a1a1a}
+.cta-btn-primary:hover{background:#f0f0f0;color:#1a1a1a;transform:translateY(-2px);box-shadow:0 8px 25px rgba(0,0,0,.15)}
+.cta-section:not(.cta-img) .cta-btn-primary{background:var(--color-accent);color:#fff}
+.cta-section:not(.cta-img) .cta-btn-primary:hover{background:var(--color-accent-hover);color:#fff}
+.cta-btn-secondary{display:inline-flex;align-items:center;gap:.5rem;padding:.875rem 2.5rem;font-family:var(--font-body);font-size:.9375rem;font-weight:500;letter-spacing:.02em;border:2px solid rgba(255,255,255,.4);border-radius:6px;cursor:pointer;transition:all .25s;text-decoration:none;background:transparent;color:#fff}
+.cta-btn-secondary:hover{border-color:#fff;color:#fff;transform:translateY(-2px)}
+.cta-section:not(.cta-img) .cta-btn-secondary{border-color:var(--color-border);color:var(--color-text)}
+.cta-section:not(.cta-img) .cta-btn-secondary:hover{border-color:var(--color-accent);color:var(--color-accent)}
+.cta-text-dark .cta-heading,.cta-text-dark .cta-body{color:var(--color-text)}.cta-text-dark .cta-btn-primary{background:var(--color-accent);color:#fff}.cta-text-dark .cta-btn-primary:hover{background:var(--color-accent-hover)}.cta-text-dark .cta-btn-secondary{border-color:var(--color-border);color:var(--color-text)}.cta-text-dark .cta-btn-secondary:hover{border-color:var(--color-accent);color:var(--color-accent)}
+@media(max-width:768px){.cta-actions{flex-direction:column;align-items:center}.cta-btn-primary,.cta-btn-secondary{width:100%;max-width:300px;justify-content:center;text-align:center}}
+</style>
+<footer class="site-footer"><div class="container"><div class="footer-top"><div class="footer-brand"><span class="footer-logo-text">Discover Vancouver Island</span></div><div class="footer-columns"><div class="footer-column"><h4 class="footer-col-title">Explore</h4><ul class="footer-links"><li><a href="/things-to-do.html">Things To Do</a></li><li><a href="/regions.html">Regions</a></li></ul></div><div class="footer-column"><h4 class="footer-col-title">About</h4><ul class="footer-links"><li><a href="/blog.html">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul></div></div></div><div class="footer-bottom"><p class="footer-copyright">© 2026 Discover Vancouver Island</p></div></div></footer>
+<style>.site-footer{padding:5rem 0 2rem;border-top:1px solid var(--color-border)}.footer-top{display:flex;justify-content:space-between;gap:4rem;margin-bottom:3rem}.footer-logo{height:32px;width:auto}.footer-logo-text{font-family:var(--font-heading);font-size:1.5rem}.footer-columns{display:flex;gap:4rem}.footer-col-title{font-family:var(--font-body);font-size:.8125rem;font-weight:600;text-transform:uppercase;letter-spacing:.1em;margin-bottom:1.25rem}.footer-links{list-style:none;display:flex;flex-direction:column;gap:.625rem}.footer-links a{color:var(--color-text-secondary);font-size:.9375rem}.footer-links a:hover{color:var(--color-accent)}.footer-newsletter{padding:2.5rem 0;border-top:1px solid var(--color-border);border-bottom:1px solid var(--color-border);margin-bottom:2rem;text-align:center}.footer-newsletter h4{margin-bottom:1rem}.newsletter-form{display:flex;max-width:440px;margin:0 auto;gap:.5rem}.newsletter-input{flex:1;padding:.75rem 1rem;font-family:var(--font-body);border:1px solid var(--color-border);border-radius:4px;background:var(--color-bg);color:var(--color-text)}.newsletter-input:focus{outline:none;border-color:var(--color-accent)}.footer-bottom{display:flex;justify-content:space-between;align-items:center;padding-top:2rem}.footer-copyright{font-size:.875rem;color:var(--color-text-secondary)}.footer-socials{display:flex;gap:1rem}.footer-social{color:var(--color-text-secondary);transition:color .2s;display:flex;align-items:center}.footer-social:hover{color:var(--color-accent)}@media(max-width:768px){.footer-top{flex-direction:column;gap:2rem}.footer-columns{flex-wrap:wrap;gap:2rem}.footer-bottom{flex-direction:column;gap:1rem;text-align:center}.newsletter-form{flex-direction:column}}</style>
+  <script>document.addEventListener('DOMContentLoaded',function(){var r=document.querySelectorAll('.reveal');var o=new IntersectionObserver(function(e){e.forEach(function(n){if(n.isIntersecting){n.target.classList.add('revealed');o.unobserve(n.target)}})},{threshold:.1,rootMargin:'0px 0px -50px 0px'});r.forEach(function(e){o.observe(e)});var t=document.querySelector('.nav-toggle'),m=document.querySelector('.nav-mobile-menu');if(t&&m){t.addEventListener('click',function(){m.classList.toggle('nav-mobile-open');t.classList.toggle('nav-toggle-active')})}var d=document.querySelectorAll('.nav-dropdown');d.forEach(function(el){el.addEventListener('mouseenter',function(){var dm=this.querySelector('.nav-dropdown-menu');if(dm){dm.style.opacity='1';dm.style.visibility='visible';dm.style.transform='translateY(0)'}});el.addEventListener('mouseleave',function(){var dm=this.querySelector('.nav-dropdown-menu');if(dm){dm.style.opacity='0';dm.style.visibility='hidden';dm.style.transform='translateY(8px)'}})});var nav=document.querySelector('.nav-sticky');if(nav){window.addEventListener('scroll',function(){nav.classList.toggle('nav-scrolled',window.scrollY>100)})}});</script>
+</body>
+</html>
